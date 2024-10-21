@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>Formulário de pedido de visto para America</title>
+
+        <link href="/favicon.ico" rel="icon" type="image/x-icon">
+        <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" referrerpolicy="no-referrer" rel="stylesheet"/>
+        <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" referrerpolicy="no-referrer" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <form action="https://sistema.chinavistos.com.br/formulario-pedido-visto-americano-post" method="post" enctype="multipart/form-data" class="form-container">
+            <input name="firstname" type="text" id="firstname">
+                <img src="/images/logo.png" alt="Logo da China Vistos" class="logo">
+                <hr>
+                <div class="header">
+                    <div class="title">
+                        <h1>Formulário de pedido de visto Americano (DS 160)</h1>
+                        <p>
+                            O candidato deve preencher este formulário de forma completa e clara. Por
+                            favor, digite as respostas em letra maiúscula em português no espaço fornecido ou marque
+                            a caixa relevante para selecionar. Se algum dos itens não se aplicam, digite N / A ou
+                            Nenhum.
+                            <br>
+                            Dúvidas? Entre em contato com a nossa central de atendimento: 001 4752-2640
+                        </p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="form-section">
+                <h3>&#10142; INFORMAÇÕES PESSOAIS</h3>
+                <div class="question">
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nome (exatamente como o passaporte):</p>
+                            <input type="text" name="nome" required>
+                        </div>
+                        <div class="input-container">
+                            <p>Sobrenome (exatamente como o passaporte):</p>
+                            <input type="text" name="sobrenome" required>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Nome completo:</p>
+                        <input type="text" name="nome_completo">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Utiliza ou já utilizou outros nomes? (Solteiro, casado, profissional, etc.):</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="outro_nome_sim" name="outro_nome" value="Sim">
+                                <label for="outro_nome_sim" class="custom-radio"></label>
+                                <label for="outro_nome_sim"><span>Sim</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="outro_nome_nao" name="outro_nome" value="Não">
+                                <label for="outro_nome_nao" class="custom-radio"></label>
+                                <label for="outro_nome_nao"><span>Não</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, qual(is)?</p>
+                        <input type="text" name="outro_nome_qual">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Sexo do solicitante:</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="masculino" name="sexo" value="Masculino">
+                            <label for="masculino" class="custom-radio"></label>
+                            <label for="masculino"><span>Masculino</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="feminino" name="sexo" value="Feminino">
+                            <label for="feminino" class="custom-radio"></label>
+                            <label for="feminino"><span>Feminino</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já serviu ao Exército?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="serviu_exercito_sim" name="serviu_exercito" value="Sim">
+                                <label for="serviu_exercito_sim" class="custom-radio"></label>
+                                <label for="serviu_exercito_sim"><span>Sim</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="serviu_exercito_nao" name="serviu_exercito" value="Não">
+                                <label for="serviu_exercito_nao" class="custom-radio"></label>
+                                <label for="serviu_exercito_nao"><span>Não</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, qual patente, período (datas de entrada e saída) e país que serviu:</p>
+                        <input type="text" name="serviu_exercito_informacoes">
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, possui habilidades com armas de fogo?</p>
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="habilidade_arma_fogo_sim" name="habilidade_arma_fogo" value="Sim">
+                                <label for="habilidade_arma_fogo_sim" class="custom-radio"></label>
+                                <label for="habilidade_arma_fogo_sim"><span>Sim</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="habilidade_arma_fogo_nao" name="habilidade_arma_fogo" value="Não">
+                                <label for="habilidade_arma_fogo_nao" class="custom-radio"></label>
+                                <label for="habilidade_arma_fogo_nao"><span>Não</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Estado Civil (obs: união estável somente mediante documento feito em cartório):</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="solteiro" name="estado_civil" value="Solteiro">
+                                <label for="solteiro" class="custom-radio"></label>
+                                <label for="solteiro"><span>Solteiro</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="mora_junto" name="estado_civil" value="Mora Junto">
+                                <label for="mora_junto" class="custom-radio"></label>
+                                <label for="mora_junto"><span>Mora Junto</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="casado" name="estado_civil" value="Casado">
+                                <label for="casado" class="custom-radio"></label>
+                                <label for="casado"><span>Casado</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="uniao_estavel" name="estado_civil" value="União estável">
+                                <label for="uniao_estavel" class="custom-radio"></label>
+                                <label for="uniao_estavel"><span>União estável</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="divorciado" name="estado_civil" value="Divorciado">
+                                <label for="divorciado" class="custom-radio"></label>
+                                <label for="divorciado"><span>Divorciado</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="separado" name="estado_civil" value="Separado">
+                                <label for="separado" class="custom-radio"></label>
+                                <label for="separado"><span>Separado</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="viuvo" name="estado_civil" value="Viúvo">
+                                <label for="viuvo" class="custom-radio"></label>
+                                <label for="viuvo"><span>Viúvo</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de nascimento: (dd/mm/yyyy)</p>
+                            <input type="date" name="local_nasc_estado">
+                        </div>
+                        <div class="input-container">
+                            <p>Local de nascimento (Cidade/Estado/País):</p>
+                            <input type="text" name="local_nasc_pais">
+                        </div>
+                    </div>
+                </div>
+                <h3>&#10142; NACIONALIDADE</h3>
+                <div class="question">
+                    <p>Tem ou já teve outra nacionalidade?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="outra_nacionalidade_sim" name="outra_nacionalidade" value="Sim">
+                                <label for="outra_nacionalidade_sim" class="custom-radio"></label>
+                                <label for="outra_nacionalidade_sim"><span>Sim</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="outra_nacionalidade_nao" name="outra_nacionalidade" value="Não">
+                                <label for="outra_nacionalidade_nao" class="custom-radio"></label>
+                                <label for="outra_nacionalidade_nao"><span>Não</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, qual? Possui passaporte desta outra nacionalidade (mesmo que vencido)? Se sim informar o número do passaporte.</p>
+                        <input type="text" name="outro_nome_qual2">
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="input-container">
+                        <p>CPF do solicitante:</p>
+                        <input type="text" name="cpf_solicitante">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Tem ou já teve os seguintes documentos americanos? Se sim, informar números:</p>
+                    <div class="input-container">
+                        <p>Social Security Number</p>
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="social_security_sim" name="social_security" value="Sim">
+                                <label for="social_security_sim" class="custom-radio"></label>
+                                <label for="social_security_sim"><span>Sim</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="social_security_nao" name="social_security" value="Não">
+                                <label for="social_security_nao" class="custom-radio"></label>
+                                <label for="social_security_nao"><span>Não</span></label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <p>Número:</p>
+                            <input type="text" name="social_security_number">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>U.S. Tax Payer ID Number</p>
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="tax_payer_id_sim" name="tax_payer_id" value="Sim">
+                                <label for="tax_payer_id_sim" class="custom-radio"></label>
+                                <label for="tax_payer_id_sim"><span>Sim</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="tax_payer_id_nao" name="tax_payer_id" value="Não">
+                                <label for="tax_payer_id_nao" class="custom-radio"></label>
+                                <label for="tax_payer_id_nao"><span>Não</span></label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <p>Número:</p>
+                            <input type="text" name="tax_payer_id_number">
+                        </div>
+                    </div>
+                </div>
+                <h3>&#10142; ENDEREÇO RESIDENCIAL</h3>
+                <div class="question">
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Rua</p>
+                            <input type="text" name="endereco_residencial_rua">
+                        </div>
+                        <div class="input-container">
+                            <p>Número</p>
+                            <input type="text" name="endereco_residencial_numero">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Complemento</p>
+                            <input type="text" name="endereco_residencial_complemento">
+                        </div>
+                        <div class="input-container">
+                            <p>Bairro</p>
+                            <input type="text" name="endereco_residencial_bairro">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Cidade</p>
+                            <input type="text" name="endereco_residencial_cidade">
+                        </div>
+                        <div class="input-container">
+                            <p>Estado</p>
+                            <input type="text" name="endereco_residencial_estado">
+                        </div>
+                        <div class="input-container">
+                            <p>CEP</p>
+                            <input type="text" name="endereco_residencial_cep">
+                        </div>
+                    </div>
+                </div>
+                <h3>&#10142; PASSAPORTE</h3>
+                <div class="question">
+                    <p>Caso o Visto seja aprovado, assinale a forma que deseja receber o passaporte com o Visto:</p>
+                    <p>Retirar pessoalmente o passaporte gratuitamente no CASV de</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="retirar_passaporte_sao_paulo" name="retirar_passaporte" value="São Paulo">
+                            <label for="retirar_passaporte_sao_paulo" class="custom-radio"></label>
+                            <label for="retirar_passaporte_sao_paulo"><span>São Paulo</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="retirar_passaporte_rio_de_janeiro" name="retirar_passaporte" value="Rio de Janeiro">
+                            <label for="retirar_passaporte_rio_de_janeiro" class="custom-radio"></label>
+                            <label for="retirar_passaporte_rio_de_janeiro"><span>Rio de Janeiro</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="retirar_passaporte_brasilia" name="retirar_passaporte" value="Brasília">
+                            <label for="retirar_passaporte_brasilia" class="custom-radio"></label>
+                            <label for="retirar_passaporte_brasilia"><span>Brasília</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="retirar_passaporte_recife" name="retirar_passaporte" value="Recife">
+                            <label for="retirar_passaporte_recife" class="custom-radio"></label>
+                            <label for="retirar_passaporte_recife"><span>Recife</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="retirar_passaporte_porto_alegre" name="retirar_passaporte" value="Porto Alegre">
+                            <label for="retirar_passaporte_porto_alegre" class="custom-radio"></label>
+                            <label for="retirar_passaporte_porto_alegre"><span>Porto Alegre</span></label>
+                        </div>
+                    </div>
+                    <p>Receber em domicílio (endereço de sua escolha) mediante pagamento de Taxa extra de R$60,00 (reais) por passaporte</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="retirar_passaporte_casa" name="retirar_passaporte" value="Receber em casa">
+                            <label for="retirar_passaporte_casa" class="custom-radio"></label>
+                            <label for="retirar_passaporte_casa"><span>Sim</span></label>
+                        </div>
+                    </div>
+                    <p>Obs: existem endereços que o Consulado Americano NÃO ENTREGA documentos. Caso o Visto seja negado, essa Taxa de envio NORMALMENTE é reembolsável. Caso aconteça a negativa, o reembolso deverá ser tratado diretamente com o Consulado Americano via e-mail.</p>
+                </div>
+                <div class="question">
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Telefone Residencial (com DDD)</p>
+                            <input type="text" name="passaporte_telefone_residencial">
+                        </div>
+                        <div class="input-container">
+                            <p>Telefone Celular (com DDD)</p>
+                            <input type="text" name="passaporte_telefone_celular">
+                        </div>
+                        <div class="input-container">
+                            <p>Telefone de Trabalho atual (com DDD)</p>
+                            <input type="text" name="passaporte_telefone_trabalho">
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Utiliza outro número de telefone nos últimos 5 anos?</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="outro_numero_telefone_ultimos_anos_sim" name="outro_numero_telefone_ultimos_anos" value="Sim">
+                            <label for="outro_numero_telefone_ultimos_anos_sim" class="custom-radio"></label>
+                            <label for="outro_numero_telefone_ultimos_anos_sim"><span>Sim</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="outro_numero_telefone_ultimos_anos_nao" name="outro_numero_telefone_ultimos_anos" value="Não">
+                            <label for="outro_numero_telefone_ultimos_anos_nao" class="custom-radio"></label>
+                            <label for="outro_numero_telefone_ultimos_anos_nao"><span>Não</span></label>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, qual (is)?</p>
+                        <input type="text" name="outro_numero_telefone_ultimos_anos_qual">
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="input-container">
+                        <p>E-mail atual:</p>
+                        <input type="text" name="email_atual">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Utiliza outros e-mails nos últimos 5 anos?</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="outro_email_ultimos_anos_sim" name="outro_email_ultimos_anos" value="Sim">
+                            <label for="outro_email_ultimos_anos_sim" class="custom-radio"></label>
+                            <label for="outro_email_ultimos_anos_sim"><span>Sim</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="outro_email_ultimos_anos_nao" name="outro_email_ultimos_anos" value="Não">
+                            <label for="outro_email_ultimos_anos_nao" class="custom-radio"></label>
+                            <label for="outro_email_ultimos_anos_nao"><span>Não</span></label>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, qual (is)?</p>
+                        <input type="text" name="outro_email_ultimos_anos_qual">
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="input-container">
+                        <p>Redes sociais (Facebook, Instagram, Snapchat, Site ou qualquer outra rede social que possua. Informar qual é a rede social e como está o seu nome. Ex.: Instagram: @...):</p>
+                        <input type="text" name="redes_sociais">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Em qual cidade deseja fazer o processo (coleta de biometria e fotos e entrevista no Consulado Americano)?</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="processo_coleta_sao_paulo" name="processo_coleta" value="São Paulo">
+                            <label for="processo_coleta_sao_paulo" class="custom-radio"></label>
+                            <label for="processo_coleta_sao_paulo"><span>São Paulo</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="processo_coleta_rio_de_janeiro" name="processo_coleta" value="Rio de Janeiro">
+                            <label for="processo_coleta_rio_de_janeiro" class="custom-radio"></label>
+                            <label for="processo_coleta_rio_de_janeiro"><span>Rio de Janeiro</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="processo_coleta_brasilia" name="processo_coleta" value="Brasília">
+                            <label for="processo_coleta_brasilia" class="custom-radio"></label>
+                            <label for="processo_coleta_brasilia"><span>Brasília</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="processo_coleta_recife" name="processo_coleta" value="Recife">
+                            <label for="processo_coleta_recife" class="custom-radio"></label>
+                            <label for="processo_coleta_recife"><span>Recife</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="processo_coleta_porto_alegre" name="processo_coleta" value="Porto Alegre">
+                            <label for="processo_coleta_porto_alegre" class="custom-radio"></label>
+                            <label for="processo_coleta_porto_alegre"><span>Porto Alegre</span></label>
+                        </div>
+                    </div>
+                    <p>Obs: existem endereços que o Consulado Americano NÂO ENTREGA documentos. Caso o Visto seja negado, essa Taxa de envio NORMALMENTE é reembolsável. Caso aconteça a negativa, o reembolso deverá ser tratado diretamente com o Consulado Americano vio e-mail.</p>
+                </div>
+                <div class="question">
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>N° do passaporte atual (2 letras e 6 números)</p>
+                            <input type="text" name="numero_passaporte_atual">
+                        </div>
+                        <div class="input-container">
+                            <p>País que autorizou a emissão</p>
+                            <input type="text" name="pais_autorizou_emissao_passaporte">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Cidade/Estado da Emissão</p>
+                            <input type="text" name="cidade_emissao_passaporte">
+                        </div>
+                        <div class="input-container">
+                            <p>País onde foi emitido</p>
+                            <input type="text" name="pais_onde_emitiu_passaporte">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de Expedição do passaporte: (dd/mm/yyyy)</p>
+                            <input type="date" name="data_expedicao_passaporte">
+                        </div>
+                        <div class="input-container">
+                            <p>Data de Validade do passaporte: (dd/mm/yyyy)</p>
+                            <input type="date" name="data_validade_passaporte">
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já teve passaporte perdido ou roubado?</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="passaporte_perdido_roubado_sim" name="passaporte_perdido_roubado" value="Sim">
+                            <label for="passaporte_perdido_roubado_sim" class="custom-radio"></label>
+                            <label for="passaporte_perdido_roubado_sim"><span>Sim</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="passaporte_perdido_roubado_nao" name="passaporte_perdido_roubado" value="Não">
+                            <label for="passaporte_perdido_roubado_nao" class="custom-radio"></label>
+                            <label for="passaporte_perdido_roubado_nao"><span>Não</span></label>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, qual ocasião, perda ou roubo?</p>
+                        <input type="text" name="passaporte_perdido_roubado_ocasiao">
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, favor informar número do passaporte, país emissor e ano do acontecimento</p>
+                        <input type="text" name="passaporte_perdido_roubado_informacoes">
+                    </div>
+                </div>
+                <h3>&#10142; VIAGEM</h3>
+                <div class="question">
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Motivo da Viagem (turismo, estudo...)?</p>
+                            <input type="text" name="motivo_viagem">
+                        </div>
+                        <div class="input-container">
+                            <p>Data que pretende chegar? (dd/mm/yyyy)</p>
+                            <input type="date" name="data_chegar_viagem">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Quanto tempo pretende ficar?</p>
+                            <input type="text" name="tempo_viagem">
+                        </div>
+                        <div class="input-container">
+                            <p>Para qual cidade você vai? (Apenas 1 cidade estimada)</p>
+                            <input type="text" name="cidade_viagem">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Quem pagará sua viagem? (Apenas 1 pessoa)</p>
+                        <input type="text" name="pessoa_pagar_viagem">
+                    </div>
+                    <div class="input-container">
+                        <p>Se outra pessoa ou empresa for pagar a sua viagem, informar nome, endereço, completo, telefone, e-mail e relação com você:</p>
+                        <input type="text" name="dados_pessoa_pagar_viagem">
+                    </div>
+                    <div class="input-container">
+                        <p>Nome completo e parentesco das pessoas viajando com você se houver:</p>
+                        <input type="text" name="pessoa_viajando_junto_1">
+                        <input type="text" name="pessoa_viajando_junto_2">
+                        <input type="text" name="pessoa_viajando_junto_3">
+                        <input type="text" name="pessoa_viajando_junto_4">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Você já esteve nos EUA?</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="viagem_anteriores_eua_sim" name="viagem_anteriores_eua" value="Sim">
+                            <label for="viagem_anteriores_eua_sim" class="custom-radio"></label>
+                            <label for="viagem_anteriores_eua_sim"><span>Sim</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="viagem_anteriores_eua_nao" name="viagem_anteriores_eua" value="Não">
+                            <label for="viagem_anteriores_eua_nao" class="custom-radio"></label>
+                            <label for="viagem_anteriores_eua_nao"><span>Não</span></label>
+                        </div>
+                    </div>
+                    <p>Se sim, data das últimas 5 viagens aos EUA:</p>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de chegada: (dd/mm/yyyy)</p>
+                            <input type="date" name="data_ultimas_viagens_eua_1">
+                        </div>
+                        <div class="input-container">
+                            <p>Tempo permanência</p>
+                            <input type="text" name="tempo_permanencia_ultimas_viagens_eua_1">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de chegada: (dd/mm/yyyy)</p>
+                            <input type="date" name="data_ultimas_viagens_eua_2">
+                        </div>
+                        <div class="input-container">
+                            <p>Tempo permanência</p>
+                            <input type="text" name="tempo_permanencia_ultimas_viagens_eua_2">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de chegada: (dd/mm/yyyy)</p>
+                            <input type="date" name="data_ultimas_viagens_eua_3">
+                        </div>
+                        <div class="input-container">
+                            <p>Tempo permanência</p>
+                            <input type="text" name="tempo_permanencia_ultimas_viagens_eua_3">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de chegada: (dd/mm/yyyy)</p>
+                            <input type="date" name="data_ultimas_viagens_eua_4">
+                        </div>
+                        <div class="input-container">
+                            <p>Tempo permanência</p>
+                            <input type="text" name="tempo_permanencia_ultimas_viagens_eua_4">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de chegada: (dd/mm/yyyy)</p>
+                            <input type="date" name="data_ultimas_viagens_eua_5">
+                        </div>
+                        <div class="input-container">
+                            <p>Tempo permanência</p>
+                            <input type="text" name="tempo_permanencia_ultimas_viagens_eua_5">
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Tem ou já teve licença para dirigir nos EUA (EMITIDA NOS EUA)?</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="licenca_dirigir_eua_sim" name="licenca_dirigir_eua" value="Sim">
+                            <label for="licenca_dirigir_eua_sim" class="custom-radio"></label>
+                            <label for="licenca_dirigir_eua_sim"><span>Sim</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="licenca_dirigir_eua_nao" name="licenca_dirigir_eua" value="Não">
+                            <label for="licenca_dirigir_eua_nao" class="custom-radio"></label>
+                            <label for="licenca_dirigir_eua_nao"><span>Não</span></label>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim citar número e Estado Americano que emitiu:</p>
+                        <input type="text" name="licenca_dirigir_eua_numero">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já tem ou teve visto americano?</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="visto_americano_sim" name="visto_americano" value="Sim">
+                            <label for="visto_americano_sim" class="custom-radio"></label>
+                            <label for="visto_americano_sim"><span>Sim</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="visto_americano_nao" name="visto_americano" value="Não">
+                            <label for="visto_americano_nao" class="custom-radio"></label>
+                            <label for="visto_americano_nao"><span>Não</span></label>
+                        </div>
+                    </div>
+                    <p>Se sim, informar os seguintes dados somente do último visto emitido:</p>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de Emissão: (dd/mm/yyyy)</p>
+                            <input type="date" name="data_emissao_visto_americano">
+                        </div>
+                        <div class="input-container">
+                            <p>Data de Expiração: (dd/mm/yyyy)</p>
+                            <input type="date" name="data_expiracao_visto_americano">
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="input-container">
+                        <p>Tipo do Visto (Turismo, Negócios, Estudante, Intercâmbio...)</p>
+                        <input type="text" name="tipo_visto">
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="input-container">
+                        <p>Número do Visto (Número em vermelho no canto inferior direito do visto)</p>
+                        <input type="text" name="numero_visto">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>O Visto foi solicitado no mesmo país onde o novo visto também está sendo solicitado?</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="visto_solicitado_mesmo_pais_sim" name="visto_solicitado_mesmo_pais" value="Sim">
+                            <label for="visto_solicitado_mesmo_pais_sim" class="custom-radio"></label>
+                            <label for="visto_solicitado_mesmo_pais_sim"><span>Sim</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="visto_solicitado_mesmo_pais_nao" name="visto_solicitado_mesmo_pais" value="Não">
+                            <label for="visto_solicitado_mesmo_pais_nao" class="custom-radio"></label>
+                            <label for="visto_solicitado_mesmo_pais_nao"><span>Não</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Em qual cidade o visto anterior foi emitido?</p>
+                    <div class="input-container radio-buttons">
+                        <div class="option">
+                            <input type="radio" id="visto_anterior_emitido_sao_paulo" name="visto_anterior_emitido" value="São Paulo">
+                            <label for="visto_anterior_emitido_sao_paulo" class="custom-radio"></label>
+                            <label for="visto_anterior_emitido_sao_paulo">
+                            <span>São Paulo</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="visto_anterior_emitido_rio_de_janeiro" name="visto_anterior_emitido" value="Rio de Janeiro">
+                            <label for="visto_anterior_emitido_rio_de_janeiro" class="custom-radio"></label>
+                            <label for="visto_anterior_emitido_rio_de_janeiro">
+                            <span>Rio de Janeiro</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="visto_anterior_emitido_brasilia" name="visto_anterior_emitido" value="Brasília">
+                            <label for="visto_anterior_emitido_brasilia" class="custom-radio"></label>
+                            <label for="visto_anterior_emitido_brasilia">
+                            <span>Brasília</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="visto_anterior_emitido_recife" name="visto_anterior_emitido" value="Recife">
+                            <label for="visto_anterior_emitido_recife" class="custom-radio"></label>
+                            <label for="visto_anterior_emitido_recife">
+                            <span>Recife</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="visto_anterior_emitido_porto_alegre" name="visto_anterior_emitido" value="Porto Alegre">
+                            <label for="visto_anterior_emitido_porto_alegre" class="custom-radio"></label>
+                            <label for="visto_anterior_emitido_porto_alegre">
+                            <span>Porto Alegre</span>
+                            </label>
+                        </div>
+                        <p>Receber em domicílio (endereço de sua escolha) mediante pagamento de Taxa extra de R$60,00 (reais) por passaporte</p>
+                        <div class="option">
+                            <input type="radio" id="visto_anterior_emitido_casa" name="visto_anterior_emitido" value="Receber em casa">
+                            <label for="visto_anterior_emitido_casa" class="custom-radio"></label>
+                            <label for="visto_anterior_emitido_casa">
+                            <span>Sim</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Alguma vez que solicitou o Visto Americano teve que colher as impressões digitais dos 10 dedos no CASV</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="colher_impressao_digital_sim" name="colher_impressao_digital" value="Sim">
+                                <label for="colher_impressao_digital_sim" class="custom-radio"></label>
+                                <label for="colher_impressao_digital_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="colher_impressao_digital_nao" name="colher_impressao_digital" value="Não">
+                                <label for="colher_impressao_digital_nao" class="custom-radio"></label>
+                                <label for="colher_impressao_digital_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já teve visto perdido ou roubado?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="visto_perdido_sim" name="visto_perdido" value="Sim">
+                                <label for="visto_perdido_sim" class="custom-radio"></label>
+                                <label for="visto_perdido_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="visto_perdido_nao" name="visto_perdido" value="Não">
+                                <label for="visto_perdido_nao" class="custom-radio"></label>
+                                <label for="visto_perdido_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já teve visto americano negado?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="visto_americano_negado_sim" name="visto_americano_negado" value="Sim">
+                                <label for="visto_americano_negado_sim" class="custom-radio"></label>
+                                <label for="visto_americano_negado_sim" >
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="visto_americano_negado_nao" name="visto_americano_negado" value="Não">
+                                <label for="visto_americano_negado_nao" class="custom-radio"></label>
+                                <label for="visto_americano_negado_nao" >
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já teve visto americano cancelado?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="visto_americano_cancelado_sim" name="visto_americano_cancelado" value="Sim">
+                                <label for="visto_americano_cancelado_sim" class="custom-radio"></label>
+                                <label for="visto_americano_cancelado_sim" >
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="visto_americano_cancelado_nao" name="visto_americano_cancelado" value="Não">
+                                <label for="visto_americano_cancelado_nao" class="custom-radio"></label>
+                                <label for="visto_americano_cancelado_nao" >
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já teve sua entrada nos EUA negada (lá na Imigração dos EUA, ao desembarcar)?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="entrada_eua_negada_sim" name="entrada_eua_negada" value="Sim">
+                                <label for="entrada_eua_negada_sim" class="custom-radio"></label>
+                                <label for="entrada_eua_negada_sim" >
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="entrada_eua_negada_nao" name="entrada_eua_negada" value="Não">
+                                <label for="entrada_eua_negada_nao" class="custom-radio"></label>
+                                <label for="entrada_eua_negada_nao" >
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Você ou alguém já deu entrada em uma petição de Imigrante em seu nome (junto ao Serviço de Cidadania dos EUA)</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="entrada_peticao_imigrante_sim" name="entrada_peticao_imigrante" value="Sim">
+                                <label for="entrada_peticao_imigrante_sim" class="custom-radio"></label>
+                                <label for="entrada_peticao_imigrante_sim" >
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="entrada_peticao_imigrante_nao" name="entrada_peticao_imigrante" value="Não">
+                                <label for="entrada_peticao_imigrante_nao" class="custom-radio"></label>
+                                <label for="entrada_peticao_imigrante_nao" >
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Contato nos EUA (HOTEL)</p>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nome</p>
+                            <input type="text" name="contato_eua_nome">
+                        </div>
+                        <div class="input-container">
+                            <p>Nome da Organização</p>
+                            <input type="text" name="contato_eua_nome_organizacao">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Relação com você</p>
+                        <input type="text" name="contato_eua_relacao_voce">
+                    </div>
+                    <div class="input-container">
+                        <p>Endereço</p>
+                        <input type="text" name="contato_eua_endereco">
+                    </div>
+                    <div class="input-container">
+                        <p>Telefone e e-mail (no caso de parentes que moram nos EUA)</p>
+                        <input type="text" name="contato_eua_parente">
+                    </div>
+                </div>
+                <h3>&#10142; DADOS DOS PAIS DO SOLICITANTE</h3>
+                <div class="question">
+                    <h6 class="title">Pai</h6>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nome</p>
+                            <input type="text" name="nome_pai">
+                        </div>
+                        <div class="input-container">
+                            <p>Data Nascimento (dd/mm/yyyy):</p>
+                            <input type="date" name="data_nasc_pai">
+                        </div>
+                    </div>
+                    <p>Seu pai se encontra nos EUA?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="pai_eua_sim" name="pai_eua" value="Sim">
+                                <label for="pai_eua_sim" class="custom-radio"></label>
+                                <label for="pai_eua_sim" >
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="pai_eua_nao" name="pai_eua" value="Não">
+                                <label for="pai_eua_nao" class="custom-radio"></label>
+                                <label for="pai_eua_nao" >
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Informar situação (Cidadão, Turista, Redidente permanete)</p>
+                        <input type="text" name="situacao_pai">
+                    </div>
+                </div>
+                <div class="question">
+                    <h6 class="title">Mãe</h6>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nome</p>
+                            <input type="text" name="nome_mae">
+                        </div>
+                        <div class="input-container">
+                            <p>Data Nascimento (dd/mm/yyyy):</p>
+                            <input type="date" name="data_nasc_mae">
+                        </div>
+                    </div>
+                    <p>Sua mãe se encontra nos EUA?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="mae_eua_sim" name="mae_eua" value="Sim">
+                                <label for="mae_eua_sim" class="custom-radio"></label>
+                                <label for="mae_eua_sim" >
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="mae_eua_nao" name="mae_eua" value="Não">
+                                <label for="mae_eua_nao" class="custom-radio"></label>
+                                <label for="mae_eua_nao" >
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Informar situação (Cidadão, Turista, Redidente permanete)</p>
+                        <input type="text" name="situacao_mae">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Possui parente direto nos EUA?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="parente_direto_eua_sim" name="parente_direto_eua" value="Sim">
+                                <label for="parente_direto_eua_sim" class="custom-radio"></label>
+                                <label for="parente_direto_eua_sim" >
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="parente_direto_eua_nao" name="parente_direto_eua" value="Não">
+                                <label for="parente_direto_eua_nao" class="custom-radio"></label>
+                                <label for="parente_direto_eua_nao" >
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, informar nome completo, situação nos EUA e grau de parentesco:</p>
+                        <input type="text" name="parente_direto_informacoes">
+                    </div>
+                </div>
+                <h3>&#10142; CÔNJUGE</h3>
+                <div class="question">
+                    <p>Informações do cônjuge (caso divorciado, separado ou viúvo, favor informar os dados abaixo da mesma forma)</p>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nome</p>
+                            <input type="text" name="conjuge_nome">
+                        </div>
+                        <div class="input-container">
+                            <p>Data nascimento (dd/mm/yyyy):</p>
+                            <input type="date" name="conjuge_data_nasc">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nacionalidade</p>
+                            <input type="text" name="conjuge_nacionalidade">
+                        </div>
+                        <div class="input-container">
+                            <p>Cidade de nascimento</p>
+                            <input type="text" name="conjuge_cidade_nasc">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Endereço</p>
+                        <input type="text" name="conjuge_endereco">
+                    </div>
+                    <p>Caso Separado ou Divorciado, Informar:</p>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data do Casamento (dd/mm/yyyy):</p>
+                            <input type="date" name="data_casamento">
+                        </div>
+                        <div class="input-container">
+                            <p>Data da Separação/Divórcio (dd/mm/yyyy):</p>
+                            <input type="date" name="data_separacao">
+                        </div>
+                    </div>
+                    <p>Primeiro divórcio</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="primeiro_divorcio_sim" name="primeiro_divorcio" value="Sim">
+                                <label for="primeiro_divorcio_sim" class="custom-radio"></label>
+                                <label for="primeiro_divorcio_sim" >
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="primeiro_divorcio_nao" name="primeiro_divorcio" value="Não">
+                                <label for="primeiro_divorcio_nao" class="custom-radio"></label>
+                                <label for="primeiro_divorcio_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Motivo</p>
+                            <input type="text" name="motivo_divorcio">
+                        </div>
+                        <div class="input-container">
+                            <p>País onde o casamento terminou</p>
+                            <input type="text" name="pais_casamento_terminou">
+                        </div>
+                    </div>
+                </div>
+                <h3>&#10142; TRABALHO DO SOLICITANTE</h3>
+                <div class="question">
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nome da Empresa ou Escola</p>
+                            <input type="text" name="nome_empresa_escola">
+                        </div>
+                        <div class="input-container">
+                            <p>Telefone</p>
+                            <input type="text" name="telefone_empresa_escola">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Endereço completo com CEP</p>
+                        <input type="text" name="endereco_completo_empresa_escola">
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Cargo/Função</p>
+                            <input type="text" name="cargo_empresa_escola">
+                        </div>
+                        <div class="input-container">
+                            <p>Renda Mensal</p>
+                            <input type="text" name="renda_mensal_empresa_escola">
+                        </div>
+                    </div>
+                    <p>Faz declaração de imposto de renda?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="declaracao_imposto_renda_sim" name="declaracao_imposto_renda" value="Sim">
+                                <label for="declaracao_imposto_renda_sim" class="custom-radio"></label>
+                                <label for="declaracao_imposto_renda_sim" >
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="declaracao_imposto_renda_nao" name="declaracao_imposto_renda" value="Não">
+                                <label for="declaracao_imposto_renda_nao" class="custom-radio"></label>
+                                <label for="declaracao_imposto_renda_nao" >
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Descreva brevemente as suas funções</p>
+                            <input type="text" name="descricao_funcoes">
+                        </div>
+                        <div class="input-container">
+                            <p>Data de admissão no emprego atual</p>
+                            <input type="text" name="data_admissao">
+                        </div>
+                    </div>
+                </div>
+                <h3>&#10142; TRABALHO ANTERIOR (SE HOUVER)</h3>
+                <div class="question">
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nome da Empresa</p>
+                            <input type="text" name="nome_empresa_anterior">
+                        </div>
+                        <div class="input-container">
+                            <p>Telefone</p>
+                            <input type="text" name="telefone_empresa_anterior">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Endereço completo com CEP</p>
+                        <input type="text" name="endereco_empresa_anterior">
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Cargo/Função</p>
+                            <input type="text" name="cargo_empresa_anterior">
+                        </div>
+                        <div class="input-container">
+                            <p>Nome completo do Superior</p>
+                            <input type="text" name="nome_superior_empresa_anterior">
+                        </div>
+                    </div>
+                </div>
+                <p>Informar histórico escolar a partir da conclusão do 2° grau (Apenas FACULDADE concluída ou em andamento)</p>
+                <p>(Solicitantes com 14 anos de idade ou mais que estão cursando ensino fundamental ou médio, preencher da mesma forma</p>
+                <div class="question">
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nome da Escola/Faculdade</p>
+                            <input type="text" name="nome_escola_faculdade_1">
+                        </div>
+                        <div class="input-container">
+                            <p>Curso</p>
+                            <input type="text" name="curso_escola_faculdade_1">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Endereço completo com CEP</p>
+                        <input type="text" name="endereco_escola_faculdade_1">
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de início do curso (mês e ano): (mm/yyyy)</p>
+                            <input type="text" name="data_inicio_escola_faculdade_1">
+                        </div>
+                        <div class="input-container">
+                            <p>Data do fim do curso (mês e ano): (mm/yyyy)</p>
+                            <input type="text" name="data_fim_escola_faculdade_1">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nome da Escola/Faculdade</p>
+                            <input type="text" name="nome_escola_faculdade_2">
+                        </div>
+                        <div class="input-container">
+                            <p>Curso</p>
+                            <input type="text" name="curso_escola_faculdade_2">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Endereço completo com CEP</p>
+                        <input type="text" name="endereco_escola_faculdade_2">
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de início do curso (mês e ano): (mm/yyyy)</p>
+                            <input type="text" name="data_inicio_escola_faculdade_2">
+                        </div>
+                        <div class="input-container">
+                            <p>Data do fim do curso (mês e ano): (mm/yyyy)</p>
+                            <input type="text" name="data_fim_escola_faculdade_2">
+                        </div>
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Nome da Escola/Faculdade</p>
+                            <input type="text" name="nome_escola_faculdade_3">
+                        </div>
+                        <div class="input-container">
+                            <p>Curso</p>
+                            <input type="text" name="curso_escola_faculdade_3">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Endereço completo com CEP</p>
+                        <input type="text" name="endereco_escola_faculdade_3">
+                    </div>
+                    <div class="question-inline">
+                        <div class="input-container">
+                            <p>Data de início do curso (mês e ano): (mm/yyyy)</p>
+                            <input type="text" name="data_inicio_escola_faculdade_3">
+                        </div>
+                        <div class="input-container">
+                            <p>Data do fim do curso (mês e ano): (mm/yyyy)</p>
+                            <input type="text" name="data_fim_escola_faculdade_3">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Informar idiomas que fala além do Português (se fluente)</p>
+                        <input type="text" name="idioma_fluente">
+                    </div>
+                </div>
+                <h3>&#10142; OUTRAS INFORMAÇÕES</h3>
+                <div class="question">
+                    <p>Fez alguma viagem internacional dentro dos últimos 5 anos, fora os EUA</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="viagem_fora_eua_sim" name="viagem_fora_eua" value="Sim">
+                                <label for="viagem_fora_eua_sim" class="custom-radio"></label>
+                                <label for="viagem_fora_eua_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="viagem_fora_eua_nao" name="viagem_fora_eua" value="Não">
+                                <label for="viagem_fora_eua_nao" class="custom-radio"></label>
+                                <label for="viagem_fora_eua_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, quais países?</p>
+                        <input type="text" name="viagem_fora_eua_detalhe">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já foi deportado ou removido de algum país?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="deportado_sim" name="deportado" value="Sim">
+                                <label for="deportado_sim" class="custom-radio"></label>
+                                <label for="deportado_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="deportado_nao" name="deportado" value="Não">
+                                <label for="deportado_nao" class="custom-radio"></label>
+                                <label for="deportado_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <p>Se sim, qual país e qual situação?</p>
+                        <input type="text" name="deportado">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Tem alguma doença contagiosa que ofereça risco á saúde pública como Tuberculose?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="doenca_contagiosa_sim" name="doenca_contagiosa" value="Sim">
+                                <label for="doenca_contagiosa_sim" class="custom-radio"></label>
+                                <label for="doenca_contagiosa_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="doenca_contagiosa_nao" name="doenca_contagiosa" value="Não">
+                                <label for="doenca_contagiosa_nao" class="custom-radio"></label>
+                                <label for="doenca_contagiosa_nao"></label>
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>É ou já foi viciado em drogas?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="viciado_drogas_sim" name="viciado_drogas" value="Sim">
+                                <label for="viciado_drogas_sim" class="custom-radio"></label>
+                                <label for="viciado_drogas_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="viciado_drogas_nao" name="viciado_drogas" value="Não">
+                                <label for="viciado_drogas_nao" class="custom-radio"></label>
+                                <label for="viciado_drogas_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já foi preso ou condenado por qualquer crime, Ainda que posteriormente tenha sido anistiado ou perdoado?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="preso_crime_sim" name="preso_crime" value="Sim">
+                                <label for="preso_crime_sim" class="custom-radio"></label>
+                                <label for="preso_crime_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="preso_crime_nao" name="preso_crime" value="Não">
+                                <label for="preso_crime_nao" class="custom-radio"></label>
+                                <label for="preso_crime_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já violou ou participou de conspiração para violar qualquer lei relativa a substâncias controladas?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="conspiracao_substancias_controladas_sim" name="conspiracao_substancias_controladas" value="Sim">
+                                <label for="conspiracao_substancias_controladas_sim" class="custom-radio"></label>
+                                <label for="conspiracao_substancias_controladas_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="conspiracao_substancias_controladas_nao" name="conspiracao_substancias_controladas" value="Não">
+                                <label for="conspiracao_substancias_controladas_nao" class="custom-radio"></label>
+                                <label for="conspiracao_substancias_controladas_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Está viajando aos EUA para se envolver com prostituição ou já se envolveu nos últimos 10 anos?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="envolvido_prontituicao_sim" name="envolvido_prontituicao" value="Sim">
+                                <label for="envolvido_prontituicao_sim" class="custom-radio"></label>
+                                <label for="envolvido_prontituicao_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="envolvido_prontituicao_nao" name="envolvido_prontituicao" value="Não">
+                                <label for="envolvido_prontituicao_nao" class="custom-radio"></label>
+                                <label for="envolvido_prontituicao_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já se envolveu ou pretende se envolver com lavagem de dinheiro?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="envolvido_lavagem_dinheiro_sim" name="envolvido_lavagem_dinheiro" value="Sim">
+                                <label for="envolvido_lavagem_dinheiro_sim" class="custom-radio"></label>
+                                <label for="envolvido_lavagem_dinheiro_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="envolvido_lavagem_dinheiro_nao" name="envolvido_lavagem_dinheiro" value="Não">
+                                <label for="envolvido_lavagem_dinheiro_nao" class="custom-radio"></label>
+                                <label for="envolvido_lavagem_dinheiro_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Pretende se envolver com espionagem, sabotagem ou qualquer atividade ilegal nos EUA?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="envolver_atividade_ilegal_sim" name="envolver_atividade_ilegal" value="Sim">
+                                <label for="envolver_atividade_ilegal_sim" class="custom-radio"></label>
+                                <label for="envolver_atividade_ilegal_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="envolver_atividade_ilegal_nao" name="envolver_atividade_ilegal" value="Não">
+                                <label for="envolver_atividade_ilegal_nao" class="custom-radio"></label>
+                                <label for="envolver_atividade_ilegal_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Pretende se envolver com terrorismo nos EUA? Já se envolveu com Terrorismo?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="envolvido_terrorismo_sim" name="envolvido_terrorismo" value="Sim">
+                                <label for="envolvido_terrorismo_sim" class="custom-radio"></label>
+                                <label for="envolvido_terrorismo_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="envolvido_terrorismo_nao" name="envolvido_terrorismo" value="Não">
+                                <label for="envolvido_terrorismo_nao" class="custom-radio"></label>
+                                <label for="envolvido_terrorismo_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já concedeu ou pretende conceder apoio financeiro para algum grupo terrorista?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="financiamento_terrorismo_sim" name="financiamento_terrorismo" value="Sim">
+                                <label for="financiamento_terrorismo_sim" class="custom-radio"></label>
+                                <label for="financiamento_terrorismo_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="financiamento_terrorismo_nao" name="financiamento_terrorismo" value="Não">
+                                <label for="financiamento_terrorismo_nao" class="custom-radio"></label>
+                                <label for="financiamento_terrorismo_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Você é membro de alguma organização terrorista?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="membro_organizacao_terrorista_sim" name="membro_organizacao_terrorista" value="Sim">
+                                <label for="membro_organizacao_terrorista_sim" class="custom-radio"></label>
+                                <label for="membro_organizacao_terrorista_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="membro_organizacao_terrorista_nao" name="membro_organizacao_terrorista" value="Não">
+                                <label for="membro_organizacao_terrorista_nao" class="custom-radio"></label>
+                                <label for="membro_organizacao_terrorista_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já ordenou, incitou, ajudou ou participou de genocídio?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="participou_genocidio_sim" name="participou_genocidio" value="Sim">
+                                <label for="participou_genocidio_sim" class="custom-radio"></label>
+                                <label for="participou_genocidio_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="participou_genocidio_nao" name="participou_genocidio" value="Não">
+                                <label for="participou_genocidio_nao" class="custom-radio"></label>
+                                <label for="participou_genocidio_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já ordenou, incitou, ajudou ou participou de tortura?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="participou_tortura_sim" name="participou_tortura" value="Sim">
+                                <label for="participou_tortura_sim" class="custom-radio"></label>
+                                <label for="participou_tortura_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="participou_tortura_nao" name="participou_tortura" value="Não">
+                                <label for="participou_tortura_nao" class="custom-radio"></label>
+                                <label for="participou_tortura_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já cometeu homicídio ou outro ato de violência?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="cometeu_homicidio_sim" name="cometeu_homicidio" value="Sim">
+                                <label for="cometeu_homicidio_sim" class="custom-radio"></label>
+                                <label for="cometeu_homicidio_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="cometeu_homicidio_nao" name="cometeu_homicidio" value="Não">
+                                <label for="cometeu_homicidio_nao" class="custom-radio"></label>
+                                <label for="cometeu_homicidio_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já contribuiu para repressão à liberdade religiosa, de qualquer forma?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="repressao_religiosa_sim" name="repressao_religiosa" value="Sim">
+                                <label for="repressao_religiosa_sim" class="custom-radio"></label>
+                                <label for="repressao_religiosa_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="repressao_religiosa_nao" name="repressao_religiosa" value="Não">
+                                <label for="repressao_religiosa_nao" class="custom-radio"></label>
+                                <label for="repressao_religiosa_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já ajudou a terceiros a obter visto americano ou qualquer outro benefício de imigração por meios fraudulentos?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="ajudou_visto_americano_fraudulento_sim" name="ajudou_visto_americano_fraudulento" value="Sim">
+                                <label for="ajudou_visto_americano_fraudulento_sim" class="custom-radio"></label>
+                                <label for="ajudou_visto_americano_fraudulento_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="ajudou_visto_americano_fraudulento_nao" name="ajudou_visto_americano_fraudulento" value="Não">
+                                <label for="ajudou_visto_americano_fraudulento_nao" class="custom-radio"></label>
+                                <label for="ajudou_visto_americano_fraudulento_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Alguma vez manteve uma criança americana fora dos EUA separada da pessoa que possui custódia?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="crianca_separada_custodia_sim" name="crianca_separada_custodia" value="Sim">
+                                <label for="crianca_separada_custodia_sim" class="custom-radio"></label>
+                                <label for="crianca_separada_custodia_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="crianca_separada_custodia_nao" name="crianca_separada_custodia" value="Não">
+                                <label for="crianca_separada_custodia_nao" class="custom-radio"></label>
+                                <label for="crianca_separada_custodia_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Já votou nos EUA em violação a qualquer lei ou regulamento?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="votou_eua_sim" name="votou_eua" value="Sim">
+                                <label for="votou_eua_sim" class="custom-radio"></label>
+                                <label for="votou_eua_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="votou_eua_nao" name="votou_eua" value="Não">
+                                <label for="votou_eua_nao" class="custom-radio"></label>
+                                <label for="votou_eua_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>Alguma vez renunciou à cidadania americana para evitar pagamento de impostos?</p>
+                    <div class="input-container">
+                        <div class="input-container radio-buttons">
+                            <div class="option">
+                                <input type="radio" id="evitar_pagamento_imposto_sim" name="evitar_pagamento_imposto" value="Sim">
+                                <label for="evitar_pagamento_imposto_sim" class="custom-radio"></label>
+                                <label for="evitar_pagamento_imposto_sim">
+                                <span>Sim</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="evitar_pagamento_imposto_nao" name="evitar_pagamento_imposto" value="Não">
+                                <label for="evitar_pagamento_imposto_nao" class="custom-radio"></label>
+                                <label for="evitar_pagamento_imposto_nao">
+                                <span>Não</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Enviar">
+                <button type="button" class="btn-print" onclick="window.print()">Imprimir</button>
+            </div>
+        </form>
+
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdNZAokAAAAALhDBK5wUk5WWTW_JNduzu53nLPx"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Include Bootstrap Datepicker -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.pt-BR.min.js" integrity="sha512-mVkLPLQVfOWLRlC2ZJuyX5+0XrTlbW2cyAwyqgPkLGxhoaHNSWesYMlcUjX8X+k45YB8q90s88O7sos86636NQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(document).ready(() => {
+                $('input[type="date"]').attr('type', 'text').addClass('datepicker').mask('99/99/9999').datepicker({
+                    format: 'dd/mm/yyyy',                
+                    language: 'pt-BR'
+                });
+            
+                function limparCache() {
+                    // localStorage.clear();
+                    Object.keys(localStorage)
+                        .filter(item =>
+                            item.startsWith('form_visto_americano.'))
+                        .forEach(item => 
+                            localStorage.removeItem(item));
+                }
+            
+                if (typeof(Storage) !== 'undefined') {
+                    if (localStorage.getItem('form_visto_americano.nome') !== null) {
+                        Swal.fire({
+                          title: 'Deseja continuar preenchendo?',
+                          text: 'Identificamos que você já havia iniciado o preenchimento.',
+                          type: 'warning',
+                          showCancelButton: true,
+                          confirmButtonColor: '#3085d6',
+                          cancelButtonColor: '#d33',
+                          confirmButtonText: 'Sim',
+                          cancelButtonText: 'Não'
+                        }).then((result) => {
+                          if (result.value) {
+                            $('input[type="text"]').each((idx, element) => {
+                                $(element).val(localStorage.getItem('form_visto_americano.' + $(element).attr('name')));
+                            });
+            
+                            $('input[type="radio"]').each((idx, element) => {
+                                const value = localStorage.getItem('form_visto_americano.' + $(element).attr('name'));
+                                $('input[type="radio"][name="' + $(element).attr('name') + '"][value="' + value + '"]').click();
+                            });
+                          } else {
+                            limparCache();
+                          }
+                        })
+                    }
+            
+                    function salvarInfo(event) {
+                        localStorage.setItem('form_visto_americano.' + $(event.target).attr('name'), $(event.target).val());
+                    }
+            
+                    $('input').change(salvarInfo);
+                    $('input[type="text"]').blur(salvarInfo);
+                } else {
+                    console.error('Sorry! No Web Storage support.');
+                }
+            
+                $('form').submit((event) => {
+                    event.preventDefault();
+            
+                    $('[type="submit"]').val('Aguarde...').attr('disabled', 'disabled');
+                    setTimeout(() => {
+                        $('[type="submit"]').val('Enviar').removeAttr('disabled');
+                    }, 1500)
+            
+                    Swal.fire({
+                      title: 'Deseja imprimir?',
+                      text: '',
+                      type: 'info',
+                      showCancelButton: true,
+                      confirmButtonColor: '#3085d6',
+                      cancelButtonColor: '#d33',
+                      confirmButtonText: 'Sim',
+                      cancelButtonText: 'Não'
+                    }).then((result) => {
+                      if (result.value) {
+                        Swal.close();
+                        setTimeout(() => {
+                            window.print();
+            
+                            $('form').unbind('submit');
+                            $('form').submit();
+                        }, 750);
+                      } else {
+                        $('form').unbind('submit');
+                        $('form').submit();
+                      }
+                    });
+            
+                    limparCache();
+                });
+            });
+                    
+        </script>
+    </body>
+</html>

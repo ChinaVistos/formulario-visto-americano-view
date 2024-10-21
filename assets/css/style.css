@@ -1,0 +1,156 @@
+/* Variáveis Globais */
+:root {
+    --main-color: #5C95C5;
+    --secondary-color: #EEEFEF;
+    --background-color: #FFFFFF;
+    --text-color: #131313;
+    --border-radius: 10px;
+    --box-shadow: 0 0 6px var(--main-color);
+    --button-width: 300px;
+    --button-height: 45px;
+}
+
+/* Estilo global */
+body, .form-container {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+hr {
+    border-top: 1px solid black;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 300px;
+}
+
+.title {
+    width: 70%;
+}
+
+.title h1 {
+    font-size: 40px;
+}
+
+.title p {
+    font-size: 25px;
+}
+
+.title-box {
+    font-size: 20px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+/* Estilo da imagem */
+.picture {
+    width: 250px;
+    min-height: 300px;
+    outline: 3px solid #A6A6A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #EEEFEF;
+}
+
+.picture-img {
+    width: 250px;
+    height: auto;
+}
+
+/* Estilo do formulário */
+.form-section, .form-box, .form-control, .form-select {
+    color: var(--text-color);
+    background: var(--background-color);
+    border: 1px solid var(--main-color);
+    border-radius: var(--border-radius);
+    box-shadow: none;
+}
+
+.form-section {
+    padding: 20px;
+    margin: 50px 0;
+    background: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+
+.form-section h3 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.form-box {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+.form-label {
+    color: black;
+}
+
+/* Estilo do botão de submissão */
+.submit, form input[type="submit"], button.btn-print {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--button-width);
+    height: var(--button-height);
+    margin: 0 auto 50px;
+    border-radius: 25px;
+    border: 0;
+    font-weight: bold;
+}
+
+form input[type="submit"] {
+    background: var(--main-color);
+    color: #EEEFEF;
+}
+
+button.btn-print {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Estilo responsivo */
+@media screen and (max-width: 1060px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        width: 90%;
+    }
+
+    .form-section {
+        margin-left: 0;
+    }
+
+    input#firstname {
+        opacity: 0;
+    }
+}
+
+/* Texto transformações */
+input, textarea {
+    text-transform: uppercase;
+}
+
+input::placeholder, textarea::placeholder {
+    text-transform: none;
+}
+
+input[type="email"] {
+    text-transform: lowercase;
+}
