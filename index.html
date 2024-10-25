@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta content="IE=edge" http-equiv="X-UA-Compatible">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Formulário de pedido de visto para America</title>
+    <title>Formulário de pedido de visto para America</title>
 
-        <link href="/favicon.ico" rel="icon" type="image/x-icon">
-        <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" referrerpolicy="no-referrer" rel="stylesheet"/>
-        <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" referrerpolicy="no-referrer" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="assets/css/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
-    </head>
+</head>
 
-    <body>
-        <form action="https://sistema.chinavistos.com.br/formulario-pedido-visto-americano-post" method="post" enctype="multipart/form-data" class="form-container">
-            <input name="firstname" type="text" id="firstname">
-                <img src="/images/logo.png" alt="Logo da China Vistos" class="logo">
-                <hr>
-                <div class="header">
-                    <div class="title">
-                        <h1>Formulário de pedido de visto Americano (DS 160)</h1>
-                        <p>
-                            O candidato deve preencher este formulário de forma completa e clara. Por
-                            favor, digite as respostas em letra maiúscula em português no espaço fornecido ou marque
-                            a caixa relevante para selecionar. Se algum dos itens não se aplicam, digite N / A ou
-                            Nenhum.
-                            <br>
-                            Dúvidas? Entre em contato com a nossa central de atendimento: 001 4752-2640
-                        </p>
-                    </div>
-                </div>
-                <hr>
+<body>
+
+<div class="container">
+
+    <form action="https://sistema.chinavistos.com.br/formulario-pedido-visto-americano-post" class="form-container" enctype="multipart/form-data" method="post">
+
+        <img alt="China vistos logo" class="logo" src="./assets/image/logo.png">
+
+        <hr>
+
+        <div class="header">
+            <div class="title">
+                <h1>Formulário de pedido de visto Americano (DS 160)</h1>
+                <p>
+                    O candidato deve preencher este formulário de forma completa e clara. Por
+                    favor, digite as respostas em letra maiúscula em português no espaço fornecido ou marque
+                    a caixa relevante para selecionar. Se algum dos itens não se aplicam, digite "N/A" ou
+                    "Nenhum".
+                </p>
             </div>
-            <div class="form-section">
-                <h3>&#10142; INFORMAÇÕES PESSOAIS</h3>
+        </div>
+
+        <hr>
+
+        <div class="form-section">
+            <h3>Informações Pessoais</h3>
+            <div class="container p-4 my-4 form-box">
                 <div class="question">
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nome (exatamente como o passaporte):</p>
-                            <input type="text" name="nome" required>
+                            <input name="nome" required type="text">
                         </div>
                         <div class="input-container">
                             <p>Sobrenome (exatamente como o passaporte):</p>
-                            <input type="text" name="sobrenome" required>
+                            <input name="sobrenome" required type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Nome completo:</p>
-                        <input type="text" name="nome_completo">
+                        <input name="nome_completo" type="text">
                     </div>
                 </div>
                 <div class="question">
@@ -58,33 +63,33 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="outro_nome_sim" name="outro_nome" value="Sim">
-                                <label for="outro_nome_sim" class="custom-radio"></label>
+                                <input id="outro_nome_sim" name="outro_nome" type="radio" value="Sim">
+                                <label class="custom-radio" for="outro_nome_sim"></label>
                                 <label for="outro_nome_sim"><span>Sim</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="outro_nome_nao" name="outro_nome" value="Não">
-                                <label for="outro_nome_nao" class="custom-radio"></label>
+                                <input id="outro_nome_nao" name="outro_nome" type="radio" value="Não">
+                                <label class="custom-radio" for="outro_nome_nao"></label>
                                 <label for="outro_nome_nao"><span>Não</span></label>
                             </div>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Se sim, qual(is)?</p>
-                        <input type="text" name="outro_nome_qual">
+                        <input name="outro_nome_qual" type="text">
                     </div>
                 </div>
                 <div class="question">
                     <p>Sexo do solicitante:</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="masculino" name="sexo" value="Masculino">
-                            <label for="masculino" class="custom-radio"></label>
+                            <input id="masculino" name="sexo" type="radio" value="Masculino">
+                            <label class="custom-radio" for="masculino"></label>
                             <label for="masculino"><span>Masculino</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="feminino" name="sexo" value="Feminino">
-                            <label for="feminino" class="custom-radio"></label>
+                            <input id="feminino" name="sexo" type="radio" value="Feminino">
+                            <label class="custom-radio" for="feminino"></label>
                             <label for="feminino"><span>Feminino</span></label>
                         </div>
                     </div>
@@ -94,32 +99,34 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="serviu_exercito_sim" name="serviu_exercito" value="Sim">
-                                <label for="serviu_exercito_sim" class="custom-radio"></label>
+                                <input id="serviu_exercito_sim" name="serviu_exercito" type="radio" value="Sim">
+                                <label class="custom-radio" for="serviu_exercito_sim"></label>
                                 <label for="serviu_exercito_sim"><span>Sim</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="serviu_exercito_nao" name="serviu_exercito" value="Não">
-                                <label for="serviu_exercito_nao" class="custom-radio"></label>
+                                <input id="serviu_exercito_nao" name="serviu_exercito" type="radio" value="Não">
+                                <label class="custom-radio" for="serviu_exercito_nao"></label>
                                 <label for="serviu_exercito_nao"><span>Não</span></label>
                             </div>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Se sim, qual patente, período (datas de entrada e saída) e país que serviu:</p>
-                        <input type="text" name="serviu_exercito_informacoes">
+                        <input name="serviu_exercito_informacoes" type="text">
                     </div>
                     <div class="input-container">
                         <p>Se sim, possui habilidades com armas de fogo?</p>
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="habilidade_arma_fogo_sim" name="habilidade_arma_fogo" value="Sim">
-                                <label for="habilidade_arma_fogo_sim" class="custom-radio"></label>
+                                <input id="habilidade_arma_fogo_sim" name="habilidade_arma_fogo" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="habilidade_arma_fogo_sim"></label>
                                 <label for="habilidade_arma_fogo_sim"><span>Sim</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="habilidade_arma_fogo_nao" name="habilidade_arma_fogo" value="Não">
-                                <label for="habilidade_arma_fogo_nao" class="custom-radio"></label>
+                                <input id="habilidade_arma_fogo_nao" name="habilidade_arma_fogo" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="habilidade_arma_fogo_nao"></label>
                                 <label for="habilidade_arma_fogo_nao"><span>Não</span></label>
                             </div>
                         </div>
@@ -130,38 +137,38 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="solteiro" name="estado_civil" value="Solteiro">
-                                <label for="solteiro" class="custom-radio"></label>
+                                <input id="solteiro" name="estado_civil" type="radio" value="Solteiro">
+                                <label class="custom-radio" for="solteiro"></label>
                                 <label for="solteiro"><span>Solteiro</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="mora_junto" name="estado_civil" value="Mora Junto">
-                                <label for="mora_junto" class="custom-radio"></label>
+                                <input id="mora_junto" name="estado_civil" type="radio" value="Mora Junto">
+                                <label class="custom-radio" for="mora_junto"></label>
                                 <label for="mora_junto"><span>Mora Junto</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="casado" name="estado_civil" value="Casado">
-                                <label for="casado" class="custom-radio"></label>
+                                <input id="casado" name="estado_civil" type="radio" value="Casado">
+                                <label class="custom-radio" for="casado"></label>
                                 <label for="casado"><span>Casado</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="uniao_estavel" name="estado_civil" value="União estável">
-                                <label for="uniao_estavel" class="custom-radio"></label>
+                                <input id="uniao_estavel" name="estado_civil" type="radio" value="União estável">
+                                <label class="custom-radio" for="uniao_estavel"></label>
                                 <label for="uniao_estavel"><span>União estável</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="divorciado" name="estado_civil" value="Divorciado">
-                                <label for="divorciado" class="custom-radio"></label>
+                                <input id="divorciado" name="estado_civil" type="radio" value="Divorciado">
+                                <label class="custom-radio" for="divorciado"></label>
                                 <label for="divorciado"><span>Divorciado</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="separado" name="estado_civil" value="Separado">
-                                <label for="separado" class="custom-radio"></label>
+                                <input id="separado" name="estado_civil" type="radio" value="Separado">
+                                <label class="custom-radio" for="separado"></label>
                                 <label for="separado"><span>Separado</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="viuvo" name="estado_civil" value="Viúvo">
-                                <label for="viuvo" class="custom-radio"></label>
+                                <input id="viuvo" name="estado_civil" type="radio" value="Viúvo">
+                                <label class="custom-radio" for="viuvo"></label>
                                 <label for="viuvo"><span>Viúvo</span></label>
                             </div>
                         </div>
@@ -171,40 +178,47 @@
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de nascimento: (dd/mm/yyyy)</p>
-                            <input type="date" name="local_nasc_estado">
+                            <input name="local_nasc_estado" type="date">
                         </div>
                         <div class="input-container">
                             <p>Local de nascimento (Cidade/Estado/País):</p>
-                            <input type="text" name="local_nasc_pais">
+                            <input name="local_nasc_pais" type="text">
                         </div>
                     </div>
                 </div>
-                <h3>&#10142; NACIONALIDADE</h3>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Nacionalidade</h3>
+            <div class="container p-4 my-4 form-box">
                 <div class="question">
                     <p>Tem ou já teve outra nacionalidade?</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="outra_nacionalidade_sim" name="outra_nacionalidade" value="Sim">
-                                <label for="outra_nacionalidade_sim" class="custom-radio"></label>
+                                <input id="outra_nacionalidade_sim" name="outra_nacionalidade" type="radio" value="Sim">
+                                <label class="custom-radio" for="outra_nacionalidade_sim"></label>
                                 <label for="outra_nacionalidade_sim"><span>Sim</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="outra_nacionalidade_nao" name="outra_nacionalidade" value="Não">
-                                <label for="outra_nacionalidade_nao" class="custom-radio"></label>
+                                <input id="outra_nacionalidade_nao" name="outra_nacionalidade" type="radio" value="Não">
+                                <label class="custom-radio" for="outra_nacionalidade_nao"></label>
                                 <label for="outra_nacionalidade_nao"><span>Não</span></label>
                             </div>
                         </div>
                     </div>
                     <div class="input-container">
-                        <p>Se sim, qual? Possui passaporte desta outra nacionalidade (mesmo que vencido)? Se sim informar o número do passaporte.</p>
-                        <input type="text" name="outro_nome_qual2">
+                        <p>Se sim, qual? Possui passaporte desta outra nacionalidade (mesmo que vencido)? Se sim
+                            informar o
+                            número do passaporte.</p>
+                        <input name="outro_nome_qual2" type="text">
                     </div>
                 </div>
                 <div class="question">
                     <div class="input-container">
                         <p>CPF do solicitante:</p>
-                        <input type="text" name="cpf_solicitante">
+                        <input name="cpf_solicitante" type="text">
                     </div>
                 </div>
                 <div class="question">
@@ -213,132 +227,155 @@
                         <p>Social Security Number</p>
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="social_security_sim" name="social_security" value="Sim">
-                                <label for="social_security_sim" class="custom-radio"></label>
+                                <input id="social_security_sim" name="social_security" type="radio" value="Sim">
+                                <label class="custom-radio" for="social_security_sim"></label>
                                 <label for="social_security_sim"><span>Sim</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="social_security_nao" name="social_security" value="Não">
-                                <label for="social_security_nao" class="custom-radio"></label>
+                                <input id="social_security_nao" name="social_security" type="radio" value="Não">
+                                <label class="custom-radio" for="social_security_nao"></label>
                                 <label for="social_security_nao"><span>Não</span></label>
                             </div>
                         </div>
                         <div class="input-container">
                             <p>Número:</p>
-                            <input type="text" name="social_security_number">
+                            <input name="social_security_number" type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>U.S. Tax Payer ID Number</p>
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="tax_payer_id_sim" name="tax_payer_id" value="Sim">
-                                <label for="tax_payer_id_sim" class="custom-radio"></label>
+                                <input id="tax_payer_id_sim" name="tax_payer_id" type="radio" value="Sim">
+                                <label class="custom-radio" for="tax_payer_id_sim"></label>
                                 <label for="tax_payer_id_sim"><span>Sim</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="tax_payer_id_nao" name="tax_payer_id" value="Não">
-                                <label for="tax_payer_id_nao" class="custom-radio"></label>
+                                <input id="tax_payer_id_nao" name="tax_payer_id" type="radio" value="Não">
+                                <label class="custom-radio" for="tax_payer_id_nao"></label>
                                 <label for="tax_payer_id_nao"><span>Não</span></label>
                             </div>
                         </div>
                         <div class="input-container">
                             <p>Número:</p>
-                            <input type="text" name="tax_payer_id_number">
+                            <input name="tax_payer_id_number" type="text">
                         </div>
                     </div>
                 </div>
-                <h3>&#10142; ENDEREÇO RESIDENCIAL</h3>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Endereço Residencial</h3>
+            <div class="container p-4 my-4 form-box">
                 <div class="question">
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Rua</p>
-                            <input type="text" name="endereco_residencial_rua">
+                            <input name="endereco_residencial_rua" type="text">
                         </div>
                         <div class="input-container">
                             <p>Número</p>
-                            <input type="text" name="endereco_residencial_numero">
+                            <input name="endereco_residencial_numero" type="text">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Complemento</p>
-                            <input type="text" name="endereco_residencial_complemento">
+                            <input name="endereco_residencial_complemento" type="text">
                         </div>
                         <div class="input-container">
                             <p>Bairro</p>
-                            <input type="text" name="endereco_residencial_bairro">
+                            <input name="endereco_residencial_bairro" type="text">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Cidade</p>
-                            <input type="text" name="endereco_residencial_cidade">
+                            <input name="endereco_residencial_cidade" type="text">
                         </div>
                         <div class="input-container">
                             <p>Estado</p>
-                            <input type="text" name="endereco_residencial_estado">
+                            <input name="endereco_residencial_estado" type="text">
                         </div>
                         <div class="input-container">
                             <p>CEP</p>
-                            <input type="text" name="endereco_residencial_cep">
+                            <input name="endereco_residencial_cep" type="text">
                         </div>
                     </div>
                 </div>
-                <h3>&#10142; PASSAPORTE</h3>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h3>Passaporte</h3>
+            <div class="container p-4 my-4 form-box">
                 <div class="question">
                     <p>Caso o Visto seja aprovado, assinale a forma que deseja receber o passaporte com o Visto:</p>
                     <p>Retirar pessoalmente o passaporte gratuitamente no CASV de</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="retirar_passaporte_sao_paulo" name="retirar_passaporte" value="São Paulo">
-                            <label for="retirar_passaporte_sao_paulo" class="custom-radio"></label>
+                            <input id="retirar_passaporte_sao_paulo" name="retirar_passaporte" type="radio"
+                                   value="São Paulo">
+                            <label class="custom-radio" for="retirar_passaporte_sao_paulo"></label>
                             <label for="retirar_passaporte_sao_paulo"><span>São Paulo</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="retirar_passaporte_rio_de_janeiro" name="retirar_passaporte" value="Rio de Janeiro">
-                            <label for="retirar_passaporte_rio_de_janeiro" class="custom-radio"></label>
+                            <input id="retirar_passaporte_rio_de_janeiro" name="retirar_passaporte" type="radio"
+                                   value="Rio de Janeiro">
+                            <label class="custom-radio" for="retirar_passaporte_rio_de_janeiro"></label>
                             <label for="retirar_passaporte_rio_de_janeiro"><span>Rio de Janeiro</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="retirar_passaporte_brasilia" name="retirar_passaporte" value="Brasília">
-                            <label for="retirar_passaporte_brasilia" class="custom-radio"></label>
+                            <input id="retirar_passaporte_brasilia" name="retirar_passaporte" type="radio"
+                                   value="Brasília">
+                            <label class="custom-radio" for="retirar_passaporte_brasilia"></label>
                             <label for="retirar_passaporte_brasilia"><span>Brasília</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="retirar_passaporte_recife" name="retirar_passaporte" value="Recife">
-                            <label for="retirar_passaporte_recife" class="custom-radio"></label>
+                            <input id="retirar_passaporte_recife" name="retirar_passaporte" type="radio" value="Recife">
+                            <label class="custom-radio" for="retirar_passaporte_recife"></label>
                             <label for="retirar_passaporte_recife"><span>Recife</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="retirar_passaporte_porto_alegre" name="retirar_passaporte" value="Porto Alegre">
-                            <label for="retirar_passaporte_porto_alegre" class="custom-radio"></label>
+                            <input id="retirar_passaporte_porto_alegre" name="retirar_passaporte" type="radio"
+                                   value="Porto Alegre">
+                            <label class="custom-radio" for="retirar_passaporte_porto_alegre"></label>
                             <label for="retirar_passaporte_porto_alegre"><span>Porto Alegre</span></label>
                         </div>
                     </div>
-                    <p>Receber em domicílio (endereço de sua escolha) mediante pagamento de Taxa extra de R$60,00 (reais) por passaporte</p>
+                    <p>Receber em domicílio (endereço de sua escolha) mediante pagamento de Taxa extra de R$60,00
+                        (reais)
+                        por
+                        passaporte</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="retirar_passaporte_casa" name="retirar_passaporte" value="Receber em casa">
-                            <label for="retirar_passaporte_casa" class="custom-radio"></label>
+                            <input id="retirar_passaporte_casa" name="retirar_passaporte" type="radio"
+                                   value="Receber em casa">
+                            <label class="custom-radio" for="retirar_passaporte_casa"></label>
                             <label for="retirar_passaporte_casa"><span>Sim</span></label>
                         </div>
                     </div>
-                    <p>Obs: existem endereços que o Consulado Americano NÃO ENTREGA documentos. Caso o Visto seja negado, essa Taxa de envio NORMALMENTE é reembolsável. Caso aconteça a negativa, o reembolso deverá ser tratado diretamente com o Consulado Americano via e-mail.</p>
+                    <p>Obs: existem endereços que o Consulado Americano NÃO ENTREGA documentos. Caso o Visto seja
+                        negado,
+                        essa
+                        Taxa de envio NORMALMENTE é reembolsável. Caso aconteça a negativa, o reembolso deverá ser
+                        tratado
+                        diretamente com o Consulado Americano via e-mail.</p>
                 </div>
                 <div class="question">
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Telefone Residencial (com DDD)</p>
-                            <input type="text" name="passaporte_telefone_residencial">
+                            <input name="passaporte_telefone_residencial" type="text">
                         </div>
                         <div class="input-container">
                             <p>Telefone Celular (com DDD)</p>
-                            <input type="text" name="passaporte_telefone_celular">
+                            <input name="passaporte_telefone_celular" type="text">
                         </div>
                         <div class="input-container">
                             <p>Telefone de Trabalho atual (com DDD)</p>
-                            <input type="text" name="passaporte_telefone_trabalho">
+                            <input name="passaporte_telefone_trabalho" type="text">
                         </div>
                     </div>
                 </div>
@@ -346,112 +383,126 @@
                     <p>Utiliza outro número de telefone nos últimos 5 anos?</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="outro_numero_telefone_ultimos_anos_sim" name="outro_numero_telefone_ultimos_anos" value="Sim">
-                            <label for="outro_numero_telefone_ultimos_anos_sim" class="custom-radio"></label>
+                            <input id="outro_numero_telefone_ultimos_anos_sim" name="outro_numero_telefone_ultimos_anos"
+                                   type="radio" value="Sim">
+                            <label class="custom-radio" for="outro_numero_telefone_ultimos_anos_sim"></label>
                             <label for="outro_numero_telefone_ultimos_anos_sim"><span>Sim</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="outro_numero_telefone_ultimos_anos_nao" name="outro_numero_telefone_ultimos_anos" value="Não">
-                            <label for="outro_numero_telefone_ultimos_anos_nao" class="custom-radio"></label>
+                            <input id="outro_numero_telefone_ultimos_anos_nao" name="outro_numero_telefone_ultimos_anos"
+                                   type="radio" value="Não">
+                            <label class="custom-radio" for="outro_numero_telefone_ultimos_anos_nao"></label>
                             <label for="outro_numero_telefone_ultimos_anos_nao"><span>Não</span></label>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Se sim, qual (is)?</p>
-                        <input type="text" name="outro_numero_telefone_ultimos_anos_qual">
+                        <input name="outro_numero_telefone_ultimos_anos_qual" type="text">
                     </div>
                 </div>
                 <div class="question">
                     <div class="input-container">
                         <p>E-mail atual:</p>
-                        <input type="text" name="email_atual">
+                        <input name="email_atual" type="text">
                     </div>
                 </div>
                 <div class="question">
                     <p>Utiliza outros e-mails nos últimos 5 anos?</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="outro_email_ultimos_anos_sim" name="outro_email_ultimos_anos" value="Sim">
-                            <label for="outro_email_ultimos_anos_sim" class="custom-radio"></label>
+                            <input id="outro_email_ultimos_anos_sim" name="outro_email_ultimos_anos" type="radio"
+                                   value="Sim">
+                            <label class="custom-radio" for="outro_email_ultimos_anos_sim"></label>
                             <label for="outro_email_ultimos_anos_sim"><span>Sim</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="outro_email_ultimos_anos_nao" name="outro_email_ultimos_anos" value="Não">
-                            <label for="outro_email_ultimos_anos_nao" class="custom-radio"></label>
+                            <input id="outro_email_ultimos_anos_nao" name="outro_email_ultimos_anos" type="radio"
+                                   value="Não">
+                            <label class="custom-radio" for="outro_email_ultimos_anos_nao"></label>
                             <label for="outro_email_ultimos_anos_nao"><span>Não</span></label>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Se sim, qual (is)?</p>
-                        <input type="text" name="outro_email_ultimos_anos_qual">
+                        <input name="outro_email_ultimos_anos_qual" type="text">
                     </div>
                 </div>
                 <div class="question">
                     <div class="input-container">
-                        <p>Redes sociais (Facebook, Instagram, Snapchat, Site ou qualquer outra rede social que possua. Informar qual é a rede social e como está o seu nome. Ex.: Instagram: @...):</p>
-                        <input type="text" name="redes_sociais">
+                        <p>Redes sociais (Facebook, Instagram, Snapchat, Site ou qualquer outra rede social que possua.
+                            Informar
+                            qual é a rede social e como está o seu nome. Ex.: Instagram: @...):</p>
+                        <input name="redes_sociais" type="text">
                     </div>
                 </div>
                 <div class="question">
-                    <p>Em qual cidade deseja fazer o processo (coleta de biometria e fotos e entrevista no Consulado Americano)?</p>
+                    <p>Em qual cidade deseja fazer o processo (coleta de biometria e fotos e entrevista no Consulado
+                        Americano)?</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="processo_coleta_sao_paulo" name="processo_coleta" value="São Paulo">
-                            <label for="processo_coleta_sao_paulo" class="custom-radio"></label>
+                            <input id="processo_coleta_sao_paulo" name="processo_coleta" type="radio" value="São Paulo">
+                            <label class="custom-radio" for="processo_coleta_sao_paulo"></label>
                             <label for="processo_coleta_sao_paulo"><span>São Paulo</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="processo_coleta_rio_de_janeiro" name="processo_coleta" value="Rio de Janeiro">
-                            <label for="processo_coleta_rio_de_janeiro" class="custom-radio"></label>
+                            <input id="processo_coleta_rio_de_janeiro" name="processo_coleta" type="radio"
+                                   value="Rio de Janeiro">
+                            <label class="custom-radio" for="processo_coleta_rio_de_janeiro"></label>
                             <label for="processo_coleta_rio_de_janeiro"><span>Rio de Janeiro</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="processo_coleta_brasilia" name="processo_coleta" value="Brasília">
-                            <label for="processo_coleta_brasilia" class="custom-radio"></label>
+                            <input id="processo_coleta_brasilia" name="processo_coleta" type="radio" value="Brasília">
+                            <label class="custom-radio" for="processo_coleta_brasilia"></label>
                             <label for="processo_coleta_brasilia"><span>Brasília</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="processo_coleta_recife" name="processo_coleta" value="Recife">
-                            <label for="processo_coleta_recife" class="custom-radio"></label>
+                            <input id="processo_coleta_recife" name="processo_coleta" type="radio" value="Recife">
+                            <label class="custom-radio" for="processo_coleta_recife"></label>
                             <label for="processo_coleta_recife"><span>Recife</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="processo_coleta_porto_alegre" name="processo_coleta" value="Porto Alegre">
-                            <label for="processo_coleta_porto_alegre" class="custom-radio"></label>
+                            <input id="processo_coleta_porto_alegre" name="processo_coleta" type="radio"
+                                   value="Porto Alegre">
+                            <label class="custom-radio" for="processo_coleta_porto_alegre"></label>
                             <label for="processo_coleta_porto_alegre"><span>Porto Alegre</span></label>
                         </div>
                     </div>
-                    <p>Obs: existem endereços que o Consulado Americano NÂO ENTREGA documentos. Caso o Visto seja negado, essa Taxa de envio NORMALMENTE é reembolsável. Caso aconteça a negativa, o reembolso deverá ser tratado diretamente com o Consulado Americano vio e-mail.</p>
+                    <p>Obs: existem endereços que o Consulado Americano NÂO ENTREGA documentos. Caso o Visto seja
+                        negado,
+                        essa
+                        Taxa de envio NORMALMENTE é reembolsável. Caso aconteça a negativa, o reembolso deverá ser
+                        tratado
+                        diretamente com o Consulado Americano vio e-mail.</p>
                 </div>
                 <div class="question">
                     <div class="question-inline">
                         <div class="input-container">
                             <p>N° do passaporte atual (2 letras e 6 números)</p>
-                            <input type="text" name="numero_passaporte_atual">
+                            <input name="numero_passaporte_atual" type="text">
                         </div>
                         <div class="input-container">
                             <p>País que autorizou a emissão</p>
-                            <input type="text" name="pais_autorizou_emissao_passaporte">
+                            <input name="pais_autorizou_emissao_passaporte" type="text">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Cidade/Estado da Emissão</p>
-                            <input type="text" name="cidade_emissao_passaporte">
+                            <input name="cidade_emissao_passaporte" type="text">
                         </div>
                         <div class="input-container">
                             <p>País onde foi emitido</p>
-                            <input type="text" name="pais_onde_emitiu_passaporte">
+                            <input name="pais_onde_emitiu_passaporte" type="text">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de Expedição do passaporte: (dd/mm/yyyy)</p>
-                            <input type="date" name="data_expedicao_passaporte">
+                            <input name="data_expedicao_passaporte" type="date">
                         </div>
                         <div class="input-container">
                             <p>Data de Validade do passaporte: (dd/mm/yyyy)</p>
-                            <input type="date" name="data_validade_passaporte">
+                            <input name="data_validade_passaporte" type="date">
                         </div>
                     </div>
                 </div>
@@ -459,74 +510,83 @@
                     <p>Já teve passaporte perdido ou roubado?</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="passaporte_perdido_roubado_sim" name="passaporte_perdido_roubado" value="Sim">
-                            <label for="passaporte_perdido_roubado_sim" class="custom-radio"></label>
+                            <input id="passaporte_perdido_roubado_sim" name="passaporte_perdido_roubado" type="radio"
+                                   value="Sim">
+                            <label class="custom-radio" for="passaporte_perdido_roubado_sim"></label>
                             <label for="passaporte_perdido_roubado_sim"><span>Sim</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="passaporte_perdido_roubado_nao" name="passaporte_perdido_roubado" value="Não">
-                            <label for="passaporte_perdido_roubado_nao" class="custom-radio"></label>
+                            <input id="passaporte_perdido_roubado_nao" name="passaporte_perdido_roubado" type="radio"
+                                   value="Não">
+                            <label class="custom-radio" for="passaporte_perdido_roubado_nao"></label>
                             <label for="passaporte_perdido_roubado_nao"><span>Não</span></label>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Se sim, qual ocasião, perda ou roubo?</p>
-                        <input type="text" name="passaporte_perdido_roubado_ocasiao">
+                        <input name="passaporte_perdido_roubado_ocasiao" type="text">
                     </div>
                     <div class="input-container">
                         <p>Se sim, favor informar número do passaporte, país emissor e ano do acontecimento</p>
-                        <input type="text" name="passaporte_perdido_roubado_informacoes">
+                        <input name="passaporte_perdido_roubado_informacoes" type="text">
                     </div>
                 </div>
-                <h3>&#10142; VIAGEM</h3>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Viagem</h3>
+            <div class="container p-4 my-4 form-box">
                 <div class="question">
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Motivo da Viagem (turismo, estudo...)?</p>
-                            <input type="text" name="motivo_viagem">
+                            <input name="motivo_viagem" type="text">
                         </div>
                         <div class="input-container">
                             <p>Data que pretende chegar? (dd/mm/yyyy)</p>
-                            <input type="date" name="data_chegar_viagem">
+                            <input name="data_chegar_viagem" type="date">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Quanto tempo pretende ficar?</p>
-                            <input type="text" name="tempo_viagem">
+                            <input name="tempo_viagem" type="text">
                         </div>
                         <div class="input-container">
                             <p>Para qual cidade você vai? (Apenas 1 cidade estimada)</p>
-                            <input type="text" name="cidade_viagem">
+                            <input name="cidade_viagem" type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Quem pagará sua viagem? (Apenas 1 pessoa)</p>
-                        <input type="text" name="pessoa_pagar_viagem">
+                        <input name="pessoa_pagar_viagem" type="text">
                     </div>
                     <div class="input-container">
-                        <p>Se outra pessoa ou empresa for pagar a sua viagem, informar nome, endereço, completo, telefone, e-mail e relação com você:</p>
-                        <input type="text" name="dados_pessoa_pagar_viagem">
+                        <p>Se outra pessoa ou empresa for pagar a sua viagem, informar nome, endereço, completo,
+                            telefone,
+                            e-mail e relação com você:</p>
+                        <input name="dados_pessoa_pagar_viagem" type="text">
                     </div>
                     <div class="input-container">
                         <p>Nome completo e parentesco das pessoas viajando com você se houver:</p>
-                        <input type="text" name="pessoa_viajando_junto_1">
-                        <input type="text" name="pessoa_viajando_junto_2">
-                        <input type="text" name="pessoa_viajando_junto_3">
-                        <input type="text" name="pessoa_viajando_junto_4">
+                        <input name="pessoa_viajando_junto_1" type="text">
+                        <input name="pessoa_viajando_junto_2" type="text">
+                        <input name="pessoa_viajando_junto_3" type="text">
+                        <input name="pessoa_viajando_junto_4" type="text">
                     </div>
                 </div>
                 <div class="question">
                     <p>Você já esteve nos EUA?</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="viagem_anteriores_eua_sim" name="viagem_anteriores_eua" value="Sim">
-                            <label for="viagem_anteriores_eua_sim" class="custom-radio"></label>
+                            <input id="viagem_anteriores_eua_sim" name="viagem_anteriores_eua" type="radio" value="Sim">
+                            <label class="custom-radio" for="viagem_anteriores_eua_sim"></label>
                             <label for="viagem_anteriores_eua_sim"><span>Sim</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="viagem_anteriores_eua_nao" name="viagem_anteriores_eua" value="Não">
-                            <label for="viagem_anteriores_eua_nao" class="custom-radio"></label>
+                            <input id="viagem_anteriores_eua_nao" name="viagem_anteriores_eua" type="radio" value="Não">
+                            <label class="custom-radio" for="viagem_anteriores_eua_nao"></label>
                             <label for="viagem_anteriores_eua_nao"><span>Não</span></label>
                         </div>
                     </div>
@@ -534,51 +594,51 @@
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de chegada: (dd/mm/yyyy)</p>
-                            <input type="date" name="data_ultimas_viagens_eua_1">
+                            <input name="data_ultimas_viagens_eua_1" type="date">
                         </div>
                         <div class="input-container">
                             <p>Tempo permanência</p>
-                            <input type="text" name="tempo_permanencia_ultimas_viagens_eua_1">
+                            <input name="tempo_permanencia_ultimas_viagens_eua_1" type="text">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de chegada: (dd/mm/yyyy)</p>
-                            <input type="date" name="data_ultimas_viagens_eua_2">
+                            <input name="data_ultimas_viagens_eua_2" type="date">
                         </div>
                         <div class="input-container">
                             <p>Tempo permanência</p>
-                            <input type="text" name="tempo_permanencia_ultimas_viagens_eua_2">
+                            <input name="tempo_permanencia_ultimas_viagens_eua_2" type="text">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de chegada: (dd/mm/yyyy)</p>
-                            <input type="date" name="data_ultimas_viagens_eua_3">
+                            <input name="data_ultimas_viagens_eua_3" type="date">
                         </div>
                         <div class="input-container">
                             <p>Tempo permanência</p>
-                            <input type="text" name="tempo_permanencia_ultimas_viagens_eua_3">
+                            <input name="tempo_permanencia_ultimas_viagens_eua_3" type="text">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de chegada: (dd/mm/yyyy)</p>
-                            <input type="date" name="data_ultimas_viagens_eua_4">
+                            <input name="data_ultimas_viagens_eua_4" type="date">
                         </div>
                         <div class="input-container">
                             <p>Tempo permanência</p>
-                            <input type="text" name="tempo_permanencia_ultimas_viagens_eua_4">
+                            <input name="tempo_permanencia_ultimas_viagens_eua_4" type="text">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de chegada: (dd/mm/yyyy)</p>
-                            <input type="date" name="data_ultimas_viagens_eua_5">
+                            <input name="data_ultimas_viagens_eua_5" type="date">
                         </div>
                         <div class="input-container">
                             <p>Tempo permanência</p>
-                            <input type="text" name="tempo_permanencia_ultimas_viagens_eua_5">
+                            <input name="tempo_permanencia_ultimas_viagens_eua_5" type="text">
                         </div>
                     </div>
                 </div>
@@ -586,32 +646,32 @@
                     <p>Tem ou já teve licença para dirigir nos EUA (EMITIDA NOS EUA)?</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="licenca_dirigir_eua_sim" name="licenca_dirigir_eua" value="Sim">
-                            <label for="licenca_dirigir_eua_sim" class="custom-radio"></label>
+                            <input id="licenca_dirigir_eua_sim" name="licenca_dirigir_eua" type="radio" value="Sim">
+                            <label class="custom-radio" for="licenca_dirigir_eua_sim"></label>
                             <label for="licenca_dirigir_eua_sim"><span>Sim</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="licenca_dirigir_eua_nao" name="licenca_dirigir_eua" value="Não">
-                            <label for="licenca_dirigir_eua_nao" class="custom-radio"></label>
+                            <input id="licenca_dirigir_eua_nao" name="licenca_dirigir_eua" type="radio" value="Não">
+                            <label class="custom-radio" for="licenca_dirigir_eua_nao"></label>
                             <label for="licenca_dirigir_eua_nao"><span>Não</span></label>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Se sim citar número e Estado Americano que emitiu:</p>
-                        <input type="text" name="licenca_dirigir_eua_numero">
+                        <input name="licenca_dirigir_eua_numero" type="text">
                     </div>
                 </div>
                 <div class="question">
                     <p>Já tem ou teve visto americano?</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="visto_americano_sim" name="visto_americano" value="Sim">
-                            <label for="visto_americano_sim" class="custom-radio"></label>
+                            <input id="visto_americano_sim" name="visto_americano" type="radio" value="Sim">
+                            <label class="custom-radio" for="visto_americano_sim"></label>
                             <label for="visto_americano_sim"><span>Sim</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="visto_americano_nao" name="visto_americano" value="Não">
-                            <label for="visto_americano_nao" class="custom-radio"></label>
+                            <input id="visto_americano_nao" name="visto_americano" type="radio" value="Não">
+                            <label class="custom-radio" for="visto_americano_nao"></label>
                             <label for="visto_americano_nao"><span>Não</span></label>
                         </div>
                     </div>
@@ -619,37 +679,39 @@
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de Emissão: (dd/mm/yyyy)</p>
-                            <input type="date" name="data_emissao_visto_americano">
+                            <input name="data_emissao_visto_americano" type="date">
                         </div>
                         <div class="input-container">
                             <p>Data de Expiração: (dd/mm/yyyy)</p>
-                            <input type="date" name="data_expiracao_visto_americano">
+                            <input name="data_expiracao_visto_americano" type="date">
                         </div>
                     </div>
                 </div>
                 <div class="question">
                     <div class="input-container">
                         <p>Tipo do Visto (Turismo, Negócios, Estudante, Intercâmbio...)</p>
-                        <input type="text" name="tipo_visto">
+                        <input name="tipo_visto" type="text">
                     </div>
                 </div>
                 <div class="question">
                     <div class="input-container">
                         <p>Número do Visto (Número em vermelho no canto inferior direito do visto)</p>
-                        <input type="text" name="numero_visto">
+                        <input name="numero_visto" type="text">
                     </div>
                 </div>
                 <div class="question">
                     <p>O Visto foi solicitado no mesmo país onde o novo visto também está sendo solicitado?</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="visto_solicitado_mesmo_pais_sim" name="visto_solicitado_mesmo_pais" value="Sim">
-                            <label for="visto_solicitado_mesmo_pais_sim" class="custom-radio"></label>
+                            <input id="visto_solicitado_mesmo_pais_sim" name="visto_solicitado_mesmo_pais" type="radio"
+                                   value="Sim">
+                            <label class="custom-radio" for="visto_solicitado_mesmo_pais_sim"></label>
                             <label for="visto_solicitado_mesmo_pais_sim"><span>Sim</span></label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="visto_solicitado_mesmo_pais_nao" name="visto_solicitado_mesmo_pais" value="Não">
-                            <label for="visto_solicitado_mesmo_pais_nao" class="custom-radio"></label>
+                            <input id="visto_solicitado_mesmo_pais_nao" name="visto_solicitado_mesmo_pais" type="radio"
+                                   value="Não">
+                            <label class="custom-radio" for="visto_solicitado_mesmo_pais_nao"></label>
                             <label for="visto_solicitado_mesmo_pais_nao"><span>Não</span></label>
                         </div>
                     </div>
@@ -658,66 +720,77 @@
                     <p>Em qual cidade o visto anterior foi emitido?</p>
                     <div class="input-container radio-buttons">
                         <div class="option">
-                            <input type="radio" id="visto_anterior_emitido_sao_paulo" name="visto_anterior_emitido" value="São Paulo">
-                            <label for="visto_anterior_emitido_sao_paulo" class="custom-radio"></label>
+                            <input id="visto_anterior_emitido_sao_paulo" name="visto_anterior_emitido" type="radio"
+                                   value="São Paulo">
+                            <label class="custom-radio" for="visto_anterior_emitido_sao_paulo"></label>
                             <label for="visto_anterior_emitido_sao_paulo">
-                            <span>São Paulo</span>
+                                <span>São Paulo</span>
                             </label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="visto_anterior_emitido_rio_de_janeiro" name="visto_anterior_emitido" value="Rio de Janeiro">
-                            <label for="visto_anterior_emitido_rio_de_janeiro" class="custom-radio"></label>
+                            <input id="visto_anterior_emitido_rio_de_janeiro" name="visto_anterior_emitido" type="radio"
+                                   value="Rio de Janeiro">
+                            <label class="custom-radio" for="visto_anterior_emitido_rio_de_janeiro"></label>
                             <label for="visto_anterior_emitido_rio_de_janeiro">
-                            <span>Rio de Janeiro</span>
+                                <span>Rio de Janeiro</span>
                             </label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="visto_anterior_emitido_brasilia" name="visto_anterior_emitido" value="Brasília">
-                            <label for="visto_anterior_emitido_brasilia" class="custom-radio"></label>
+                            <input id="visto_anterior_emitido_brasilia" name="visto_anterior_emitido" type="radio"
+                                   value="Brasília">
+                            <label class="custom-radio" for="visto_anterior_emitido_brasilia"></label>
                             <label for="visto_anterior_emitido_brasilia">
-                            <span>Brasília</span>
+                                <span>Brasília</span>
                             </label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="visto_anterior_emitido_recife" name="visto_anterior_emitido" value="Recife">
-                            <label for="visto_anterior_emitido_recife" class="custom-radio"></label>
+                            <input id="visto_anterior_emitido_recife" name="visto_anterior_emitido" type="radio"
+                                   value="Recife">
+                            <label class="custom-radio" for="visto_anterior_emitido_recife"></label>
                             <label for="visto_anterior_emitido_recife">
-                            <span>Recife</span>
+                                <span>Recife</span>
                             </label>
                         </div>
                         <div class="option">
-                            <input type="radio" id="visto_anterior_emitido_porto_alegre" name="visto_anterior_emitido" value="Porto Alegre">
-                            <label for="visto_anterior_emitido_porto_alegre" class="custom-radio"></label>
+                            <input id="visto_anterior_emitido_porto_alegre" name="visto_anterior_emitido" type="radio"
+                                   value="Porto Alegre">
+                            <label class="custom-radio" for="visto_anterior_emitido_porto_alegre"></label>
                             <label for="visto_anterior_emitido_porto_alegre">
-                            <span>Porto Alegre</span>
+                                <span>Porto Alegre</span>
                             </label>
                         </div>
-                        <p>Receber em domicílio (endereço de sua escolha) mediante pagamento de Taxa extra de R$60,00 (reais) por passaporte</p>
+                        <p>Receber em domicílio (endereço de sua escolha) mediante pagamento de Taxa extra de R$60,00
+                            (reais)
+                            por passaporte</p>
                         <div class="option">
-                            <input type="radio" id="visto_anterior_emitido_casa" name="visto_anterior_emitido" value="Receber em casa">
-                            <label for="visto_anterior_emitido_casa" class="custom-radio"></label>
+                            <input id="visto_anterior_emitido_casa" name="visto_anterior_emitido" type="radio"
+                                   value="Receber em casa">
+                            <label class="custom-radio" for="visto_anterior_emitido_casa"></label>
                             <label for="visto_anterior_emitido_casa">
-                            <span>Sim</span>
+                                <span>Sim</span>
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="question">
-                    <p>Alguma vez que solicitou o Visto Americano teve que colher as impressões digitais dos 10 dedos no CASV</p>
+                    <p>Alguma vez que solicitou o Visto Americano teve que colher as impressões digitais dos 10 dedos no
+                        CASV</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="colher_impressao_digital_sim" name="colher_impressao_digital" value="Sim">
-                                <label for="colher_impressao_digital_sim" class="custom-radio"></label>
+                                <input id="colher_impressao_digital_sim" name="colher_impressao_digital" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="colher_impressao_digital_sim"></label>
                                 <label for="colher_impressao_digital_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="colher_impressao_digital_nao" name="colher_impressao_digital" value="Não">
-                                <label for="colher_impressao_digital_nao" class="custom-radio"></label>
+                                <input id="colher_impressao_digital_nao" name="colher_impressao_digital" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="colher_impressao_digital_nao"></label>
                                 <label for="colher_impressao_digital_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -728,17 +801,17 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="visto_perdido_sim" name="visto_perdido" value="Sim">
-                                <label for="visto_perdido_sim" class="custom-radio"></label>
+                                <input id="visto_perdido_sim" name="visto_perdido" type="radio" value="Sim">
+                                <label class="custom-radio" for="visto_perdido_sim"></label>
                                 <label for="visto_perdido_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="visto_perdido_nao" name="visto_perdido" value="Não">
-                                <label for="visto_perdido_nao" class="custom-radio"></label>
+                                <input id="visto_perdido_nao" name="visto_perdido" type="radio" value="Não">
+                                <label class="custom-radio" for="visto_perdido_nao"></label>
                                 <label for="visto_perdido_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -749,17 +822,19 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="visto_americano_negado_sim" name="visto_americano_negado" value="Sim">
-                                <label for="visto_americano_negado_sim" class="custom-radio"></label>
-                                <label for="visto_americano_negado_sim" >
-                                <span>Sim</span>
+                                <input id="visto_americano_negado_sim" name="visto_americano_negado" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="visto_americano_negado_sim"></label>
+                                <label for="visto_americano_negado_sim">
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="visto_americano_negado_nao" name="visto_americano_negado" value="Não">
-                                <label for="visto_americano_negado_nao" class="custom-radio"></label>
-                                <label for="visto_americano_negado_nao" >
-                                <span>Não</span>
+                                <input id="visto_americano_negado_nao" name="visto_americano_negado" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="visto_americano_negado_nao"></label>
+                                <label for="visto_americano_negado_nao">
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -770,17 +845,19 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="visto_americano_cancelado_sim" name="visto_americano_cancelado" value="Sim">
-                                <label for="visto_americano_cancelado_sim" class="custom-radio"></label>
-                                <label for="visto_americano_cancelado_sim" >
-                                <span>Sim</span>
+                                <input id="visto_americano_cancelado_sim" name="visto_americano_cancelado" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="visto_americano_cancelado_sim"></label>
+                                <label for="visto_americano_cancelado_sim">
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="visto_americano_cancelado_nao" name="visto_americano_cancelado" value="Não">
-                                <label for="visto_americano_cancelado_nao" class="custom-radio"></label>
-                                <label for="visto_americano_cancelado_nao" >
-                                <span>Não</span>
+                                <input id="visto_americano_cancelado_nao" name="visto_americano_cancelado" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="visto_americano_cancelado_nao"></label>
+                                <label for="visto_americano_cancelado_nao">
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -791,38 +868,43 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="entrada_eua_negada_sim" name="entrada_eua_negada" value="Sim">
-                                <label for="entrada_eua_negada_sim" class="custom-radio"></label>
-                                <label for="entrada_eua_negada_sim" >
-                                <span>Sim</span>
+                                <input id="entrada_eua_negada_sim" name="entrada_eua_negada" type="radio" value="Sim">
+                                <label class="custom-radio" for="entrada_eua_negada_sim"></label>
+                                <label for="entrada_eua_negada_sim">
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="entrada_eua_negada_nao" name="entrada_eua_negada" value="Não">
-                                <label for="entrada_eua_negada_nao" class="custom-radio"></label>
-                                <label for="entrada_eua_negada_nao" >
-                                <span>Não</span>
+                                <input id="entrada_eua_negada_nao" name="entrada_eua_negada" type="radio" value="Não">
+                                <label class="custom-radio" for="entrada_eua_negada_nao"></label>
+                                <label for="entrada_eua_negada_nao">
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="question">
-                    <p>Você ou alguém já deu entrada em uma petição de Imigrante em seu nome (junto ao Serviço de Cidadania dos EUA)</p>
+                    <p>Você ou alguém já deu entrada em uma petição de Imigrante em seu nome (junto ao Serviço de
+                        Cidadania
+                        dos
+                        EUA)</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="entrada_peticao_imigrante_sim" name="entrada_peticao_imigrante" value="Sim">
-                                <label for="entrada_peticao_imigrante_sim" class="custom-radio"></label>
-                                <label for="entrada_peticao_imigrante_sim" >
-                                <span>Sim</span>
+                                <input id="entrada_peticao_imigrante_sim" name="entrada_peticao_imigrante" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="entrada_peticao_imigrante_sim"></label>
+                                <label for="entrada_peticao_imigrante_sim">
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="entrada_peticao_imigrante_nao" name="entrada_peticao_imigrante" value="Não">
-                                <label for="entrada_peticao_imigrante_nao" class="custom-radio"></label>
-                                <label for="entrada_peticao_imigrante_nao" >
-                                <span>Não</span>
+                                <input id="entrada_peticao_imigrante_nao" name="entrada_peticao_imigrante" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="entrada_peticao_imigrante_nao"></label>
+                                <label for="entrada_peticao_imigrante_nao">
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -833,61 +915,66 @@
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nome</p>
-                            <input type="text" name="contato_eua_nome">
+                            <input name="contato_eua_nome" type="text">
                         </div>
                         <div class="input-container">
                             <p>Nome da Organização</p>
-                            <input type="text" name="contato_eua_nome_organizacao">
+                            <input name="contato_eua_nome_organizacao" type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Relação com você</p>
-                        <input type="text" name="contato_eua_relacao_voce">
+                        <input name="contato_eua_relacao_voce" type="text">
                     </div>
                     <div class="input-container">
                         <p>Endereço</p>
-                        <input type="text" name="contato_eua_endereco">
+                        <input name="contato_eua_endereco" type="text">
                     </div>
                     <div class="input-container">
                         <p>Telefone e e-mail (no caso de parentes que moram nos EUA)</p>
-                        <input type="text" name="contato_eua_parente">
+                        <input name="contato_eua_parente" type="text">
                     </div>
                 </div>
-                <h3>&#10142; DADOS DOS PAIS DO SOLICITANTE</h3>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h3>Dados dos pais do solicitante</h3>
+            <div class="container p-4 my-4 form-box">
                 <div class="question">
                     <h6 class="title">Pai</h6>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nome</p>
-                            <input type="text" name="nome_pai">
+                            <input name="nome_pai" type="text">
                         </div>
                         <div class="input-container">
                             <p>Data Nascimento (dd/mm/yyyy):</p>
-                            <input type="date" name="data_nasc_pai">
+                            <input name="data_nasc_pai" type="date">
                         </div>
                     </div>
                     <p>Seu pai se encontra nos EUA?</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="pai_eua_sim" name="pai_eua" value="Sim">
-                                <label for="pai_eua_sim" class="custom-radio"></label>
-                                <label for="pai_eua_sim" >
-                                <span>Sim</span>
+                                <input id="pai_eua_sim" name="pai_eua" type="radio" value="Sim">
+                                <label class="custom-radio" for="pai_eua_sim"></label>
+                                <label for="pai_eua_sim">
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="pai_eua_nao" name="pai_eua" value="Não">
-                                <label for="pai_eua_nao" class="custom-radio"></label>
-                                <label for="pai_eua_nao" >
-                                <span>Não</span>
+                                <input id="pai_eua_nao" name="pai_eua" type="radio" value="Não">
+                                <label class="custom-radio" for="pai_eua_nao"></label>
+                                <label for="pai_eua_nao">
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Informar situação (Cidadão, Turista, Redidente permanete)</p>
-                        <input type="text" name="situacao_pai">
+                        <input name="situacao_pai" type="text">
                     </div>
                 </div>
                 <div class="question">
@@ -895,35 +982,35 @@
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nome</p>
-                            <input type="text" name="nome_mae">
+                            <input name="nome_mae" type="text">
                         </div>
                         <div class="input-container">
                             <p>Data Nascimento (dd/mm/yyyy):</p>
-                            <input type="date" name="data_nasc_mae">
+                            <input name="data_nasc_mae" type="date">
                         </div>
                     </div>
                     <p>Sua mãe se encontra nos EUA?</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="mae_eua_sim" name="mae_eua" value="Sim">
-                                <label for="mae_eua_sim" class="custom-radio"></label>
-                                <label for="mae_eua_sim" >
-                                <span>Sim</span>
+                                <input id="mae_eua_sim" name="mae_eua" type="radio" value="Sim">
+                                <label class="custom-radio" for="mae_eua_sim"></label>
+                                <label for="mae_eua_sim">
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="mae_eua_nao" name="mae_eua" value="Não">
-                                <label for="mae_eua_nao" class="custom-radio"></label>
-                                <label for="mae_eua_nao" >
-                                <span>Não</span>
+                                <input id="mae_eua_nao" name="mae_eua" type="radio" value="Não">
+                                <label class="custom-radio" for="mae_eua_nao"></label>
+                                <label for="mae_eua_nao">
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Informar situação (Cidadão, Turista, Redidente permanete)</p>
-                        <input type="text" name="situacao_mae">
+                        <input name="situacao_mae" type="text">
                     </div>
                 </div>
                 <div class="question">
@@ -931,79 +1018,86 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="parente_direto_eua_sim" name="parente_direto_eua" value="Sim">
-                                <label for="parente_direto_eua_sim" class="custom-radio"></label>
-                                <label for="parente_direto_eua_sim" >
-                                <span>Sim</span>
+                                <input id="parente_direto_eua_sim" name="parente_direto_eua" type="radio" value="Sim">
+                                <label class="custom-radio" for="parente_direto_eua_sim"></label>
+                                <label for="parente_direto_eua_sim">
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="parente_direto_eua_nao" name="parente_direto_eua" value="Não">
-                                <label for="parente_direto_eua_nao" class="custom-radio"></label>
-                                <label for="parente_direto_eua_nao" >
-                                <span>Não</span>
+                                <input id="parente_direto_eua_nao" name="parente_direto_eua" type="radio" value="Não">
+                                <label class="custom-radio" for="parente_direto_eua_nao"></label>
+                                <label for="parente_direto_eua_nao">
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Se sim, informar nome completo, situação nos EUA e grau de parentesco:</p>
-                        <input type="text" name="parente_direto_informacoes">
+                        <input name="parente_direto_informacoes" type="text">
                     </div>
                 </div>
-                <h3>&#10142; CÔNJUGE</h3>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h3>Cônjuge</h3>
+            <div class="container p-4 my-4 form-box">
                 <div class="question">
-                    <p>Informações do cônjuge (caso divorciado, separado ou viúvo, favor informar os dados abaixo da mesma forma)</p>
+                    <p>Informações do cônjuge (caso divorciado, separado ou viúvo, favor informar os dados abaixo da
+                        mesma
+                        forma)</p>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nome</p>
-                            <input type="text" name="conjuge_nome">
+                            <input name="conjuge_nome" type="text">
                         </div>
                         <div class="input-container">
                             <p>Data nascimento (dd/mm/yyyy):</p>
-                            <input type="date" name="conjuge_data_nasc">
+                            <input name="conjuge_data_nasc" type="date">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nacionalidade</p>
-                            <input type="text" name="conjuge_nacionalidade">
+                            <input name="conjuge_nacionalidade" type="text">
                         </div>
                         <div class="input-container">
                             <p>Cidade de nascimento</p>
-                            <input type="text" name="conjuge_cidade_nasc">
+                            <input name="conjuge_cidade_nasc" type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Endereço</p>
-                        <input type="text" name="conjuge_endereco">
+                        <input name="conjuge_endereco" type="text">
                     </div>
                     <p>Caso Separado ou Divorciado, Informar:</p>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data do Casamento (dd/mm/yyyy):</p>
-                            <input type="date" name="data_casamento">
+                            <input name="data_casamento" type="date">
                         </div>
                         <div class="input-container">
                             <p>Data da Separação/Divórcio (dd/mm/yyyy):</p>
-                            <input type="date" name="data_separacao">
+                            <input name="data_separacao" type="date">
                         </div>
                     </div>
                     <p>Primeiro divórcio</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="primeiro_divorcio_sim" name="primeiro_divorcio" value="Sim">
-                                <label for="primeiro_divorcio_sim" class="custom-radio"></label>
-                                <label for="primeiro_divorcio_sim" >
-                                <span>Sim</span>
+                                <input id="primeiro_divorcio_sim" name="primeiro_divorcio" type="radio" value="Sim">
+                                <label class="custom-radio" for="primeiro_divorcio_sim"></label>
+                                <label for="primeiro_divorcio_sim">
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="primeiro_divorcio_nao" name="primeiro_divorcio" value="Não">
-                                <label for="primeiro_divorcio_nao" class="custom-radio"></label>
+                                <input id="primeiro_divorcio_nao" name="primeiro_divorcio" type="radio" value="Não">
+                                <label class="custom-radio" for="primeiro_divorcio_nao"></label>
                                 <label for="primeiro_divorcio_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1011,55 +1105,62 @@
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Motivo</p>
-                            <input type="text" name="motivo_divorcio">
+                            <input name="motivo_divorcio" type="text">
                         </div>
                         <div class="input-container">
                             <p>País onde o casamento terminou</p>
-                            <input type="text" name="pais_casamento_terminou">
+                            <input name="pais_casamento_terminou" type="text">
                         </div>
                     </div>
                 </div>
-                <h3>&#10142; TRABALHO DO SOLICITANTE</h3>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Trabalho do solicitante</h3>
+            <div class="container p-4 my-4 form-box">
                 <div class="question">
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nome da Empresa ou Escola</p>
-                            <input type="text" name="nome_empresa_escola">
+                            <input name="nome_empresa_escola" type="text">
                         </div>
                         <div class="input-container">
                             <p>Telefone</p>
-                            <input type="text" name="telefone_empresa_escola">
+                            <input name="telefone_empresa_escola" type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Endereço completo com CEP</p>
-                        <input type="text" name="endereco_completo_empresa_escola">
+                        <input name="endereco_completo_empresa_escola" type="text">
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Cargo/Função</p>
-                            <input type="text" name="cargo_empresa_escola">
+                            <input name="cargo_empresa_escola" type="text">
                         </div>
                         <div class="input-container">
                             <p>Renda Mensal</p>
-                            <input type="text" name="renda_mensal_empresa_escola">
+                            <input name="renda_mensal_empresa_escola" type="text">
                         </div>
                     </div>
                     <p>Faz declaração de imposto de renda?</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="declaracao_imposto_renda_sim" name="declaracao_imposto_renda" value="Sim">
-                                <label for="declaracao_imposto_renda_sim" class="custom-radio"></label>
-                                <label for="declaracao_imposto_renda_sim" >
-                                <span>Sim</span>
+                                <input id="declaracao_imposto_renda_sim" name="declaracao_imposto_renda" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="declaracao_imposto_renda_sim"></label>
+                                <label for="declaracao_imposto_renda_sim">
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="declaracao_imposto_renda_nao" name="declaracao_imposto_renda" value="Não">
-                                <label for="declaracao_imposto_renda_nao" class="custom-radio"></label>
-                                <label for="declaracao_imposto_renda_nao" >
-                                <span>Não</span>
+                                <input id="declaracao_imposto_renda_nao" name="declaracao_imposto_renda" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="declaracao_imposto_renda_nao"></label>
+                                <label for="declaracao_imposto_renda_nao">
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1067,145 +1168,157 @@
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Descreva brevemente as suas funções</p>
-                            <input type="text" name="descricao_funcoes">
+                            <input name="descricao_funcoes" type="text">
                         </div>
                         <div class="input-container">
                             <p>Data de admissão no emprego atual</p>
-                            <input type="text" name="data_admissao">
+                            <input name="data_admissao" type="text">
                         </div>
                     </div>
                 </div>
-                <h3>&#10142; TRABALHO ANTERIOR (SE HOUVER)</h3>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h3>Trabalho anterior (se houver)</h3>
+            <div class="container p-4 my-4 form-box">
                 <div class="question">
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nome da Empresa</p>
-                            <input type="text" name="nome_empresa_anterior">
+                            <input name="nome_empresa_anterior" type="text">
                         </div>
                         <div class="input-container">
                             <p>Telefone</p>
-                            <input type="text" name="telefone_empresa_anterior">
+                            <input name="telefone_empresa_anterior" type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Endereço completo com CEP</p>
-                        <input type="text" name="endereco_empresa_anterior">
+                        <input name="endereco_empresa_anterior" type="text">
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Cargo/Função</p>
-                            <input type="text" name="cargo_empresa_anterior">
+                            <input name="cargo_empresa_anterior" type="text">
                         </div>
                         <div class="input-container">
                             <p>Nome completo do Superior</p>
-                            <input type="text" name="nome_superior_empresa_anterior">
+                            <input name="nome_superior_empresa_anterior" type="text">
                         </div>
                     </div>
                 </div>
-                <p>Informar histórico escolar a partir da conclusão do 2° grau (Apenas FACULDADE concluída ou em andamento)</p>
-                <p>(Solicitantes com 14 anos de idade ou mais que estão cursando ensino fundamental ou médio, preencher da mesma forma</p>
+                <p>Informar histórico escolar a partir da conclusão do 2° grau (Apenas FACULDADE concluída ou em
+                    andamento)</p>
+                <p>(Solicitantes com 14 anos de idade ou mais que estão cursando ensino fundamental ou médio, preencher
+                    da mesma forma</p>
                 <div class="question">
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nome da Escola/Faculdade</p>
-                            <input type="text" name="nome_escola_faculdade_1">
+                            <input name="nome_escola_faculdade_1" type="text">
                         </div>
                         <div class="input-container">
                             <p>Curso</p>
-                            <input type="text" name="curso_escola_faculdade_1">
+                            <input name="curso_escola_faculdade_1" type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Endereço completo com CEP</p>
-                        <input type="text" name="endereco_escola_faculdade_1">
+                        <input name="endereco_escola_faculdade_1" type="text">
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de início do curso (mês e ano): (mm/yyyy)</p>
-                            <input type="text" name="data_inicio_escola_faculdade_1">
+                            <input name="data_inicio_escola_faculdade_1" type="text">
                         </div>
                         <div class="input-container">
                             <p>Data do fim do curso (mês e ano): (mm/yyyy)</p>
-                            <input type="text" name="data_fim_escola_faculdade_1">
+                            <input name="data_fim_escola_faculdade_1" type="text">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nome da Escola/Faculdade</p>
-                            <input type="text" name="nome_escola_faculdade_2">
+                            <input name="nome_escola_faculdade_2" type="text">
                         </div>
                         <div class="input-container">
                             <p>Curso</p>
-                            <input type="text" name="curso_escola_faculdade_2">
+                            <input name="curso_escola_faculdade_2" type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Endereço completo com CEP</p>
-                        <input type="text" name="endereco_escola_faculdade_2">
+                        <input name="endereco_escola_faculdade_2" type="text">
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de início do curso (mês e ano): (mm/yyyy)</p>
-                            <input type="text" name="data_inicio_escola_faculdade_2">
+                            <input name="data_inicio_escola_faculdade_2" type="text">
                         </div>
                         <div class="input-container">
                             <p>Data do fim do curso (mês e ano): (mm/yyyy)</p>
-                            <input type="text" name="data_fim_escola_faculdade_2">
+                            <input name="data_fim_escola_faculdade_2" type="text">
                         </div>
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Nome da Escola/Faculdade</p>
-                            <input type="text" name="nome_escola_faculdade_3">
+                            <input name="nome_escola_faculdade_3" type="text">
                         </div>
                         <div class="input-container">
                             <p>Curso</p>
-                            <input type="text" name="curso_escola_faculdade_3">
+                            <input name="curso_escola_faculdade_3" type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Endereço completo com CEP</p>
-                        <input type="text" name="endereco_escola_faculdade_3">
+                        <input name="endereco_escola_faculdade_3" type="text">
                     </div>
                     <div class="question-inline">
                         <div class="input-container">
                             <p>Data de início do curso (mês e ano): (mm/yyyy)</p>
-                            <input type="text" name="data_inicio_escola_faculdade_3">
+                            <input name="data_inicio_escola_faculdade_3" type="text">
                         </div>
                         <div class="input-container">
                             <p>Data do fim do curso (mês e ano): (mm/yyyy)</p>
-                            <input type="text" name="data_fim_escola_faculdade_3">
+                            <input name="data_fim_escola_faculdade_3" type="text">
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Informar idiomas que fala além do Português (se fluente)</p>
-                        <input type="text" name="idioma_fluente">
+                        <input name="idioma_fluente" type="text">
                     </div>
                 </div>
-                <h3>&#10142; OUTRAS INFORMAÇÕES</h3>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Outras informações</h3>
+            <div class="container p-4 my-4 form-box">
                 <div class="question">
                     <p>Fez alguma viagem internacional dentro dos últimos 5 anos, fora os EUA</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="viagem_fora_eua_sim" name="viagem_fora_eua" value="Sim">
-                                <label for="viagem_fora_eua_sim" class="custom-radio"></label>
+                                <input id="viagem_fora_eua_sim" name="viagem_fora_eua" type="radio" value="Sim">
+                                <label class="custom-radio" for="viagem_fora_eua_sim"></label>
                                 <label for="viagem_fora_eua_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="viagem_fora_eua_nao" name="viagem_fora_eua" value="Não">
-                                <label for="viagem_fora_eua_nao" class="custom-radio"></label>
+                                <input id="viagem_fora_eua_nao" name="viagem_fora_eua" type="radio" value="Não">
+                                <label class="custom-radio" for="viagem_fora_eua_nao"></label>
                                 <label for="viagem_fora_eua_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Se sim, quais países?</p>
-                        <input type="text" name="viagem_fora_eua_detalhe">
+                        <input name="viagem_fora_eua_detalhe" type="text">
                     </div>
                 </div>
                 <div class="question">
@@ -1213,24 +1326,24 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="deportado_sim" name="deportado" value="Sim">
-                                <label for="deportado_sim" class="custom-radio"></label>
+                                <input id="deportado_sim" name="deportado" type="radio" value="Sim">
+                                <label class="custom-radio" for="deportado_sim"></label>
                                 <label for="deportado_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="deportado_nao" name="deportado" value="Não">
-                                <label for="deportado_nao" class="custom-radio"></label>
+                                <input id="deportado_nao" name="deportado" type="radio" value="Não">
+                                <label class="custom-radio" for="deportado_nao"></label>
                                 <label for="deportado_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="input-container">
                         <p>Se sim, qual país e qual situação?</p>
-                        <input type="text" name="deportado">
+                        <input name="deportado" type="text">
                     </div>
                 </div>
                 <div class="question">
@@ -1238,15 +1351,15 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="doenca_contagiosa_sim" name="doenca_contagiosa" value="Sim">
-                                <label for="doenca_contagiosa_sim" class="custom-radio"></label>
+                                <input id="doenca_contagiosa_sim" name="doenca_contagiosa" type="radio" value="Sim">
+                                <label class="custom-radio" for="doenca_contagiosa_sim"></label>
                                 <label for="doenca_contagiosa_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="doenca_contagiosa_nao" name="doenca_contagiosa" value="Não">
-                                <label for="doenca_contagiosa_nao" class="custom-radio"></label>
+                                <input id="doenca_contagiosa_nao" name="doenca_contagiosa" type="radio" value="Não">
+                                <label class="custom-radio" for="doenca_contagiosa_nao"></label>
                                 <label for="doenca_contagiosa_nao"></label>
                                 <span>Não</span>
                                 </label>
@@ -1259,80 +1372,89 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="viciado_drogas_sim" name="viciado_drogas" value="Sim">
-                                <label for="viciado_drogas_sim" class="custom-radio"></label>
+                                <input id="viciado_drogas_sim" name="viciado_drogas" type="radio" value="Sim">
+                                <label class="custom-radio" for="viciado_drogas_sim"></label>
                                 <label for="viciado_drogas_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="viciado_drogas_nao" name="viciado_drogas" value="Não">
-                                <label for="viciado_drogas_nao" class="custom-radio"></label>
+                                <input id="viciado_drogas_nao" name="viciado_drogas" type="radio" value="Não">
+                                <label class="custom-radio" for="viciado_drogas_nao"></label>
                                 <label for="viciado_drogas_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="question">
-                    <p>Já foi preso ou condenado por qualquer crime, Ainda que posteriormente tenha sido anistiado ou perdoado?</p>
+                    <p>Já foi preso ou condenado por qualquer crime, Ainda que posteriormente tenha sido anistiado ou
+                        perdoado?</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="preso_crime_sim" name="preso_crime" value="Sim">
-                                <label for="preso_crime_sim" class="custom-radio"></label>
+                                <input id="preso_crime_sim" name="preso_crime" type="radio" value="Sim">
+                                <label class="custom-radio" for="preso_crime_sim"></label>
                                 <label for="preso_crime_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="preso_crime_nao" name="preso_crime" value="Não">
-                                <label for="preso_crime_nao" class="custom-radio"></label>
+                                <input id="preso_crime_nao" name="preso_crime" type="radio" value="Não">
+                                <label class="custom-radio" for="preso_crime_nao"></label>
                                 <label for="preso_crime_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="question">
-                    <p>Já violou ou participou de conspiração para violar qualquer lei relativa a substâncias controladas?</p>
+                    <p>Já violou ou participou de conspiração para violar qualquer lei relativa a substâncias
+                        controladas?</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="conspiracao_substancias_controladas_sim" name="conspiracao_substancias_controladas" value="Sim">
-                                <label for="conspiracao_substancias_controladas_sim" class="custom-radio"></label>
+                                <input id="conspiracao_substancias_controladas_sim"
+                                       name="conspiracao_substancias_controladas"
+                                       type="radio" value="Sim">
+                                <label class="custom-radio" for="conspiracao_substancias_controladas_sim"></label>
                                 <label for="conspiracao_substancias_controladas_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="conspiracao_substancias_controladas_nao" name="conspiracao_substancias_controladas" value="Não">
-                                <label for="conspiracao_substancias_controladas_nao" class="custom-radio"></label>
+                                <input id="conspiracao_substancias_controladas_nao"
+                                       name="conspiracao_substancias_controladas"
+                                       type="radio" value="Não">
+                                <label class="custom-radio" for="conspiracao_substancias_controladas_nao"></label>
                                 <label for="conspiracao_substancias_controladas_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="question">
-                    <p>Está viajando aos EUA para se envolver com prostituição ou já se envolveu nos últimos 10 anos?</p>
+                    <p>Está viajando aos EUA para se envolver com prostituição ou já se envolveu nos últimos 10
+                        anos?</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="envolvido_prontituicao_sim" name="envolvido_prontituicao" value="Sim">
-                                <label for="envolvido_prontituicao_sim" class="custom-radio"></label>
+                                <input id="envolvido_prontituicao_sim" name="envolvido_prontituicao" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="envolvido_prontituicao_sim"></label>
                                 <label for="envolvido_prontituicao_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="envolvido_prontituicao_nao" name="envolvido_prontituicao" value="Não">
-                                <label for="envolvido_prontituicao_nao" class="custom-radio"></label>
+                                <input id="envolvido_prontituicao_nao" name="envolvido_prontituicao" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="envolvido_prontituicao_nao"></label>
                                 <label for="envolvido_prontituicao_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1343,17 +1465,21 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="envolvido_lavagem_dinheiro_sim" name="envolvido_lavagem_dinheiro" value="Sim">
-                                <label for="envolvido_lavagem_dinheiro_sim" class="custom-radio"></label>
+                                <input id="envolvido_lavagem_dinheiro_sim" name="envolvido_lavagem_dinheiro"
+                                       type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="envolvido_lavagem_dinheiro_sim"></label>
                                 <label for="envolvido_lavagem_dinheiro_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="envolvido_lavagem_dinheiro_nao" name="envolvido_lavagem_dinheiro" value="Não">
-                                <label for="envolvido_lavagem_dinheiro_nao" class="custom-radio"></label>
+                                <input id="envolvido_lavagem_dinheiro_nao" name="envolvido_lavagem_dinheiro"
+                                       type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="envolvido_lavagem_dinheiro_nao"></label>
                                 <label for="envolvido_lavagem_dinheiro_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1364,17 +1490,19 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="envolver_atividade_ilegal_sim" name="envolver_atividade_ilegal" value="Sim">
-                                <label for="envolver_atividade_ilegal_sim" class="custom-radio"></label>
+                                <input id="envolver_atividade_ilegal_sim" name="envolver_atividade_ilegal" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="envolver_atividade_ilegal_sim"></label>
                                 <label for="envolver_atividade_ilegal_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="envolver_atividade_ilegal_nao" name="envolver_atividade_ilegal" value="Não">
-                                <label for="envolver_atividade_ilegal_nao" class="custom-radio"></label>
+                                <input id="envolver_atividade_ilegal_nao" name="envolver_atividade_ilegal" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="envolver_atividade_ilegal_nao"></label>
                                 <label for="envolver_atividade_ilegal_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1385,17 +1513,19 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="envolvido_terrorismo_sim" name="envolvido_terrorismo" value="Sim">
-                                <label for="envolvido_terrorismo_sim" class="custom-radio"></label>
+                                <input id="envolvido_terrorismo_sim" name="envolvido_terrorismo" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="envolvido_terrorismo_sim"></label>
                                 <label for="envolvido_terrorismo_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="envolvido_terrorismo_nao" name="envolvido_terrorismo" value="Não">
-                                <label for="envolvido_terrorismo_nao" class="custom-radio"></label>
+                                <input id="envolvido_terrorismo_nao" name="envolvido_terrorismo" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="envolvido_terrorismo_nao"></label>
                                 <label for="envolvido_terrorismo_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1406,17 +1536,19 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="financiamento_terrorismo_sim" name="financiamento_terrorismo" value="Sim">
-                                <label for="financiamento_terrorismo_sim" class="custom-radio"></label>
+                                <input id="financiamento_terrorismo_sim" name="financiamento_terrorismo" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="financiamento_terrorismo_sim"></label>
                                 <label for="financiamento_terrorismo_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="financiamento_terrorismo_nao" name="financiamento_terrorismo" value="Não">
-                                <label for="financiamento_terrorismo_nao" class="custom-radio"></label>
+                                <input id="financiamento_terrorismo_nao" name="financiamento_terrorismo" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="financiamento_terrorismo_nao"></label>
                                 <label for="financiamento_terrorismo_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1427,17 +1559,21 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="membro_organizacao_terrorista_sim" name="membro_organizacao_terrorista" value="Sim">
-                                <label for="membro_organizacao_terrorista_sim" class="custom-radio"></label>
+                                <input id="membro_organizacao_terrorista_sim" name="membro_organizacao_terrorista"
+                                       type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="membro_organizacao_terrorista_sim"></label>
                                 <label for="membro_organizacao_terrorista_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="membro_organizacao_terrorista_nao" name="membro_organizacao_terrorista" value="Não">
-                                <label for="membro_organizacao_terrorista_nao" class="custom-radio"></label>
+                                <input id="membro_organizacao_terrorista_nao" name="membro_organizacao_terrorista"
+                                       type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="membro_organizacao_terrorista_nao"></label>
                                 <label for="membro_organizacao_terrorista_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1448,17 +1584,19 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="participou_genocidio_sim" name="participou_genocidio" value="Sim">
-                                <label for="participou_genocidio_sim" class="custom-radio"></label>
+                                <input id="participou_genocidio_sim" name="participou_genocidio" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="participou_genocidio_sim"></label>
                                 <label for="participou_genocidio_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="participou_genocidio_nao" name="participou_genocidio" value="Não">
-                                <label for="participou_genocidio_nao" class="custom-radio"></label>
+                                <input id="participou_genocidio_nao" name="participou_genocidio" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="participou_genocidio_nao"></label>
                                 <label for="participou_genocidio_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1469,17 +1607,17 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="participou_tortura_sim" name="participou_tortura" value="Sim">
-                                <label for="participou_tortura_sim" class="custom-radio"></label>
+                                <input id="participou_tortura_sim" name="participou_tortura" type="radio" value="Sim">
+                                <label class="custom-radio" for="participou_tortura_sim"></label>
                                 <label for="participou_tortura_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="participou_tortura_nao" name="participou_tortura" value="Não">
-                                <label for="participou_tortura_nao" class="custom-radio"></label>
+                                <input id="participou_tortura_nao" name="participou_tortura" type="radio" value="Não">
+                                <label class="custom-radio" for="participou_tortura_nao"></label>
                                 <label for="participou_tortura_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1490,17 +1628,17 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="cometeu_homicidio_sim" name="cometeu_homicidio" value="Sim">
-                                <label for="cometeu_homicidio_sim" class="custom-radio"></label>
+                                <input id="cometeu_homicidio_sim" name="cometeu_homicidio" type="radio" value="Sim">
+                                <label class="custom-radio" for="cometeu_homicidio_sim"></label>
                                 <label for="cometeu_homicidio_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="cometeu_homicidio_nao" name="cometeu_homicidio" value="Não">
-                                <label for="cometeu_homicidio_nao" class="custom-radio"></label>
+                                <input id="cometeu_homicidio_nao" name="cometeu_homicidio" type="radio" value="Não">
+                                <label class="custom-radio" for="cometeu_homicidio_nao"></label>
                                 <label for="cometeu_homicidio_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1511,38 +1649,43 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="repressao_religiosa_sim" name="repressao_religiosa" value="Sim">
-                                <label for="repressao_religiosa_sim" class="custom-radio"></label>
+                                <input id="repressao_religiosa_sim" name="repressao_religiosa" type="radio" value="Sim">
+                                <label class="custom-radio" for="repressao_religiosa_sim"></label>
                                 <label for="repressao_religiosa_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="repressao_religiosa_nao" name="repressao_religiosa" value="Não">
-                                <label for="repressao_religiosa_nao" class="custom-radio"></label>
+                                <input id="repressao_religiosa_nao" name="repressao_religiosa" type="radio" value="Não">
+                                <label class="custom-radio" for="repressao_religiosa_nao"></label>
                                 <label for="repressao_religiosa_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="question">
-                    <p>Já ajudou a terceiros a obter visto americano ou qualquer outro benefício de imigração por meios fraudulentos?</p>
+                    <p>Já ajudou a terceiros a obter visto americano ou qualquer outro benefício de imigração por meios
+                        fraudulentos?</p>
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="ajudou_visto_americano_fraudulento_sim" name="ajudou_visto_americano_fraudulento" value="Sim">
-                                <label for="ajudou_visto_americano_fraudulento_sim" class="custom-radio"></label>
+                                <input id="ajudou_visto_americano_fraudulento_sim"
+                                       name="ajudou_visto_americano_fraudulento"
+                                       type="radio" value="Sim">
+                                <label class="custom-radio" for="ajudou_visto_americano_fraudulento_sim"></label>
                                 <label for="ajudou_visto_americano_fraudulento_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="ajudou_visto_americano_fraudulento_nao" name="ajudou_visto_americano_fraudulento" value="Não">
-                                <label for="ajudou_visto_americano_fraudulento_nao" class="custom-radio"></label>
+                                <input id="ajudou_visto_americano_fraudulento_nao"
+                                       name="ajudou_visto_americano_fraudulento"
+                                       type="radio" value="Não">
+                                <label class="custom-radio" for="ajudou_visto_americano_fraudulento_nao"></label>
                                 <label for="ajudou_visto_americano_fraudulento_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1553,17 +1696,19 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="crianca_separada_custodia_sim" name="crianca_separada_custodia" value="Sim">
-                                <label for="crianca_separada_custodia_sim" class="custom-radio"></label>
+                                <input id="crianca_separada_custodia_sim" name="crianca_separada_custodia" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="crianca_separada_custodia_sim"></label>
                                 <label for="crianca_separada_custodia_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="crianca_separada_custodia_nao" name="crianca_separada_custodia" value="Não">
-                                <label for="crianca_separada_custodia_nao" class="custom-radio"></label>
+                                <input id="crianca_separada_custodia_nao" name="crianca_separada_custodia" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="crianca_separada_custodia_nao"></label>
                                 <label for="crianca_separada_custodia_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1574,17 +1719,17 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="votou_eua_sim" name="votou_eua" value="Sim">
-                                <label for="votou_eua_sim" class="custom-radio"></label>
+                                <input id="votou_eua_sim" name="votou_eua" type="radio" value="Sim">
+                                <label class="custom-radio" for="votou_eua_sim"></label>
                                 <label for="votou_eua_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="votou_eua_nao" name="votou_eua" value="Não">
-                                <label for="votou_eua_nao" class="custom-radio"></label>
+                                <input id="votou_eua_nao" name="votou_eua" type="radio" value="Não">
+                                <label class="custom-radio" for="votou_eua_nao"></label>
                                 <label for="votou_eua_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
@@ -1595,128 +1740,42 @@
                     <div class="input-container">
                         <div class="input-container radio-buttons">
                             <div class="option">
-                                <input type="radio" id="evitar_pagamento_imposto_sim" name="evitar_pagamento_imposto" value="Sim">
-                                <label for="evitar_pagamento_imposto_sim" class="custom-radio"></label>
+                                <input id="evitar_pagamento_imposto_sim" name="evitar_pagamento_imposto" type="radio"
+                                       value="Sim">
+                                <label class="custom-radio" for="evitar_pagamento_imposto_sim"></label>
                                 <label for="evitar_pagamento_imposto_sim">
-                                <span>Sim</span>
+                                    <span>Sim</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="evitar_pagamento_imposto_nao" name="evitar_pagamento_imposto" value="Não">
-                                <label for="evitar_pagamento_imposto_nao" class="custom-radio"></label>
+                                <input id="evitar_pagamento_imposto_nao" name="evitar_pagamento_imposto" type="radio"
+                                       value="Não">
+                                <label class="custom-radio" for="evitar_pagamento_imposto_nao"></label>
                                 <label for="evitar_pagamento_imposto_nao">
-                                <span>Não</span>
+                                    <span>Não</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="submit">
-                <input type="submit" value="Enviar">
-                <button type="button" class="btn-print" onclick="window.print()">Imprimir</button>
-            </div>
-        </form>
+        </div>
 
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdNZAokAAAAALhDBK5wUk5WWTW_JNduzu53nLPx"></script>
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- Include Bootstrap Datepicker -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.pt-BR.min.js" integrity="sha512-mVkLPLQVfOWLRlC2ZJuyX5+0XrTlbW2cyAwyqgPkLGxhoaHNSWesYMlcUjX8X+k45YB8q90s88O7sos86636NQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
-            $(document).ready(() => {
-                $('input[type="date"]').attr('type', 'text').addClass('datepicker').mask('99/99/9999').datepicker({
-                    format: 'dd/mm/yyyy',                
-                    language: 'pt-BR'
-                });
-            
-                function limparCache() {
-                    // localStorage.clear();
-                    Object.keys(localStorage)
-                        .filter(item =>
-                            item.startsWith('form_visto_americano.'))
-                        .forEach(item => 
-                            localStorage.removeItem(item));
-                }
-            
-                if (typeof(Storage) !== 'undefined') {
-                    if (localStorage.getItem('form_visto_americano.nome') !== null) {
-                        Swal.fire({
-                          title: 'Deseja continuar preenchendo?',
-                          text: 'Identificamos que você já havia iniciado o preenchimento.',
-                          type: 'warning',
-                          showCancelButton: true,
-                          confirmButtonColor: '#3085d6',
-                          cancelButtonColor: '#d33',
-                          confirmButtonText: 'Sim',
-                          cancelButtonText: 'Não'
-                        }).then((result) => {
-                          if (result.value) {
-                            $('input[type="text"]').each((idx, element) => {
-                                $(element).val(localStorage.getItem('form_visto_americano.' + $(element).attr('name')));
-                            });
-            
-                            $('input[type="radio"]').each((idx, element) => {
-                                const value = localStorage.getItem('form_visto_americano.' + $(element).attr('name'));
-                                $('input[type="radio"][name="' + $(element).attr('name') + '"][value="' + value + '"]').click();
-                            });
-                          } else {
-                            limparCache();
-                          }
-                        })
-                    }
-            
-                    function salvarInfo(event) {
-                        localStorage.setItem('form_visto_americano.' + $(event.target).attr('name'), $(event.target).val());
-                    }
-            
-                    $('input').change(salvarInfo);
-                    $('input[type="text"]').blur(salvarInfo);
-                } else {
-                    console.error('Sorry! No Web Storage support.');
-                }
-            
-                $('form').submit((event) => {
-                    event.preventDefault();
-            
-                    $('[type="submit"]').val('Aguarde...').attr('disabled', 'disabled');
-                    setTimeout(() => {
-                        $('[type="submit"]').val('Enviar').removeAttr('disabled');
-                    }, 1500)
-            
-                    Swal.fire({
-                      title: 'Deseja imprimir?',
-                      text: '',
-                      type: 'info',
-                      showCancelButton: true,
-                      confirmButtonColor: '#3085d6',
-                      cancelButtonColor: '#d33',
-                      confirmButtonText: 'Sim',
-                      cancelButtonText: 'Não'
-                    }).then((result) => {
-                      if (result.value) {
-                        Swal.close();
-                        setTimeout(() => {
-                            window.print();
-            
-                            $('form').unbind('submit');
-                            $('form').submit();
-                        }, 750);
-                      } else {
-                        $('form').unbind('submit');
-                        $('form').submit();
-                      }
-                    });
-            
-                    limparCache();
-                });
-            });
-                    
-        </script>
-    </body>
+        <div class="submit">
+            <input type="submit" value="Enviar">
+            <button class="btn-print" onclick="window.print()" type="button">Imprimir</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6LdNZAokAAAAALhDBK5wUk5WWTW_JNduzu53nLPx"></script>
+<script crossorigin="anonymous" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" src="https://code.jquery.com/jquery-3.6.3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script crossorigin="anonymous" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script crossorigin="anonymous" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+<script crossorigin="anonymous" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script crossorigin="anonymous" integrity="sha512-mVkLPLQVfOWLRlC2ZJuyX5+0XrTlbW2cyAwyqgPkLGxhoaHNSWesYMlcUjX8X+k45YB8q90s88O7sos86636NQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+
+<script src="assets/js/script.js"></script>
+
+</body>
 </html>

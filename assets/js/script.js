@@ -1,9 +1,7 @@
 $(document).ready(() => {
     initDateInput();
-    setupPictureInputChange();
     checkLocalStorage();
     handleFormSubmission();
-    showOnSelectChange();
     noSpecialCaracters();
 });
 
@@ -30,35 +28,11 @@ function initDateInput() {
 }
 
 /**
- * Configura o evento de alteração de imagem.
- */
-function setupPictureInputChange() {
-    $('#input-picture').on('change', () => {
-        $('#picture-img').attr('src', URL.createObjectURL($('#input-picture').get(0).files[0]));
-    });
-}
-
-/**
- * Exibe um popup informativo pedindo para anexar a foto.
- */
-function popupInformarFoto() {
-    Swal.fire({
-        title: 'ATENÇÃO',
-        text: 'POR GENTILEZA ANEXAR A SUA FOTO ANTES DE INICIAR O PREENCHIMENTO DO FORMULÁRIO. PODE SER UMA FOTO TIRADA DE FRENTE COM O CELULAR, PORÉM SEM SORRIR, FUNDO BRANCO E SEM ÓCULOS OU QUALQUER ADORNO.',
-        icon: 'info',
-        imageUrl: 'assets/image/modelo_foto.png',  // Caminho da imagem
-        imageWidth: 400,   // Largura da imagem
-        imageHeight: 200,  // Altura da imagem
-        imageAlt: 'Imagem de exemplo',
-    });
-}
-
-/**
  * Limpa os dados do cache do formulário armazenados no localStorage.
  */
 function limparCache() {
     Object.keys(localStorage)
-        .filter(item => item.startsWith('form_visto_china.'))
+        .filter(item => item.startsWith('form_visto_americano.'))
         .forEach(item => localStorage.removeItem(item));
 }
 
@@ -67,7 +41,7 @@ function limparCache() {
  */
 function checkLocalStorage() {
     if (typeof(Storage) !== 'undefined') {
-        if (localStorage.getItem('form_visto_china.nome') !== null) {
+        if (localStorage.getItem('form_visto_americano.nome') !== null) {
             Swal.fire({
                 title: 'Deseja continuar preenchendo?',
                 text: 'Identificamos que você já havia iniciado o preenchimento.',
@@ -83,18 +57,13 @@ function checkLocalStorage() {
                 } else {
                     limparCache();
                 }
-
-                popupInformarFoto();
             });
-        } else {
-            popupInformarFoto();
         }
 
         $('input').change(salvarInfo);
         $('input[type="text"]').blur(salvarInfo);
     } else {
         console.error('Sorry! No Web Storage support.');
-        popupInformarFoto();
     }
 }
 
@@ -103,11 +72,11 @@ function checkLocalStorage() {
  */
 function restoreFormData() {
     $('input[type="text"]').each((idx, element) => {
-        $(element).val(localStorage.getItem('form_visto_china.' + $(element).attr('name')));
+        $(element).val(localStorage.getItem('form_visto_americano.' + $(element).attr('name')));
     });
 
     $('input[type="radio"]').each((idx, element) => {
-        const value = localStorage.getItem('form_visto_china.' + $(element).attr('name'));
+        const value = localStorage.getItem('form_visto_americano.' + $(element).attr('name'));
         $('input[type="radio"][name="' + $(element).attr('name') + '"][value="' + value + '"]').click();
     });
 }
@@ -117,7 +86,7 @@ function restoreFormData() {
  * @param {Event} event - O evento disparado no campo de entrada.
  */
 function salvarInfo(event) {
-    localStorage.setItem('form_visto_china.' + $(event.target).attr('name'), $(event.target).val());
+    localStorage.setItem('form_visto_americano.' + $(event.target).attr('name'), $(event.target).val());
 }
 
 /**
@@ -132,80 +101,9 @@ function handleFormSubmission() {
             $('[type="submit"]').val('Enviar').removeAttr('disabled');
         }, 1500);
 
-        if ($('#input-picture').val().length === 0) {
-            Swal.fire({
-                title: 'ATENÇÃO',
-                text: 'POR GENTILEZA ANEXAR A SUA FOTO. PODE SER UMA FOTO TIRADA DE FRENTE COM O CELULAR, PORÉM SEM SORRIR, FUNDO BRANCO E SEM ÓCULOS OU QUALQUER ADORNO.',
-                icon: 'info',
-                imageUrl: 'assets/image/modelo_foto.png',  // Caminho da imagem
-                imageWidth: 400,   // Largura da imagem
-                imageHeight: 200,  // Altura da imagem
-                imageAlt: 'Imagem de exemplo',
-            });
-        } else {
-            $('form').unbind('submit');
-            $('form').submit();
-        }
+        $('form').unbind('submit');
+        $('form').submit();
         limparCache();
-    });
-}
-
-function showOnSelectChange() {
-    $('#estado_civil').on('change', function () {
-        const estadoCivil = $(this).val();
-        if (estadoCivil === 'casado') {
-            $('#conjuge-info').show(); // Exibe a div
-        } else {
-            $('#conjuge-info').hide(); // Oculta a div
-        }
-    });
-
-    $('#categoria_visto').on('change', function () {
-        const categoriaVisto = $(this).val();
-        const isEmpresaVisible = categoriaVisto === 'M' || categoriaVisto === 'Z' || categoriaVisto === 'F' || categoriaVisto === 'C';
-
-        if (isEmpresaVisible) {
-            $('#empresa_convidativa_title').text('Empresa convidativa na China');
-        } else {
-            $('#empresa_convidativa_title').text('Hospedagem na China');
-        }
-    });
-
-    $('#ocupacao_atual').on('change', function () {
-        const ocupacaoAtual = $(this).val();
-
-        if (ocupacaoAtual === 'Desempregado' || ocupacaoAtual === 'Aposentado') {
-            $('#empresa_brasil_title').text('Empresa do responsável por custear a viagem');
-        } else {
-            $('#empresa_brasil_title').text('Empresa');
-        }
-    });
-
-    document.getElementById('categoria_visto').addEventListener('change', function() {
-        const categoria = this.value;
-        const tipoVisto = document.getElementById('tipo_visto');
-        tipoVisto.value = '';
-
-        // Capturando as opções apenas uma vez para evitar reconsulta ao DOM
-        const opcoes = {
-            umaEntrada: tipoVisto.querySelector("option[value='uma entrada']"),
-            duasEntradas: tipoVisto.querySelector("option[value='duas entradas']"),
-            multiplasEntradas: tipoVisto.querySelector("option[value='multiplas entradas']")
-        };
-
-        // Categorias específicas que têm apenas uma opção habilitada
-        const categoriasUmaEntrada = ['Q1', 'S1', 'Z', 'X1'];
-
-        // Verificando se a categoria está na lista de categoriasUmaEntrada
-        if (categoriasUmaEntrada.includes(categoria)) {
-            opcoes.umaEntrada.disabled = false;
-            opcoes.duasEntradas.disabled = true;
-            opcoes.multiplasEntradas.disabled = true;
-        } else {
-            opcoes.umaEntrada.disabled = true;
-            opcoes.duasEntradas.disabled = false;
-            opcoes.multiplasEntradas.disabled = false;
-        }
     });
 }
 
