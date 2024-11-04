@@ -40,273 +40,256 @@
         <hr>
 
         <div class="form-section">
+
             <h3>Informações Pessoais</h3>
+
             <div class="container p-4 my-4 form-box">
-                <div class="question">
-                    <div class="question-inline">
-                        <div class="input-container">
-                            <p>Nome (exatamente como o passaporte):</p>
-                            <input name="nome" required type="text">
-                        </div>
-                        <div class="input-container">
-                            <p>Sobrenome (exatamente como o passaporte):</p>
-                            <input name="sobrenome" required type="text">
-                        </div>
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <label class="form-label" for="nome">Nome</label>
+                        <input class="form-control" id="nome" name="nome" placeholder="Exatamente como o passaporte" type="text" required>
                     </div>
-                    <div class="input-container">
-                        <p>Nome completo:</p>
-                        <input name="nome_completo" type="text">
+                    <div class="mb-3 col-md-6">
+                        <label class="form-label" for="sobrenome">Sobrenome</label>
+                        <input class="form-control" id="sobrenome" name="sobrenome" placeholder="Exatamente como o passaporte" type="text" required>
+                    </div>
+                    <div class="mb-3 col-md-12">
+                        <label class="form-label" for="nome_completo">Nome completo</label>
+                        <input class="form-control" id="nome_completo" name="nome_completo" placeholder="Exatamente como o passaporte" type="text" required>
                     </div>
                 </div>
-                <div class="question">
-                    <p>Utiliza ou já utilizou outros nomes? (Solteiro, casado, profissional, etc.):</p>
-                    <div class="input-container">
-                        <div class="input-container radio-buttons">
-                            <div class="option">
-                                <input id="outro_nome_sim" name="outro_nome" type="radio" value="Sim">
-                                <label class="custom-radio" for="outro_nome_sim"></label>
-                                <label for="outro_nome_sim"><span>Sim</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="outro_nome_nao" name="outro_nome" type="radio" value="Não">
-                                <label class="custom-radio" for="outro_nome_nao"></label>
-                                <label for="outro_nome_nao"><span>Não</span></label>
-                            </div>
-                        </div>
+
+                <div class="row">
+                    <div class="mb-3 col-md-3">
+                        <label class="form-label" for="nacionalidade">Nacionalidade</label>
+                        <input class="form-control" id="nacionalidade" name="nacionalidade" placeholder="Nacionalidade" required type="text">
                     </div>
-                    <div class="input-container">
-                        <p>Se sim, qual(is)?</p>
-                        <input name="outro_nome_qual" type="text">
+
+                    <div class="mb-3 col-md-3">
+                        <label class="form-label" for="data_nascimento">Data de Nascimento</label>
+                        <input class="form-control" id="data_nascimento" name="data_nascimento" placeholder="DD/MM/YYYY" type="date" required>
                     </div>
-                </div>
-                <div class="question">
-                    <p>Sexo do solicitante:</p>
-                    <div class="input-container radio-buttons">
-                        <div class="option">
-                            <input id="masculino" name="sexo" type="radio" value="Masculino">
-                            <label class="custom-radio" for="masculino"></label>
-                            <label for="masculino"><span>Masculino</span></label>
-                        </div>
-                        <div class="option">
-                            <input id="feminino" name="sexo" type="radio" value="Feminino">
-                            <label class="custom-radio" for="feminino"></label>
-                            <label for="feminino"><span>Feminino</span></label>
-                        </div>
+
+                    <div class="mb-3 col-md-3">
+                        <label class="form-label" for="sexo">Gênero</label>
+                        <select class="form-select" id="sexo" name="sexo" required>
+                            <option disabled selected value="">Selecione o gênero</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 col-md-3">
+                        <label class="form-label" for="estado_civil">Estado Civil</label>
+                        <select class="form-select" id="estado_civil" name="estado_civil" required>
+                            <option disabled selected value="">Selecione o estado civil</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="viuvo">Viúvo(a)</option>
+                        </select>
                     </div>
                 </div>
-                <div class="question">
-                    <p>Já serviu ao Exército?</p>
-                    <div class="input-container">
-                        <div class="input-container radio-buttons">
-                            <div class="option">
-                                <input id="serviu_exercito_sim" name="serviu_exercito" type="radio" value="Sim">
-                                <label class="custom-radio" for="serviu_exercito_sim"></label>
-                                <label for="serviu_exercito_sim"><span>Sim</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="serviu_exercito_nao" name="serviu_exercito" type="radio" value="Não">
-                                <label class="custom-radio" for="serviu_exercito_nao"></label>
-                                <label for="serviu_exercito_nao"><span>Não</span></label>
-                            </div>
-                        </div>
+            </div>
+
+            <h3>Local de Nascimento</h3>
+
+            <div class="container p-4 my-4 form-box">
+                <div class="row">
+                    <div class="mb-3  col-md-4">
+                        <label class="form-label" for="local_nascimento_pais">Pais ou Região</label>
+                        <input class="form-control" id="local_nascimento_pais" name="local_nascimento_pais" placeholder="Pais ou Região" type="text" required>
                     </div>
-                    <div class="input-container">
-                        <p>Se sim, qual patente, período (datas de entrada e saída) e país que serviu:</p>
-                        <input name="serviu_exercito_informacoes" type="text">
+                    <div class="mb-3  col-md-4">
+                        <label class="form-label" for="local_nascimento_estado">Provincia/Estado</label>
+                        <input class="form-control" id="local_nascimento_estado" name="local_nascimento_estado" placeholder="Provincia/Estado" type="text" required>
                     </div>
-                    <div class="input-container">
-                        <p>Se sim, possui habilidades com armas de fogo?</p>
-                        <div class="input-container radio-buttons">
-                            <div class="option">
-                                <input id="habilidade_arma_fogo_sim" name="habilidade_arma_fogo" type="radio"
-                                       value="Sim">
-                                <label class="custom-radio" for="habilidade_arma_fogo_sim"></label>
-                                <label for="habilidade_arma_fogo_sim"><span>Sim</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="habilidade_arma_fogo_nao" name="habilidade_arma_fogo" type="radio"
-                                       value="Não">
-                                <label class="custom-radio" for="habilidade_arma_fogo_nao"></label>
-                                <label for="habilidade_arma_fogo_nao"><span>Não</span></label>
-                            </div>
-                        </div>
+                    <div class="mb-3  col-md-4">
+                        <label class="form-label" for="local_nascimento_cidade">Cidade</label>
+                        <input class="form-control" id="local_nascimento_cidade" name="local_nascimento_cidade" placeholder="Cidade" type="text" required>
                     </div>
                 </div>
-                <div class="question">
-                    <p>Estado Civil (obs: união estável somente mediante documento feito em cartório):</p>
-                    <div class="input-container">
-                        <div class="input-container radio-buttons">
-                            <div class="option">
-                                <input id="solteiro" name="estado_civil" type="radio" value="Solteiro">
-                                <label class="custom-radio" for="solteiro"></label>
-                                <label for="solteiro"><span>Solteiro</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="mora_junto" name="estado_civil" type="radio" value="Mora Junto">
-                                <label class="custom-radio" for="mora_junto"></label>
-                                <label for="mora_junto"><span>Mora Junto</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="casado" name="estado_civil" type="radio" value="Casado">
-                                <label class="custom-radio" for="casado"></label>
-                                <label for="casado"><span>Casado</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="uniao_estavel" name="estado_civil" type="radio" value="União estável">
-                                <label class="custom-radio" for="uniao_estavel"></label>
-                                <label for="uniao_estavel"><span>União estável</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="divorciado" name="estado_civil" type="radio" value="Divorciado">
-                                <label class="custom-radio" for="divorciado"></label>
-                                <label for="divorciado"><span>Divorciado</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="separado" name="estado_civil" type="radio" value="Separado">
-                                <label class="custom-radio" for="separado"></label>
-                                <label for="separado"><span>Separado</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="viuvo" name="estado_civil" type="radio" value="Viúvo">
-                                <label class="custom-radio" for="viuvo"></label>
-                                <label for="viuvo"><span>Viúvo</span></label>
-                            </div>
-                        </div>
+            </div>
+
+            <h3>Identificação</h3>
+
+            <div class="container p-4 my-4 form-box">
+                <div class="row">
+                    <div class="mb-3 col-md-3">
+                        <label class="form-label" for="documento_identidade">Documento</label>
+                        <select class="form-select" id="documento_identidade" name="documento_identidade" required>
+                            <option disabled selected value="">Selecione um documento</option>
+                            <option value="rg">RG</option>
+                            <option value="cpf">CPF</option>
+                        </select>
                     </div>
-                </div>
-                <div class="question">
-                    <div class="question-inline">
-                        <div class="input-container">
-                            <p>Data de nascimento: (dd/mm/yyyy)</p>
-                            <input name="local_nasc_estado" type="date">
-                        </div>
-                        <div class="input-container">
-                            <p>Local de nascimento (Cidade/Estado/País):</p>
-                            <input name="local_nasc_pais" type="text">
-                        </div>
+
+                    <div class="mb-3 col-md-9">
+                        <label class="form-label" for="numero_identificacao">ID</label>
+                        <input class="form-control" id="numero_identificacao" name="numero_identificacao" placeholder="Numero" type="text" required>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="form-section">
-            <h3>Nacionalidade</h3>
+            <h3>Outras Identificações e Nacionalidades</h3>
+
             <div class="container p-4 my-4 form-box">
-                <div class="question">
-                    <p>Tem ou já teve outra nacionalidade?</p>
-                    <div class="input-container">
-                        <div class="input-container radio-buttons">
-                            <div class="option">
-                                <input id="outra_nacionalidade_sim" name="outra_nacionalidade" type="radio" value="Sim">
-                                <label class="custom-radio" for="outra_nacionalidade_sim"></label>
-                                <label for="outra_nacionalidade_sim"><span>Sim</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="outra_nacionalidade_nao" name="outra_nacionalidade" type="radio" value="Não">
-                                <label class="custom-radio" for="outra_nacionalidade_nao"></label>
-                                <label for="outra_nacionalidade_nao"><span>Não</span></label>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label class="form-label" for="possui_outro_nome">Utiliza ou já utilizou outros nomes</label>
+                        <select class="form-select" id="possui_outro_nome" name="possui_outro_nome" required>
+                            <option disabled selected value="">Selecione uma opção</option>
+                            <option value="Não">Não</option>
+                            <option value="Sim">Sim</option>
+                        </select>
                     </div>
-                    <div class="input-container">
-                        <p>Se sim, qual? Possui passaporte desta outra nacionalidade (mesmo que vencido)? Se sim
-                            informar o
-                            número do passaporte.</p>
-                        <input name="outro_nome_qual2" type="text">
+
+                    <div class="mb-3 col-md-4">
+                        <label class="form-label" for="outro_nome">Nome</label>
+                        <input disabled class="form-control" id="outro_nome" name="outro_nome" placeholder="Nome" type="text">
+                    </div>
+
+                    <div class="mb-3 col-md-4">
+                        <label class="form-label" for="outro_sobrenome">Sobrenome</label>
+                        <input disabled class="form-control" id="outro_sobrenome" name="outro_sobrenome" placeholder="Sobrenome" type="text">
                     </div>
                 </div>
-                <div class="question">
-                    <div class="input-container">
-                        <p>CPF do solicitante:</p>
-                        <input name="cpf_solicitante" type="text">
+
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label class="form-label" for="possui_outra_nacionalidade">Possui ou já possuiu outra nacionalidade</label>
+                        <select class="form-select" id="possui_outra_nacionalidade" name="possui_outra_nacionalidade" required>
+                            <option disabled selected value="">Selecione uma opção</option>
+                            <option value="Não">Não</option>
+                            <option value="Sim">Sim</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 col-md-4">
+                        <label class="form-label" for="outra_nacionalidade">Nacionalidade</label>
+                        <input disabled class="form-control" id="outra_nacionalidade" name="outra_nacionalidade" placeholder="Nacionalidade" type="text">
+                    </div>
+
+                    <div class="mb-3 col-md-4">
+                        <label class="form-label" for="outro_passaporte">Numero Passaporte</label>
+                        <input disabled class="form-control" id="outro_passaporte" name="outro_passaporte" placeholder="Numero Passaporte" type="text">
                     </div>
                 </div>
-                <div class="question">
-                    <p>Tem ou já teve os seguintes documentos americanos? Se sim, informar números:</p>
-                    <div class="input-container">
-                        <p>Social Security Number</p>
-                        <div class="input-container radio-buttons">
-                            <div class="option">
-                                <input id="social_security_sim" name="social_security" type="radio" value="Sim">
-                                <label class="custom-radio" for="social_security_sim"></label>
-                                <label for="social_security_sim"><span>Sim</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="social_security_nao" name="social_security" type="radio" value="Não">
-                                <label class="custom-radio" for="social_security_nao"></label>
-                                <label for="social_security_nao"><span>Não</span></label>
-                            </div>
-                        </div>
-                        <div class="input-container">
-                            <p>Número:</p>
-                            <input name="social_security_number" type="text">
-                        </div>
+
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label class="form-label" for="possui_seguro_social_eua">Possui ou já possuiu Seguro Social dos EUA</label>
+                        <select class="form-select" id="possui_seguro_social_eua" name="possui_seguro_social_eua" required>
+                            <option disabled selected value="">Selecione uma opção</option>
+                            <option value="Não">Não</option>
+                            <option value="Sim">Sim</option>
+                        </select>
                     </div>
-                    <div class="input-container">
-                        <p>U.S. Tax Payer ID Number</p>
-                        <div class="input-container radio-buttons">
-                            <div class="option">
-                                <input id="tax_payer_id_sim" name="tax_payer_id" type="radio" value="Sim">
-                                <label class="custom-radio" for="tax_payer_id_sim"></label>
-                                <label for="tax_payer_id_sim"><span>Sim</span></label>
-                            </div>
-                            <div class="option">
-                                <input id="tax_payer_id_nao" name="tax_payer_id" type="radio" value="Não">
-                                <label class="custom-radio" for="tax_payer_id_nao"></label>
-                                <label for="tax_payer_id_nao"><span>Não</span></label>
-                            </div>
-                        </div>
-                        <div class="input-container">
-                            <p>Número:</p>
-                            <input name="tax_payer_id_number" type="text">
-                        </div>
+
+                    <div class="mb-3 col-md-8">
+                        <label class="form-label" for="numero_seguro_social_eua">Número de Seguro Social dos EUA</label>
+                        <input disabled class="form-control" id="numero_seguro_social_eua" name="numero_seguro_social_eua" placeholder="ID" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label class="form-label" for="possui_identificacao_fiscal_contribuinte_eua">Possui ou já possuiu Identificação Fiscal dos EUA</label>
+                        <select class="form-select" id="possui_identificacao_fiscal_contribuinte_eua" name="possui_identificacao_fiscal_contribuinte_eua" required>
+                            <option disabled selected value="">Selecione uma opção</option>
+                            <option value="Não">Não</option>
+                            <option value="Sim">Sim</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 col-md-8">
+                        <label class="form-label" for="numero_identificacao_fiscal_contribuinte_eua">Número de Identificação Fiscal do Contribuinte dos EUA</label>
+                        <input disabled class="form-control" id="numero_identificacao_fiscal_contribuinte_eua" name="numero_identificacao_fiscal_contribuinte_eua" placeholder="ID" type="text">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="form-section">
-            <h3>Endereço Residencial</h3>
+            <h3>Informações da viagem</h3>
             <div class="container p-4 my-4 form-box">
-                <div class="question">
-                    <div class="question-inline">
-                        <div class="input-container">
-                            <p>Rua</p>
-                            <input name="endereco_residencial_rua" type="text">
-                        </div>
-                        <div class="input-container">
-                            <p>Número</p>
-                            <input name="endereco_residencial_numero" type="text">
-                        </div>
+                <div class="mb-3">
+                    <label class="form-label" for="categoria_visto">Categoria do visto</label>
+                    <select class="form-select" id="categoria_visto" name="categoria_visto" required>
+                        <option disabled selected value="">Selecione uma classe de visto</option>
+                        <option value="B">(B1/B2) Visitante temporário a negócios ou turismo</option>
+                        <option value="C">(C) Estrangeiro em trânsito</option>
+                        <option value="D">(D) Membro da tripulação</option>
+                        <option value="F">(F) Estudante acadêmico ou de idiomas</option>
+                        <option value="J">(J) Visitante de intercâmbio</option>
+                        <option value="N">Outros</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="mb-3  col-md-2">
+                        <label class="form-label" for="data_chegada_prevista">Data de chegada prevista</label>
+                        <input class="form-control" id="data_chegada_prevista" name="data_chegada_prevista" placeholder="DD/MM/YYYY" type="date" required>
                     </div>
-                    <div class="question-inline">
-                        <div class="input-container">
-                            <p>Complemento</p>
-                            <input name="endereco_residencial_complemento" type="text">
-                        </div>
-                        <div class="input-container">
-                            <p>Bairro</p>
-                            <input name="endereco_residencial_bairro" type="text">
-                        </div>
+
+                    <div class="mb-3  col-md-4">
+                        <label class="form-label" for="responsavel_custo_viagem">Pessoa/Entidade Pagando pela Sua Viagem</label>
+                        <select class="form-select" id="responsavel_custo_viagem" name="responsavel_custo_viagem" required>
+                            <option selected="selected" value="">Selecione uma opcão</option>
+                            <option value="S">Próprio</option>
+                            <option value="O">Outra P˚essoa</option>
+                            <option value="P">Empregador Atual</option>
+                            <option value="U">Empregador Nos E.U.A.</option>
+                            <option value="C">Outra Empresa/Organização</option>
+                        </select>
                     </div>
-                    <div class="question-inline">
-                        <div class="input-container">
-                            <p>Cidade</p>
-                            <input name="endereco_residencial_cidade" type="text">
-                        </div>
-                        <div class="input-container">
-                            <p>Estado</p>
-                            <input name="endereco_residencial_estado" type="text">
-                        </div>
-                        <div class="input-container">
-                            <p>CEP</p>
-                            <input name="endereco_residencial_cep" type="text">
+
+                    <div class="mb-3  col-md-6">
+                        <div class="row">
+                            <div class="mb-3  col-md-6">
+                                <label class="form-label" for="duracao">Duração</label>
+                                <input class="form-control" id="duracao" name="duracao" placeholder="123" type="number" required>
+                            </div>
+
+                            <div class="mb-3  col-md-6">
+                                <label class="form-label" for="periodo">Periodo</label>
+                                <select class="form-select" id="periodo" name="periodo" required>
+                                    <option selected="selected" value="">Selecione um periodo</option>
+                                    <option value="Y">Ano(s)</option>
+                                    <option value="M">Mês(es)</option>
+                                    <option value="W">Semana(s)</option>
+                                    <option value="D">Dia(s)</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <h3>Endereço onde você ficará nos EUA</h3>
+            <div class="container p-4 my-4 form-box">
+                <div class="row">
+                    <div class="mb-3  col-md-3">
+                        <label class="form-label" for="endereco_eua">Logradouro</label>
+                        <input class="form-control" id="endereco_eua" name="endereco_eua" placeholder="Endereço" type="text" required>
+                    </div>
+                    <div class="mb-3  col-md-3">
+                        <label class="form-label" for="cidade_eua">Cidade</label>
+                        <input class="form-control" id="cidade_eua" name="cidade_eua" placeholder="Cidade" type="text" required>
+                    </div>
+                    <div class="mb-3  col-md-3">
+                        <label class="form-label" for="estado_eua">Estado</label>
+                        <input class="form-control" id="estado_eua" name="estado_eua" placeholder="Estado" type="text" required>
+                    </div>
+                    <div class="mb-3  col-md-3">
+                        <label class="form-label" for="zip_code_eua">Zip Code</label>
+                        <input class="form-control" id="zip_code_eua" name="zip_code_eua" placeholder="12345" type="text">
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
         <div class="form-section">
             <h3>Passaporte</h3>
             <div class="container p-4 my-4 form-box">
@@ -937,7 +920,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="form-section">
             <h3>Dados dos pais do solicitante</h3>
             <div class="container p-4 my-4 form-box">
@@ -1040,7 +1023,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="form-section">
             <h3>Cônjuge</h3>
             <div class="container p-4 my-4 form-box">
@@ -1178,7 +1161,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="form-section">
             <h3>Trabalho anterior (se houver)</h3>
             <div class="container p-4 my-4 form-box">

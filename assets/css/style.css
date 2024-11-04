@@ -33,10 +33,6 @@ hr {
     width: 300px;
 }
 
-.title {
-
-}
-
 .title h1 {
     font-size: 40px;
     text-align: center;
@@ -80,7 +76,7 @@ hr {
 
 .form-section {
     padding: 20px;
-    margin: 50px 0;
+    margin: 60px 0;
     background: var(--background-color);
     box-shadow: var(--box-shadow);
 }
