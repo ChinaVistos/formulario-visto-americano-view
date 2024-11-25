@@ -81,6 +81,13 @@ hr {
     color: black;
 }
 
+.form-radio {
+    margin: 10px 0;
+    padding: 6px 0;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+}
+
 /* Estilo do botão de submissão */
 .submit, form input[type="submit"], button.btn-print {
     display: flex;
