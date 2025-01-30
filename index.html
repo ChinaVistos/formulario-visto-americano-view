@@ -1,1265 +1,987 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang = "pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset = "UTF-8">
+    <meta content = "IE=edge" http-equiv = "X-UA-Compatible">
+    <meta content = "width=device-width, initial-scale=1.0" name = "viewport">
 
     <title>Formulário de pedido de visto para America</title>
 
-    <link href="/favicon.ico" rel="icon" type="image/x-icon">
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" referrerpolicy="no-referrer" rel="stylesheet"/>
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" referrerpolicy="no-referrer" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href = "/favicon.ico" rel = "icon" type = "image/x-icon">
+    <link crossorigin = "anonymous" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity = "sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" referrerpolicy = "no-referrer" rel = "stylesheet"/>
+    <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel = "stylesheet">
+    <link href = "assets/css/style.css" rel = "stylesheet">
 
 </head>
 
 <body>
+<form action = "https://sistema.chinavistos.com.br/formulario-pedido-visto-americano-post" class = "form-container" enctype = "multipart/form-data" method = "post">
+    <div class = "container">
 
-<div class="container">
-
-    <form action="https://sistema.chinavistos.com.br/formulario-pedido-visto-americano-post" class="form-container" enctype="multipart/form-data" method="post">
-
-        <div class="container mt-3">
-            <div class="d-flex justify-content-between align-items-center">
-                <img alt="China vistos logo" class="logo" src="./assets/image/logo.png"> <img alt="China vistos logo" class="logo" src="assets/image/bandeira_americana.png">
+        <div class = "container mt-3">
+            <div class = "d-flex justify-content-between align-items-center">
+                <img alt = "China vistos logo" class = "logo" src = "./assets/image/logo.png">
+                <img alt = "China vistos logo" class = "logo" src = "assets/image/bandeira_americana.png">
             </div>
         </div>
 
         <hr>
 
-        <div class="header">
-            <div class="title">
+        <div class = "header">
+            <div class = "title">
                 <h1>Formulário de pedido de visto Americano (DS 160)</h1>
-                <p>O candidato deve preencher este formulário de forma completa e clara. Por favor,
-                    digite as respostas em letra maiúscula em português no espaço fornecido ou marque a caixa relevante para selecionar.
-                    Se algum dos itens não se aplicam, digite "N/A" ou "Nenhum". </p>
             </div>
         </div>
 
         <hr>
 
-        <div class="form-section">
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
 
-            <h3>Informações Pessoais</h3>
-
-            <div class="container p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3 col-md-6">
-                        <label class="form-label" for="nome">Nome</label>
-                        <input class="form-control" id="nome" name="nome" placeholder="Exatamente como o passaporte" required type="text">
-                    </div>
-                    <div class="mb-3 col-md-6">
-                        <label class="form-label" for="sobrenome">Sobrenome</label>
-                        <input class="form-control" id="sobrenome" name="sobrenome" placeholder="Exatamente como o passaporte" required type="text">
-                    </div>
-                    <div class="mb-3 col-md-12">
-                        <label class="form-label" for="nome_completo">Nome completo</label>
-                        <input class="form-control" id="nome_completo" name="nome_completo" placeholder="Exatamente como o passaporte" required type="text">
-                    </div>
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "nome">nome</label>
+                    <input class = "form-control" id = "nome" name = "nome" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="nacionalidade">Nacionalidade</label>
-                        <input class="form-control" id="nacionalidade" name="nacionalidade" placeholder="Nacionalidade" required type="text">
-                    </div>
-
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="data_nascimento">Data de Nascimento</label>
-                        <input class="form-control" id="data_nascimento" name="data_nascimento" placeholder="DD/MM/YYYY" required type="date">
-                    </div>
-
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="sexo">Gênero</label>
-                        <select class="form-select" id="sexo" name="sexo" required>
-                            <option disabled selected value="">Selecione o gênero</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="estado_civil">Estado Civil</label>
-                        <select class="form-select" id="estado_civil" name="estado_civil" required>
-                            <option disabled selected value="">Selecione o estado civil</option>
-                            <option value="casado">Casado(a)</option>
-                            <option value="solteiro">Solteiro(a)</option>
-                            <option value="divorciado">Divorciado(a)</option>
-                            <option value="viuvo">Viúvo(a)</option>
-                        </select>
-                    </div>
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "sobrenome">sobrenome</label>
+                    <input class = "form-control" id = "sobrenome" name = "sobrenome" type = "text">
                 </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "nome_completo">nome completo</label>
+                    <input class = "form-control" id = "nome_completo" name = "nome_completo" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "nacionalidade">nacionalidade</label>
+                    <input class = "form-control" id = "nacionalidade" name = "nacionalidade" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "data_nascimento">data nascimento</label>
+                    <input class = "form-control" id = "data_nascimento" name = "data_nascimento" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "sexo">sexo</label>
+                    <input class = "form-control" id = "sexo" name = "sexo" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "estado_civil">estado civil</label>
+                    <input class = "form-control" id = "estado_civil" name = "estado_civil" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "local_nascimento_pais">local nascimento pais</label>
+                    <input class = "form-control" id = "local_nascimento_pais" name = "local_nascimento_pais" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "local_nascimento_estado">local nascimento estado</label>
+                    <input class = "form-control" id = "local_nascimento_estado" name = "local_nascimento_estado" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "local_nascimento_cidade">local nascimento cidade</label>
+                    <input class = "form-control" id = "local_nascimento_cidade" name = "local_nascimento_cidade" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "documento_identidade">documento identidade</label>
+                    <input class = "form-control" id = "documento_identidade" name = "documento_identidade" type = "text">
+                </div>
+
+                <div class = "mb-3 col-9">
+                    <label class = "form-label" for = "numero_identificacao">numero identificacao</label>
+                    <input class = "form-control" id = "numero_identificacao" name = "numero_identificacao" type = "text">
+                </div>
+
             </div>
+        </div>
 
-            <h3>Local de Nascimento</h3>
+        <h3>Dados Adicionais</h3>
 
-            <div class="container p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3  col-md-4">
-                        <label class="form-label" for="local_nascimento_pais">Pais ou Região</label>
-                        <input class="form-control" id="local_nascimento_pais" name="local_nascimento_pais" placeholder="Pais ou Região" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-4">
-                        <label class="form-label" for="local_nascimento_estado">Provincia/Estado</label>
-                        <input class="form-control" id="local_nascimento_estado" name="local_nascimento_estado" placeholder="Provincia/Estado" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-4">
-                        <label class="form-label" for="local_nascimento_cidade">Cidade</label>
-                        <input class="form-control" id="local_nascimento_cidade" name="local_nascimento_cidade" placeholder="Cidade" required type="text">
-                    </div>
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
+
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "solicitante_obteve_outro_nome">Possui outro nome</label>
+                    <input class = "form-control text-center" id = "solicitante_obteve_outro_nome" name = "solicitante_obteve_outro_nome" type = "text">
                 </div>
+
+                <div class = "mb-3 col-5">
+                    <label class = "form-label" for = "outro_nome">nome</label>
+                    <input class = "form-control" id = "outro_nome" name = "outro_nome" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "outro_sobrenome">sobrenome</label>
+                    <input class = "form-control" id = "outro_sobrenome" name = "outro_sobrenome" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "solicitante_obteve_outra_nacionalidade">Possui outra nacionalidade</label>
+                    <input class = "form-control text-center" id = "solicitante_obteve_outra_nacionalidade" name = "solicitante_obteve_outra_nacionalidade" type = "text">
+                </div>
+
+                <div class = "mb-3 col-9">
+                    <label class = "form-label" for = "outra_nacionalidade">nacionalidade</label>
+                    <input class = "form-control" id = "outra_nacionalidade" name = "outra_nacionalidade" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "solicitante_obteve_outro_passaporte">Possui outro passaporte</label>
+                    <input class = "form-control text-center" id = "solicitante_obteve_outro_passaporte" name = "solicitante_obteve_outro_passaporte" type = "text">
+                </div>
+
+                <div class = "mb-3 col-9">
+                    <label class = "form-label" for = "numero_outro_passaporte">numero outro passaporte</label>
+                    <input class = "form-control" id = "numero_outro_passaporte" name = "numero_outro_passaporte" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "passagem_comprada">passagem comprada</label>
+                    <input class = "form-control text-center" id = "passagem_comprada" name = "passagem_comprada" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "data_chegada_passagem_aerea">data chegada passagem aerea</label>
+                    <input class = "form-control" id = "data_chegada_passagem_aerea" name = "data_chegada_passagem_aerea" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "numero_voo_chegada_prevista">numero voo chegada prevista</label>
+                    <input class = "form-control" id = "numero_voo_chegada_prevista" name = "numero_voo_chegada_prevista" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "aeroporto_chegada_prevista">aeroporto chegada prevista</label>
+                    <input class = "form-control" id = "aeroporto_chegada_prevista" name = "aeroporto_chegada_prevista" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "data_partida_passagem_aerea">data partida passagem aerea</label>
+                    <input class = "form-control" id = "data_partida_passagem_aerea" name = "data_partida_passagem_aerea" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "numero_voo_partida_prevista">numero voo partida prevista</label>
+                    <input class = "form-control" id = "numero_voo_partida_prevista" name = "numero_voo_partida_prevista" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "aeroporto_partida_prevista">aeroporto partida prevista</label>
+                    <input class = "form-control" id = "aeroporto_partida_prevista" name = "aeroporto_partida_prevista" type = "text">
+                </div>
+
             </div>
+        </div>
 
-            <h3>Identificação</h3>
 
-            <div class="container p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="documento_identidade">Documento</label>
-                        <select class="form-select" id="documento_identidade" name="documento_identidade" required>
-                            <option disabled selected value="">Selecione um documento</option>
-                            <option value="rg">RG</option>
-                            <option value="cpf">CPF</option>
-                        </select>
-                    </div>
+        <h3>Viagem</h3>
 
-                    <div class="mb-3 col-md-9">
-                        <label class="form-label" for="numero_identificacao">ID</label>
-                        <input class="form-control" id="numero_identificacao" name="numero_identificacao" placeholder="Numero" required type="text">
-                    </div>
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
+
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "categoria_visto">categoria visto</label>
+                    <input class = "form-control text-center" id = "categoria_visto" name = "categoria_visto" type = "text">
                 </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "categoria_visto_especifica">categoria visto especifica</label>
+                    <input class = "form-control text-center" id = "categoria_visto_especifica" name = "categoria_visto_especifica" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "data_chegada_prevista">data chegada prevista</label>
+                    <input class = "form-control" id = "data_chegada_prevista" name = "data_chegada_prevista" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "duracao_permanecia">duracao permanecia</label>
+                    <input class = "form-control" id = "duracao_permanecia" name = "duracao_permanecia" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "periodo_permanecia">periodo permanecia</label>
+                    <input class = "form-control" id = "periodo_permanecia" name = "periodo_permanecia" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "responsavel_custo_viagem">responsavel custo viagem</label>
+                    <input class = "form-control text-center" id = "responsavel_custo_viagem" name = "responsavel_custo_viagem" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "nome_responsavel_custo_viagem">nome responsavel custo viagem</label>
+                    <input class = "form-control" id = "nome_responsavel_custo_viagem" name = "nome_responsavel_custo_viagem" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "sobrenome_responsavel_custo_viagem">sobrenome responsavel custo viagem</label>
+                    <input class = "form-control" id = "sobrenome_responsavel_custo_viagem" name = "sobrenome_responsavel_custo_viagem" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "celular_responsavel_custo_viagem">celular responsavel custo viagem</label>
+                    <input class = "form-control" id = "celular_responsavel_custo_viagem" name = "celular_responsavel_custo_viagem" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "relacionamento_responsavel_custo_viagem">relacionamento responsavel custo viagem</label>
+                    <input class = "form-control" id = "relacionamento_responsavel_custo_viagem" name = "relacionamento_responsavel_custo_viagem" type = "text">
+                </div>
+
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "endereco_hospedagem_eua">endereco hospedagem eua</label>
+                    <input class = "form-control" id = "endereco_hospedagem_eua" name = "endereco_hospedagem_eua" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "cidade_hospedagem_eua">cidade hospedagem eua</label>
+                    <input class = "form-control" id = "cidade_hospedagem_eua" name = "cidade_hospedagem_eua" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "estado_hospedagem_eua">estado hospedagem eua</label>
+                    <input class = "form-control" id = "estado_hospedagem_eua" name = "estado_hospedagem_eua" type = "text">
+                </div>
+
+                <div class = "mb-3 col-2">
+                    <label class = "form-label" for = "zip_hospedagem_eua">zip hospedagem eua</label>
+                    <input class = "form-control" id = "zip_hospedagem_eua" name = "zip_hospedagem_eua" type = "text">
+                </div>
+
             </div>
+        </div>
 
-            <h3>Outras Identificações e Nacionalidades</h3>
 
-            <div class="container p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3 col-md-4">
-                        <label class="form-label" for="possui_outro_nome">Utiliza ou já utilizou outros nomes</label>
-                        <select class="form-select" id="possui_outro_nome" name="possui_outro_nome" required>
-                            <option disabled selected value="">Selecione uma opção</option>
-                            <option value="Não">Não</option>
-                            <option value="Sim">Sim</option>
-                        </select>
-                    </div>
+        <h3>Acompanhantes</h3>
 
-                    <div class="mb-3 col-md-4">
-                        <label class="form-label" for="outro_nome">Nome</label>
-                        <input class="form-control" disabled id="outro_nome" name="outro_nome" placeholder="Nome" type="text">
-                    </div>
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
 
-                    <div class="mb-3 col-md-4">
-                        <label class="form-label" for="outro_sobrenome">Sobrenome</label>
-                        <input class="form-control" disabled id="outro_sobrenome" name="outro_sobrenome" placeholder="Sobrenome" type="text">
-                    </div>
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "viajando_acompanhado">viajando acompanhado</label>
+                    <input class = "form-control text-center" id = "viajando_acompanhado" name = "viajando_acompanhado" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3 col-md-4">
-                        <label class="form-label" for="possui_outra_nacionalidade">Possui ou já possuiu outra nacionalidade</label>
-                        <select class="form-select" id="possui_outra_nacionalidade" name="possui_outra_nacionalidade" required>
-                            <option disabled selected value="">Selecione uma opção</option>
-                            <option value="Não">Não</option>
-                            <option value="Sim">Sim</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3 col-md-4">
-                        <label class="form-label" for="outra_nacionalidade">Nacionalidade</label>
-                        <input class="form-control" disabled id="outra_nacionalidade" name="outra_nacionalidade" placeholder="Nacionalidade" type="text">
-                    </div>
-
-                    <div class="mb-3 col-md-4">
-                        <label class="form-label" for="outro_passaporte">Numero Passaporte</label>
-                        <input class="form-control" disabled id="outro_passaporte" name="outro_passaporte" placeholder="Numero Passaporte" type="text">
-                    </div>
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "nome_companheiro_viajante">nome companheiro viajante</label>
+                    <input class = "form-control" id = "nome_companheiro_viajante" name = "nome_companheiro_viajante" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3 col-md-4">
-                        <label class="form-label" for="possui_seguro_social_eua">Possui ou já possuiu Seguro Social dos EUA</label>
-                        <select class="form-select" id="possui_seguro_social_eua" name="possui_seguro_social_eua" required>
-                            <option disabled selected value="">Selecione uma opção</option>
-                            <option value="Não">Não</option>
-                            <option value="Sim">Sim</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3 col-md-8">
-                        <label class="form-label" for="numero_seguro_social_eua">Número de Seguro Social dos EUA</label>
-                        <input class="form-control" disabled id="numero_seguro_social_eua" name="numero_seguro_social_eua" placeholder="ID" type="text">
-                    </div>
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "sobrenome_companheiro_viajante">sobrenome companheiro viajante</label>
+                    <input class = "form-control" id = "sobrenome_companheiro_viajante" name = "sobrenome_companheiro_viajante" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3 col-md-4">
-                        <label class="form-label" for="possui_identificacao_fiscal_contribuinte_eua">Possui ou já possuiu Identificação Fiscal dos EUA</label>
-                        <select class="form-select" id="possui_identificacao_fiscal_contribuinte_eua" name="possui_identificacao_fiscal_contribuinte_eua" required>
-                            <option disabled selected value="">Selecione uma opção</option>
-                            <option value="Não">Não</option>
-                            <option value="Sim">Sim</option>
-                        </select>
-                    </div>
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "relacionamento_companheiro_viajante">relacionamento companheiro viajante</label>
+                    <input class = "form-control" id = "relacionamento_companheiro_viajante" name = "relacionamento_companheiro_viajante" type = "text">
+                </div>
 
-                    <div class="mb-3 col-md-8">
-                        <label class="form-label" for="numero_identificacao_fiscal_contribuinte_eua">Número de Identificação Fiscal do Contribuinte dos EUA</label>
-                        <input class="form-control" disabled id="numero_identificacao_fiscal_contribuinte_eua" name="numero_identificacao_fiscal_contribuinte_eua" placeholder="ID" type="text">
-                    </div>
+            </div>
+        </div>
+
+
+        <h3>Viagens anteriores</h3>
+
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_esteve_eua">solicitante esteve eua</label>
+                    <input class = "form-control text-center" id = "solicitante_esteve_eua" name = "solicitante_esteve_eua" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "data_viagem_anterior">data viagem anterior</label>
+                    <input class = "form-control" id = "data_viagem_anterior" name = "data_viagem_anterior" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "duracao_viagem_anterior">duracao viagem anterior</label>
+                    <input class = "form-control" id = "duracao_viagem_anterior" name = "duracao_viagem_anterior" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "periodo_viagem_anterior">periodo viagem anterior</label>
+                    <input class = "form-control" id = "periodo_viagem_anterior" name = "periodo_viagem_anterior" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "solicitante_obteve_visto_eua">solicitante obteve visto eua</label>
+                    <input class = "form-control text-center" id = "solicitante_obteve_visto_eua" name = "solicitante_obteve_visto_eua" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "data_ultimo_visto_solicitado">data ultimo visto solicitado</label>
+                    <input class = "form-control" id = "data_ultimo_visto_solicitado" name = "data_ultimo_visto_solicitado" type = "text">
+                </div>
+
+                <div class = "mb-3 col-5">
+                    <label class = "form-label" for = "numero_ultimo_visto_solicitado">numero ultimo visto solicitado</label>
+                    <input class = "form-control" id = "numero_ultimo_visto_solicitado" name = "numero_ultimo_visto_solicitado" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "obteve_visto_negado">obteve visto negado</label>
+                    <input class = "form-control text-center" id = "obteve_visto_negado" name = "obteve_visto_negado" type = "text">
+                </div>
+
+                <div class = "mb-3 col-9">
+                    <label class = "form-label" for = "justificativa_visto_negado">justificativa visto negado</label>
+                    <input class = "form-control" id = "justificativa_visto_negado" name = "justificativa_visto_negado" type = "text">
+                </div>
+
+            </div>
+        </div>
+
+        <h3>Endereço e Telefone</h3>
+
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
+
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "pais_residencia">pais residencia</label>
+                    <input class = "form-control" id = "pais_residencia" name = "pais_residencia" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "estado_residencia">estado residencia</label>
+                    <input class = "form-control" id = "estado_residencia" name = "estado_residencia" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "cidade_residencia">cidade residencia</label>
+                    <input class = "form-control" id = "cidade_residencia" name = "cidade_residencia" type = "text">
+                </div>
+
+                <div class = "mb-3 col-8">
+                    <label class = "form-label" for = "logradouro_residencia">logradouro residencia</label>
+                    <input class = "form-control" id = "logradouro_residencia" name = "logradouro_residencia" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "cep_residencia">cep residencia</label>
+                    <input class = "form-control" id = "cep_residencia" name = "cep_residencia" type = "text">
+                </div>
+
+                <div class = "mb-3 col-8">
+                    <label class = "form-label" for = "email_solicitante">email solicitante</label>
+                    <input class = "form-control" id = "email_solicitante" name = "email_solicitante" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "celular_solicitante">celular solicitante</label>
+                    <input class = "form-control" id = "celular_solicitante" name = "celular_solicitante" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "midias_sociais_solicitante">midias sociais solicitante</label>
+                    <input class = "form-control text-center" id = "midias_sociais_solicitante" name = "midias_sociais_solicitante" type = "text">
+                </div>
+
+                <div class = "mb-3 col-9">
+                    <label class = "form-label" for = "identificador_midias_sociais_solicitante">identificador midias sociais solicitante</label>
+                    <input class = "form-control" id = "identificador_midias_sociais_solicitante" name = "identificador_midias_sociais_solicitante" type = "text">
+                </div>
+
+            </div>
+        </div>
+
+
+        <h3>Passaporte</h3>
+
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "tipo_passaporte">tipo passaporte</label>
+                    <input class = "form-control" id = "tipo_passaporte" name = "tipo_passaporte" type = "text">
+                </div>
+
+                <div class = "mb-3 col-8">
+                    <label class = "form-label" for = "numero_passaporte">numero passaporte</label>
+                    <input class = "form-control" id = "numero_passaporte" name = "numero_passaporte" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "pais_emissao_passaporte">pais emissao passaporte</label>
+                    <input class = "form-control" id = "pais_emissao_passaporte" name = "pais_emissao_passaporte" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "estado_emissao_passaporte">estado emissao passaporte</label>
+                    <input class = "form-control" id = "estado_emissao_passaporte" name = "estado_emissao_passaporte" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "cidade_emissao_passaporte">cidade emissao passaporte</label>
+                    <input class = "form-control" id = "cidade_emissao_passaporte" name = "cidade_emissao_passaporte" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "data_emissao_passaporte">data emissao passaporte</label>
+                    <input class = "form-control" id = "data_emissao_passaporte" name = "data_emissao_passaporte" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "data_expiracao_passaporte">data expiracao passaporte</label>
+                    <input class = "form-control" id = "data_expiracao_passaporte" name = "data_expiracao_passaporte" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "passaporte_roubado">passaporte roubado</label>
+                    <input class = "form-control text-center" id = "passaporte_roubado" name = "passaporte_roubado" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "pais_emissao_passaporte_roubado">pais emissao passaporte roubado</label>
+                    <input class = "form-control" id = "pais_emissao_passaporte_roubado" name = "pais_emissao_passaporte_roubado" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "numero_passaporte_roubado">numero passaporte roubado</label>
+                    <input class = "form-control" id = "numero_passaporte_roubado" name = "numero_passaporte_roubado" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "justificativa_passaporte_roubado">justificativa passaporte roubado</label>
+                    <input class = "form-control" id = "justificativa_passaporte_roubado" name = "justificativa_passaporte_roubado" type = "text">
                 </div>
             </div>
         </div>
 
-        <div class="form-section">
+        <h3>Contato no EUA</h3>
 
-            <h3>Informações da viagem</h3>
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
 
-            <div class="container p-4 my-4 form-box">
-                <div class="mb-3">
-                    <label class="form-label" for="categoria_visto">Categoria do visto</label>
-                    <select class="form-select" id="categoria_visto" name="categoria_visto" required>
-                        <option disabled selected value="">Selecione uma classe de visto</option>
-                        <option value="B">(B1/B2) Visitante temporário a negócios ou turismo</option>
-                        <option value="C">(C) Estrangeiro em trânsito</option>
-                        <option value="D">(D) Membro da tripulação</option>
-                        <option value="F">(F) Estudante acadêmico ou de idiomas</option>
-                        <option value="J">(J) Visitante de intercâmbio</option>
-                        <option value="N">Outros</option>
-                    </select>
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "tipo_contato_eua">tipo contato eua</label>
+                    <input class = "form-control" id = "tipo_contato_eua" name = "tipo_contato_eua" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3  col-md-2">
-                        <label class="form-label" for="data_chegada_prevista">Data de chegada prevista</label>
-                        <input class="form-control" id="data_chegada_prevista" name="data_chegada_prevista" placeholder="DD/MM/YYYY" required type="date">
-                    </div>
-
-                    <div class="mb-3  col-md-4">
-                        <label class="form-label" for="responsavel_custo_viagem">Pessoa/Entidade Pagando pela Sua Viagem</label>
-                        <select class="form-select" id="responsavel_custo_viagem" name="responsavel_custo_viagem" required>
-                            <option selected="selected" value="">Selecione uma opcão</option>
-                            <option value="S">Próprio</option>
-                            <option value="O">Outra Pessoa</option>
-                            <option value="P">Empregador Atual</option>
-                            <option value="U">Empregador Nos E.U.A.</option>
-                            <option value="C">Outra Empresa/Organização</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3  col-md-6">
-                        <div class="row">
-                            <div class="mb-3  col-md-6">
-                                <label class="form-label" for="duracao">Duração</label>
-                                <input class="form-control" id="duracao" name="duracao" placeholder="123" required type="number">
-                            </div>
-
-                            <div class="mb-3  col-md-6">
-                                <label class="form-label" for="periodo">Periodo</label>
-                                <select class="form-select" id="periodo" name="periodo" required>
-                                    <option selected="selected" value="">Selecione um periodo</option>
-                                    <option value="Y">Ano(s)</option>
-                                    <option value="M">Mês(es)</option>
-                                    <option value="W">Semana(s)</option>
-                                    <option value="D">Dia(s)</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                <div class = "mb-3 col-8">
+                    <label class = "form-label" for = "nome_contato_eua">nome contato eua</label>
+                    <input class = "form-control" id = "nome_contato_eua" name = "nome_contato_eua" type = "text">
                 </div>
-            </div>
 
-            <h3>Endereço onde você ficará nos EUA</h3>
-
-            <div class="container p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3  col-md-3">
-                        <label class="form-label" for="endereco_eua">Logradouro</label>
-                        <input class="form-control" id="endereco_eua" name="endereco_eua" placeholder="Logradouro" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-3">
-                        <label class="form-label" for="cidade_eua">Cidade</label>
-                        <input class="form-control" id="cidade_eua" name="cidade_eua" placeholder="Cidade" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-3">
-                        <label class="form-label" for="estado_eua">Estado</label>
-                        <input class="form-control" id="estado_eua" name="estado_eua" placeholder="Estado" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-3">
-                        <label class="form-label" for="zip_code_eua">Zip Code</label>
-                        <input class="form-control" id="zip_code_eua" name="zip_code_eua" placeholder="12345" type="text">
-                    </div>
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "estado_contato_eua">estado contato eua</label>
+                    <input class = "form-control" id = "estado_contato_eua" name = "estado_contato_eua" type = "text">
                 </div>
-            </div>
 
-        </div>
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "cidade_contato_eua">cidade contato eua</label>
+                    <input class = "form-control" id = "cidade_contato_eua" name = "cidade_contato_eua" type = "text">
+                </div>
 
-        <div class="form-section">
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "endereco_contato_eua">endereco contato eua</label>
+                    <input class = "form-control" id = "endereco_contato_eua" name = "endereco_contato_eua" type = "text">
+                </div>
 
-            <h3>Acompanhantes na Viagem</h3>
+                <div class = "mb-3 col-2">
+                    <label class = "form-label" for = "zip_contato_eua">zip contato eua</label>
+                    <input class = "form-control" id = "zip_contato_eua" name = "zip_contato_eua" type = "text">
+                </div>
 
-            <div class="container p-4 my-4 form-box">
-                <label class="form-label" for="esta_viajando_acompanhado">Há outras pessoas viajando com você</label>
-                <select class="form-select" id="esta_viajando_acompanhado" name="esta_viajando_acompanhado" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
+                <div class = "mb-3 col-8">
+                    <label class = "form-label" for = "email_contato_eua">email contato eua</label>
+                    <input class = "form-control" id = "email_contato_eua" name = "email_contato_eua" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "celular_contato_eua">celular contato eua</label>
+                    <input class = "form-control" id = "celular_contato_eua" name = "celular_contato_eua" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "relacionamento_contato_eua">relacionamento contato eua</label>
+                    <input class = "form-control" id = "relacionamento_contato_eua" name = "relacionamento_contato_eua" type = "text">
+                </div>
+
             </div>
         </div>
 
-        <div class="form-section">
+        <h3>Familiares</h3>
 
-            <h3>Informações anteriores sobre viagens aos EUA</h3>
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
 
-            <div class="container p-4 my-4 form-box">
-                <div class="mb-3 col-md-12">
-                    <label class="form-label" for="esteve_nos_eua">Você já esteve nos Estados Unidos</label>
-                    <select class="form-select" id="esteve_nos_eua" name="esteve_nos_eua" required>
-                        <option disabled selected value="">Selecione uma opção</option>
-                        <option value="Não">Não</option>
-                        <option value="Sim">Sim</option>
-                    </select>
-                </div>
-                <div class="mb-3 col-md-12">
-                    <label class="form-label" for="possui_visto_eua">Você já recebeu um visto americano</label>
-                    <select class="form-select" id="possui_visto_eua" name="possui_visto_eua" required>
-                        <option disabled selected value="">Selecione uma opção</option>
-                        <option value="Não">Não</option>
-                        <option value="Sim">Sim</option>
-                    </select>
-                </div>
-                <div class="mb-3 col-md-12">
-                    <label class="form-label" for="teve_visto_negado">Você já teve um visto para os EUA negado</label>
-                    <select class="form-select" id="teve_visto_negado" name="teve_visto_negado" required>
-                        <option disabled selected value="">Selecione uma opção</option>
-                        <option value="Não">Não</option>
-                        <option value="Sim">Sim</option>
-                    </select>
-                </div>
-                <div class="mb-3 col-md-12">
-                    <label class="form-label" for="solicitou_cidadania">Já entrou com um pedido de Cidadania dos Estados Unidos</label>
-                    <select class="form-select" id="solicitou_cidadania" name="solicitou_cidadania" required>
-                        <option disabled selected value="">Selecione uma opção</option>
-                        <option value="Não">Não</option>
-                        <option value="Sim">Sim</option>
-                    </select>
-                </div>
-            </div>
-        </div>
+                <h3>Pai</h3>
 
-        <div class="form-section">
-
-            <h3>Informações de Endereço Pessoal</h3>
-
-            <div class="container p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3  col-md-3">
-                        <label class="form-label" for="endereco_pessoal">Logradouro</label>
-                        <input class="form-control" id="endereco_pessoal" name="endereco_pessoal" placeholder="Logradouro" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-3">
-                        <label class="form-label" for="cidade_pessoal">Cidade</label>
-                        <input class="form-control" id="cidade_pessoal" name="cidade_pessoal" placeholder="Cidade" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-3">
-                        <label class="form-label" for="estado_pessoal">Estado</label>
-                        <input class="form-control" id="estado_pessoal" name="estado_pessoal" placeholder="Estado" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-3">
-                        <label class="form-label" for="zip_code_pessoal">Zip Code</label>
-                        <input class="form-control" id="zip_code_pessoal" name="zip_code_pessoal" placeholder="12345" type="text">
-                    </div>
-                </div>
-            </div>
-
-            <h3>Endereço Postal</h3>
-
-            <div class="container p-4 my-4 form-box">
-                <label class="form-label" for="mesmo_endereco_correspondencia">Endereço de correspondência é o mesmo endereço informado ?</label>
-                <select class="form-select" id="mesmo_endereco_correspondencia" name="mesmo_endereco_correspondencia" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-            </div>
-
-            <h3>Telefones Pessoal</h3>
-
-            <div class="container p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3  col-md-4">
-                        <label class="form-label" for="telefone_principal">Número de telefone princial</label>
-                        <input class="form-control" id="telefone_principal" name="telefone_principal" placeholder="Telefone Princial" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-4">
-                        <label class="form-label" for="telefone_secundario">Número de telefone secundario</label>
-                        <input class="form-control" id="telefone_secundario" name="telefone_secundario" placeholder="Telefone Secundario" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-4">
-                        <label class="form-label" for="telefone_trabalho">Número de telefone do trabalho</label>
-                        <input class="form-control" id="telefone_trabalho" name="telefone_trabalho" placeholder="Telefone Trabalho" required type="text">
-                    </div>
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "nome_pai">nome</label>
+                    <input class = "form-control" id = "nome_pai" name = "nome_pai" type = "text">
                 </div>
 
-                <label class="form-label" for="alterou_numero_telefone">Você usou algum outro número de telefone nos últimos cinco anos ?</label>
-                <select class="form-select" id="alterou_numero_telefone" name="alterou_numero_telefone" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-            </div>
-
-            <h3>Endereço eletrónico</h3>
-
-            <div class="container p-4 my-4 form-box">
-                <div class="mb-3">
-                    <label class="form-label" for="endereco_eletronico">E-mail</label>
-                    <input class="form-control" id="endereco_eletronico" name="endereco_eletronico" placeholder="e-mail" required type="text">
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "sobrenome_pai">sobrenome</label>
+                    <input class = "form-control" id = "sobrenome_pai" name = "sobrenome_pai" type = "text">
                 </div>
 
-                <label class="form-label" for="alterou_email">Você usou algum outro endereço de e-mail nos últimos cinco anos ?</label>
-                <select class="form-select" id="alterou_email" name="alterou_email" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-            </div>
-
-            <h3>Mídias Sociais</h3>
-
-            <div class="container p-4 my-4 form-box">
-                <div class="mb-3">
-                    <label class="form-label" for="provedor_midia_social">Provedor/Plataforma de Mídias Sociais</label>
-                    <select class="form-select" id="provedor_midia_social" name="provedor_midia_social" required>
-                        <option disabled selected value="">Selecione uma opção</option>
-                        <option value="ASKF">ASK.FM</option>
-                        <option value="DUBN">DOUBAN</option>
-                        <option value="FCBK">FACEBOOK</option>
-                        <option value="FLKR">FLICKR</option>
-                        <option value="GOGL">GOOGLE+</option>
-                        <option value="INST">INSTAGRAM</option>
-                        <option value="LINK">LINKEDIN</option>
-                        <option value="MYSP">MYSPACE</option>
-                        <option value="PTST">PINTEREST</option>
-                        <option value="QZNE">QZONE (QQ)</option>
-                        <option value="RDDT">REDDIT</option>
-                        <option value="SWBO">SINA WEIBO</option>
-                        <option value="TWBO">TENCENT WEIBO</option>
-                        <option value="TUMB">TUMBLR</option>
-                        <option value="TWIT">TWITTER</option>
-                        <option value="TWOO">TWOO</option>
-                        <option value="VINE">VINE</option>
-                        <option value="VKON">VKONTAKTE (VK)</option>
-                        <option value="YUKU">YOUKU</option>
-                        <option value="YTUB">YOUTUBE</option>
-                        <option value="NONE">NONE</option>
-                    </select>
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "data_nascimento_pai">data nascimento</label>
+                    <input class = "form-control" id = "data_nascimento_pai" name = "data_nascimento_pai" type = "text">
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label" for="identificador_midia_social">Identificador de Mídias Sociais</label>
-                    <input class="form-control" id="identificador_midia_social" name="identificador_midia_social" placeholder="@Usuario" required type="text">
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "pai_nos_estados_unidos">Esta nos estados unidos</label>
+                    <input class = "form-control text-center" id = "pai_nos_estados_unidos" name = "pai_nos_estados_unidos" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "tipo_permanencia_pai">tipo permanencia</label>
+                    <input class = "form-control text-center" id = "tipo_permanencia_pai" name = "tipo_permanencia_pai" type = "text">
+                </div>
+
+                <h3>Mãe</h3>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "nome_mae">nome</label>
+                    <input class = "form-control" id = "nome_mae" name = "nome_mae" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "sobrenome_mae">sobrenome</label>
+                    <input class = "form-control" id = "sobrenome_mae" name = "sobrenome_mae" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "data_nascimento_mae">data nascimento</label>
+                    <input class = "form-control" id = "data_nascimento_mae" name = "data_nascimento_mae" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "mae_nos_estados_unidos">Esta nos estados unidos</label>
+                    <input class = "form-control text-center" id = "mae_nos_estados_unidos" name = "mae_nos_estados_unidos" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "tipo_permanencia_mae">tipo permanencia</label>
+                    <input class = "form-control text-center" id = "tipo_permanencia_mae" name = "tipo_permanencia_mae" type = "text">
+                </div>
+
+                <h3>Parente</h3>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "nome_parente">nome</label>
+                    <input class = "form-control" id = "nome_parente" name = "nome_parente" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "sobrenome_parente">sobrenome</label>
+                    <input class = "form-control" id = "sobrenome_parente" name = "sobrenome_parente" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "parente_nos_estados_unidos">Esta nos estados unidos</label>
+                    <input class = "form-control text-center" id = "parente_nos_estados_unidos" name = "parente_nos_estados_unidos" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "tipo_permanencia_parente">tipo permanencia</label>
+                    <input class = "form-control text-center" id = "tipo_permanencia_parente" name = "tipo_permanencia_parente" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "relacionamento_parente">relacionamento</label>
+                    <input class = "form-control text-center" id = "relacionamento_parente" name = "relacionamento_parente" type = "text">
                 </div>
             </div>
         </div>
 
-        <div class="form-section">
 
-            <h3>Informações do Passaporte</h3>
+        <h3>Conjuge</h3>
 
-            <div class="container p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="tipo_passaporte">Tipo</label>
-                        <select class="form-select" id="tipo_passaporte" name="tipo_passaporte" required>
-                            <option disabled selected value="">Selecione um tipo</option>
-                            <option value="diplomatico">Diplomatico</option>
-                            <option value="oficial">Oficial</option>
-                            <option value="comum">Comum</option>
-                            <option value="serviço">Serviço</option>
-                            <option value="especial">Especial</option>
-                        </select>
-                    </div>
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
 
-                    <div class="mb-3 col-md-9">
-                        <label class="form-label" for="numero_passaporte">Numero</label>
-                        <input class="form-control" id="numero_passaporte" name="numero_passaporte" placeholder="Numero" required type="text">
-                    </div>
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "nome_conjuge">nome conjuge</label>
+                    <input class = "form-control" id = "nome_conjuge" name = "nome_conjuge" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="pais_emissao_passaporte">País de Emissão</label>
-                        <input class="form-control" id="pais_emissao_passaporte" name="pais_emissao_passaporte" placeholder="País de Emissão" required type="text">
-                    </div>
-
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="autoridade_emissao_passaporte">Autoridade</label>
-                        <input class="form-control" id="autoridade_emissao_passaporte" name="autoridade_emissao_passaporte" placeholder="Autoridade Igual no Passaporte" required type="text">
-                    </div>
-
-
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="data_emissao_passaporte">Data de emissão</label>
-                        <input class="form-control" id="data_emissao_passaporte" name="data_emissao_passaporte" placeholder="DD/MM/YYYY" required type="date">
-                    </div>
-
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="data_expiracao_passaporte">Data de expiração</label>
-                        <input class="form-control" id="data_expiracao_passaporte" name="data_expiracao_passaporte" placeholder="DD/MM/YYYY" required type="date">
-                    </div>
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "sobrenome_conjuge">sobrenome conjuge</label>
+                    <input class = "form-control" id = "sobrenome_conjuge" name = "sobrenome_conjuge" type = "text">
                 </div>
 
-                <label class="form-label" for="passsaporte_roubado">Você já perdeu o seu passaporte ou teve um roubado?</label>
-                <select class="form-select" id="passsaporte_roubado" name="passsaporte_roubado" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "nacionalidade_conjuge">nacionalidade conjuge</label>
+                    <input class = "form-control" id = "nacionalidade_conjuge" name = "nacionalidade_conjuge" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "data_nascimento_conjuge">data nascimento conjuge</label>
+                    <input class = "form-control" id = "data_nascimento_conjuge" name = "data_nascimento_conjuge" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "cidade_nascimento_conjuge">cidade nascimento conjuge</label>
+                    <input class = "form-control" id = "cidade_nascimento_conjuge" name = "cidade_nascimento_conjuge" type = "text">
+                </div>
+
             </div>
         </div>
 
-        <div class="form-section">
 
-            <h3>Informações de Contato dos EUA</h3>
+        <h3>Ocupação Atual</h3>
 
-            <div class="container p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3 col">
-                        <label class="form-label" for="nome_pessoa_contato">Nome da pessoa de contato</label>
-                        <input class="form-control" id="nome_pessoa_contato" name="nome_pessoa_contato" placeholder="Nome" required type="text">
-                    </div>
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
 
-                    <div class="mb-3 col">
-                        <label class="form-label" for="sobrenome_pessoa_contato">Sobrenome da pessoa de contato</label>
-                        <input class="form-control" id="sobrenome_pessoa_contato" name="sobrenome_pessoa_contato" placeholder="Sobrenome" required type="text">
-                    </div>
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "ocupacao_atual">ocupacao atual</label>
+                    <input class = "form-control text-center" id = "ocupacao_atual" name = "ocupacao_atual" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3 col">
-                        <label class="form-label" for="endereco_pessoa_contato">Logradouro</label>
-                        <input class="form-control" id="endereco_pessoa_contato" name="endereco_pessoa_contato" placeholder="Logradouro" required type="text">
-                    </div>
-                    <div class="mb-3 col">
-                        <label class="form-label" for="cidade_pessoa_contato">Cidade</label>
-                        <input class="form-control" id="cidade_pessoa_contato" name="cidade_pessoa_contato" placeholder="Cidade" required type="text">
-                    </div>
-                    <div class="mb-3 col">
-                        <label class="form-label" for="estado_pessoa_contato">Estado</label>
-                        <input class="form-control" id="estado_pessoa_contato" name="estado_pessoa_contato" placeholder="Estado" required type="text">
-                    </div>
-                    <div class="mb-3 col">
-                        <label class="form-label" for="zip_code_pessoa_contato">Zip Code</label>
-                        <input class="form-control" id="zip_code_pessoa_contato" name="zip_code_pessoa_contato" placeholder="12345" type="text">
-                    </div>
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "nome_empresa">nome empresa</label>
+                    <input class = "form-control" id = "nome_empresa" name = "nome_empresa" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3 col">
-                        <label class="form-label" for="pessoa_contato_relacionamento">Relacionamento com você</label>
-                        <input class="form-control" id="pessoa_contato_relacionamento" name="pessoa_contato_relacionamento" placeholder="Relacionamento" required type="text">
-                    </div>
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "pais_empresa">pais empresa</label>
+                    <input class = "form-control" id = "pais_empresa" name = "pais_empresa" type = "text">
+                </div>
 
-                    <div class="mb-3 col">
-                        <label class="form-label" for="telefone_pessoa_contato">Número de telefone</label>
-                        <input class="form-control" id="telefone_pessoa_contato" name="telefone_pessoa_contato" placeholder="Telefone" required type="text">
-                    </div>
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "estado_empresa">estado empresa</label>
+                    <input class = "form-control" id = "estado_empresa" name = "estado_empresa" type = "text">
+                </div>
 
-                    <div class="mb-3 col">
-                        <label class="form-label" for="email_pessoa_contato">E-mail</label>
-                        <input class="form-control" id="email_pessoa_contato" name="email_pessoa_contato" placeholder="Telefone" required type="text">
-                    </div>
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "cidade_empresa">cidade empresa</label>
+                    <input class = "form-control" id = "cidade_empresa" name = "cidade_empresa" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "logradouro_empresa">logradouro empresa</label>
+                    <input class = "form-control" id = "logradouro_empresa" name = "logradouro_empresa" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "cep_empresa">cep empresa</label>
+                    <input class = "form-control" id = "cep_empresa" name = "cep_empresa" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "numero_contato_empresa">numero contato empresa</label>
+                    <input class = "form-control" id = "numero_contato_empresa" name = "numero_contato_empresa" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "data_admissao_empresa">data admissao empresa</label>
+                    <input class = "form-control" id = "data_admissao_empresa" name = "data_admissao_empresa" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "renda_empresa">renda empresa</label>
+                    <input class = "form-control" id = "renda_empresa" name = "renda_empresa" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "periodo_renda_empresa">periodo renda empresa</label>
+                    <input class = "form-control" id = "periodo_renda_empresa" name = "periodo_renda_empresa" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "justificativa_funcoes_empresa">justificativa funcoes empresa</label>
+                    <input class = "form-control" id = "justificativa_funcoes_empresa" name = "justificativa_funcoes_empresa" type = "text">
                 </div>
             </div>
         </div>
 
-        <div class="form-section">
+        <h3>Experiência</h3>
 
-            <h3>Pai</h3>
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
 
-            <div class="container mb-3 p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3 col">
-                        <label class="form-label" for="nome_pai">Nome</label>
-                        <input class="form-control" id="nome_pai" name="nome_pai" placeholder="Nome" required type="text">
-                    </div>
-                    <div class="mb-3 col">
-                        <label class="form-label" for="sobrenome_pai">Sobrenome</label>
-                        <input class="form-control" id="sobrenome_pai" name="sobrenome_pai" placeholder="Sobrenome" required type="text">
-                    </div>
-                    <div class="mb-3 col">
-                        <label class="form-label" for="birthDate_pai">Data de Nascimento</label>
-                        <input class="form-control" id="birthDate_pai" name="birthDate_pai" placeholder="DD/MM/YYYY" required type="date">
-                    </div>
-                </div>
-            </div>
-
-            <h3>Mãe</h3>
-
-            <div class="container mb-3 p-4 my-4 form-box">
-                <div class="row">
-                    <div class="mb-3 col">
-                        <label class="form-label" for="nome_mae">Nome</label>
-                        <input class="form-control" id="nome_mae" name="nome_mae" placeholder="Nome" required type="text">
-                    </div>
-                    <div class="mb-3 col">
-                        <label class="form-label" for="sobrenome_mae">Sobrenome</label>
-                        <input class="form-control" id="sobrenome_mae" name="sobrenome_mae" placeholder="Sobrenome" required type="text">
-                    </div>
-                    <div class="mb-3 col">
-                        <label class="form-label" for="birthDate_mae">Data de Nascimento</label>
-                        <input class="form-control" id="birthDate_mae" name="birthDate_mae" placeholder="DD/MM/YYYY" required type="date">
-                    </div>
-                </div>
-            </div>
-
-            <div id="conjuge-info" style="display:none;">
-                <h3>Cônjuge</h3>
-
-                <div class="container mb-3 p-4 my-4 form-box">
-
-                    <div class="row">
-                        <div class="mb-3 col">
-                            <label class="form-label" for="nome_conjuge">Nome</label>
-                            <input class="form-control" id="nome_conjuge" name="nome_conjuge" placeholder="Nome" type="text">
-                        </div>
-                        <div class="mb-3 col">
-                            <label class="form-label" for="sobrenome_conjuge">Sobrenome</label>
-                            <input class="form-control" id="sobrenome_conjuge" name="sobrenome_conjuge" placeholder="Sobrenome" type="text">
-                        </div>
-                        <div class="mb-3 col">
-                            <label class="form-label" for="birthDate_conjuge">Data de Nascimento</label>
-                            <input class="form-control" id="birthDate_conjuge" name="birthDate_conjuge" placeholder="DD/MM/YYYY" type="date">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h3>Famililares nos Estados Unidos</h3>
-
-            <div class="container mb-3 p-4 my-4 form-box">
-                <label class="form-label" for="possui_parente_proximo_eua">Você tem algum parente próximo nos Estados Unidos?</label>
-                <select class="form-select" id="possui_parente_proximo_eua" name="possui_parente_proximo_eua" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-section">
-
-            <h3>Informações Atuais de Trabalho/Educação/Treinamento</h3>
-
-            <div class="container mb-3 p-4 my-4 form-box">
-                <div class="mb-3">
-                    <label class="form-label" for="ocupacao_atual">Selecione uma ocupação</label>
-                    <select class="form-select" id="ocupacao_atual" name="ocupacao_atual" required>
-                        <option disabled selected value="">Ocupação Atual</option>
-                        <option value="">-Selecione Uma-</option>
-                        <option value="A">Agricultura</option>
-                        <option value="AP">Artista/Intérprete</option>
-                        <option selected="selected" value="B">Negócios</option>
-                        <option value="CM">Comunicações</option>
-                        <option value="CS">Ciência da Computação</option>
-                        <option value="C">Culinária/Serviços de Alimentação</option>
-                        <option value="ED">Educação</option>
-                        <option value="EN">Engenharia</option>
-                        <option value="G">Governo</option>
-                        <option value="H">Dona(o) de Casa</option>
-                        <option value="LP">Profissão Jurídica</option>
-                        <option value="MH">Médico/Saúde</option>
-                        <option value="M">Militar</option>
-                        <option value="NS">Ciência Natural</option>
-                        <option value="N">Não Empregado(a)</option>
-                        <option value="PS">Ciências Físicas</option>
-                        <option value="RV">Vocação Religiosa</option>
-                        <option value="R">Pesquisa</option>
-                        <option value="RT">Aposentado(a)</option>
-                        <option value="SS">Ciências Sociais</option>
-                        <option value="S">Estudante</option>
-                    </select>
-                </div>
-            </div>
-
-            <h3 id="empresa_brasil_title">Empresa</h3>
-
-            <div class="container mb-3 p-4 my-4 form-box">
-                <div class="mb-3">
-                    <label class="form-label" for="nome_empresa">Nome</label>
-                    <input class="form-control" id="nome_empresa" name="nome_empresa" placeholder="Nome Empresa" required type="text">
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_empregado_anteriormente">solicitante empregado anteriormente</label>
+                    <input class = "form-control text-center" id = "solicitante_empregado_anteriormente" name = "solicitante_empregado_anteriormente" type = "text">
                 </div>
 
-                <div class="mb-3">
-                    <div class="row">
-                        <div class="mb-3  col-md-4">
-                            <label class="form-label" for="local_empresa_pais">Pais ou Região</label>
-                            <input class="form-control" id="local_empresa_pais" name="local_empresa_pais" placeholder="Pais ou Região" required type="text">
-                        </div>
-                        <div class="mb-3  col-md-4">
-                            <label class="form-label" for="local_empresa_estado">Provincia/Estado</label>
-                            <input class="form-control" id="local_empresa_estado" name="local_empresa_estado" placeholder="Provincia/Estado" required type="text">
-                        </div>
-                        <div class="mb-3  col-md-4">
-                            <label class="form-label" for="local_empresa_cidade">Cidade</label>
-                            <input class="form-control" id="local_empresa_cidade" name="local_empresa_cidade" placeholder="Cidade" required type="text">
-                        </div>
-                    </div>
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "nome_empresa_anteriormente">nome empresa anteriormente</label>
+                    <input class = "form-control" id = "nome_empresa_anteriormente" name = "nome_empresa_anteriormente" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3 col-md-5">
-                        <label class="form-label" for="cargo_atual">Cargo</label>
-                        <input class="form-control" id="cargo_atual" name="cargo_atual" placeholder="Cargo" type="text">
-                    </div>
-
-                    <div class="mb-3 col-md-3">
-                        <label class="form-label" for="renda_mensal">Renda Mensal</label>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">R$</span>
-                            <input class="form-control" id="renda_mensal" name="renda_mensal" placeholder="0" type="text">
-                        </div>
-                    </div>
-
-                    <div class="mb-3  col-md-2">
-                        <label class="form-label" for="empresa_contato">Contato Telefonico</label>
-                        <input class="form-control" id="empresa_contato" name="empresa_contato" placeholder="XX XXXXX XXXX" required type="text">
-                    </div>
-
-                    <div class="mb-3 col-md-2">
-                        <label class="form-label" for="empresa_data_admissao">Data de Admissão</label>
-                        <input class="form-control" id="empresa_data_admissao" name="empresa_data_admissao" placeholder="DD/MM/YYYY" required type="date">
-                    </div>
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "pais_empresa_anteriormente">pais empresa anteriormente</label>
+                    <input class = "form-control" id = "pais_empresa_anteriormente" name = "pais_empresa_anteriormente" type = "text">
                 </div>
 
-                <label class="form-label" for="trabalhou_anteriormente">Você já trabalhou anteriormente?</label>
-                <select class="form-select" id="trabalhou_anteriormente" name="trabalhou_anteriormente" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-            </div>
-
-            <h3>Educação</h3>
-
-            <div class="container mb-3 p-4 my-4 form-box">
-
-                <label class="form-label" for="possui_nivel_superior">Você frequentou alguma instituição educacional de nível secundário ou superior?</label>
-                <select class="mb-3 form-select" id="possui_nivel_superior" name="possui_nivel_superior" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-
-                <div class="mb-3">
-                    <label class="form-label" for="nome_instituicao">Nome da Instituição</label>
-                    <input class="form-control" id="nome_instituicao" name="nome_instituicao" placeholder="Nome da Instituição" required type="text">
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "estado_empresa_anteriormente">estado empresa anteriormente</label>
+                    <input class = "form-control" id = "estado_empresa_anteriormente" name = "estado_empresa_anteriormente" type = "text">
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label" for="curso_de_estudo">Curso de Estudo</label>
-                    <input class="form-control" id="curso_de_estudo" name="curso_de_estudo" placeholder="Curso de Estudo" required type="text">
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "cidade_empresa_anteriormente">cidade empresa anteriormente</label>
+                    <input class = "form-control" id = "cidade_empresa_anteriormente" name = "cidade_empresa_anteriormente" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3  col-md-4">
-                        <label class="form-label" for="local_instituicao_pais">Pais ou Região</label>
-                        <input class="form-control" id="local_instituicao_pais" name="local_instituicao_pais" placeholder="Pais ou Região" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-4">
-                        <label class="form-label" for="local_instituicao_estado">Provincia/Estado</label>
-                        <input class="form-control" id="local_instituicao_estado" name="local_instituicao_estado" placeholder="Provincia/Estado" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-4">
-                        <label class="form-label" for="local_instituicao_cidade">Cidade</label>
-                        <input class="form-control" id="local_instituicao_cidade" name="local_instituicao_cidade" placeholder="Cidade" required type="text">
-                    </div>
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "logradouro_empresa_anteriormente">logradouro empresa anteriormente</label>
+                    <input class = "form-control" id = "logradouro_empresa_anteriormente" name = "logradouro_empresa_anteriormente" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3  col-md-8">
-                        <label class="form-label" for="local_instituicao_logradouro">Logradouro</label>
-                        <input class="form-control" id="local_instituicao_logradouro" name="local_instituicao_logradouro" placeholder="Longradouro" required type="text">
-                    </div>
-                    <div class="mb-3  col-md-2">
-                        <label class="form-label" for="local_instituicao_numero">Numero</label>
-                        <input class="form-control" id="local_instituicao_numero" name="local_instituicao_numero" placeholder="123" required type="number">
-                    </div>
-                    <div class="mb-3  col-md-2">
-                        <label class="form-label" for="local_instituicao_cep">CEP</label> <input class="form-control" id="local_instituicao_cep" name="local_instituicao_cep" placeholder="12345-678" required type="text">
-                    </div>
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "cep_empresa_anteriormente">cep empresa anteriormente</label>
+                    <input class = "form-control" id = "cep_empresa_anteriormente" name = "cep_empresa_anteriormente" type = "text">
                 </div>
 
-                <div class="row">
-                    <div class="mb-3 col">
-                        <label class="form-label" for="instituicao_data_inicio">Data de Inicio</label>
-                        <input class="form-control" id="instituicao_data_inicio" name="instituicao_data_inicio" placeholder="DD/MM/YYYY" required type="date">
-                    </div>
-
-                    <div class="mb-3 col">
-                        <label class="form-label" for="instituicao_data_fim">Data de Fim</label>
-                        <input class="form-control" id="instituicao_data_fim" name="instituicao_data_fim" placeholder="DD/MM/YYYY" required type="date">
-                    </div>
-                </div>
-            </div>
-
-            <h3>Informações de Treinamento</h3>
-
-            <div class="container mb-3 p-4 my-4 form-box">
-
-                <div class="mb-3">
-                    <label class="form-label" for="idiomas">Forneça uma lista de idiomas que você fala.</label>
-                    <input class="form-control" id="idiomas" name="idiomas" placeholder="Lista de idiomas" required type="text">
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "numero_contato_empresa_anteriormente">numero contato empresa anteriormente</label>
+                    <input class = "form-control" id = "numero_contato_empresa_anteriormente" name = "numero_contato_empresa_anteriormente" type = "text">
                 </div>
 
-                <label class="form-label" for="possui_cla_tribo">Você pertence a um clã ou tribo?</label>
-
-                <select class="mb-3 form-select" id="possui_cla_tribo" name="possui_cla_tribo" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-
-                <label class="form-label" for="viajou_ultimos_cinco_anos">Você viajou para algum país/região nos últimos cinco anos?</label>
-                <select class="mb-3 form-select" id="viajou_ultimos_cinco_anos" name="viajou_ultimos_cinco_anos" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-
-                <label class="form-label" for="pertenceu_organizacao_profissional">Você já pertenceu, contribuiu ou trabalhou para alguma organização profissional, social ou beneficente?</label>
-                <select class="mb-3 form-select" id="pertenceu_organizacao_profissional" name="pertenceu_organizacao_profissional" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-
-                <label class="form-label" for="possui_habilidade_arma_fogo">Você possui alguma habilidade ou treinamento especializado, como experiência com armas de fogo, explosivos, nuclear, biológico ou químico?</label>
-                <select class="mb-3 form-select" id="possui_habilidade_arma_fogo" name="possui_habilidade_arma_fogo" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-
-                <label class="form-label" for="serviu_exercito">Você já serviu no exército?</label>
-                <select class="mb-3 form-select" id="serviu_exercito" name="serviu_exercito" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-
-                <label class="form-label" for="serviu_organizacao_insurgente">Você já serviu, foi membro ou esteve envolvido em uma unidade paramilitar, unidade de vigilância, grupo rebelde, grupo guerrilheiro ou organizacao_insurgente?</label>
-                <select class="mb-3 form-select" id="serviu_organizacao_insurgente" name="serviu_organizacao_insurgente" required>
-                    <option disabled selected value="">Selecione uma opção</option>
-                    <option value="Não">Não</option>
-                    <option value="Sim">Sim</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-section">
-
-            <h3>Segurança e Histórico</h3>
-
-            <div class="container mb-3 p-4 my-4 form-box">
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você tem uma doença transmissível de importância para a saúde pública?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label for="doenca_transmissivel_sim">Sim</label>
-                            <input id="doenca_transmissivel_sim" name="possui_doenca_transmissivel" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label for="doenca_transmissivel_nao">Não</label>
-                            <input id="doenca_transmissivel_nao" name="possui_doenca_transmissivel" required type="radio" value="Não">
-                        </div>
-                    </div>
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "cargo_empresa_anteriormente">cargo empresa anteriormente</label>
+                    <input class = "form-control" id = "cargo_empresa_anteriormente" name = "cargo_empresa_anteriormente" type = "text">
                 </div>
 
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100 text-center w-100">Você tem algum transtorno mental ou físico que representa ou provavelmente representará uma ameaça à segurança de si mesmo ou de outras pessoas?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label for="transtorno_mental_sim">Sim</label>
-                            <input id="transtorno_mental_sim" name="possui_transtorno_mental" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label for="transtorno_mental_nao">Não</label>
-                            <input id="transtorno_mental_nao" name="possui_transtorno_mental" required type="radio" value="Não">
-                        </div>
-                    </div>
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "data_admissao_empresa_anteriormente">data admissao</label>
+                    <input class = "form-control" id = "data_admissao_empresa_anteriormente" name = "data_admissao_empresa_anteriormente" type = "text">
                 </div>
 
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você é ou já foi usuário ou viciado em drogas?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label for="vicio_drogas_sim">Sim</label>
-                            <input id="vicio_drogas_sim" name="possui_vicio_drogas" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label for="vicio_drogas_nao">Não</label>
-                            <input id="vicio_drogas_nao" name="possui_vicio_drogas" required type="radio" value="Não">
-                        </div>
-                    </div>
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "data_desligamento_empresa_anteriormente">data desligamento</label>
+                    <input class = "form-control" id = "data_desligamento_empresa_anteriormente" name = "data_desligamento_empresa_anteriormente" type = "text">
                 </div>
 
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já foi preso ou condenado por qualquer crime ou delito, mesmo que tenha sido objeto de perdão, anistia ou outra ação similar?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label for="crime_delito_sim">Sim</label>
-                            <input id="crime_delito_sim" name="possui_crime_delito" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label for="crime_delito_nao">Não</label>
-                            <input id="crime_delito_nao" name="possui_crime_delito" required type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já violou, ou participou de uma conspiração para violar, qualquer lei relacionada a substâncias controladas?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label for="conspiracao_substancias_sim">Sim</label>
-                            <input id="conspiracao_substancias_sim" name="possui_conspiracao_substancias_controladas" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label for="conspiracao_substancias_nao">Não</label>
-                            <input id="conspiracao_substancias_nao" name="possui_conspiracao_substancias_controladas" required type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você está vindo para os Estados Unidos para se envolver em prostituição ou vício comercializado ilegal ?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label for="envolvimento_prostituicao_sim">Sim</label>
-                            <input id="envolvimento_prostituicao_sim" name="possui_envolvimento_prostituicao" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label for="envolvimento_prostituicao_nao">Não</label>
-                            <input id="envolvimento_prostituicao_nao" name="possui_envolvimento_prostituicao" required type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já esteve envolvido em, ou pretende se envolver em, lavagem de dinheiro?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label for="lavagem_dinheiro_sim">Sim</label>
-                            <input id="lavagem_dinheiro_sim" name="possui_lavagem_dinheiro" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label for="lavagem_dinheiro_nao">Não</label>
-                            <input id="lavagem_dinheiro_nao" name="possui_lavagem_dinheiro" required type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já cometeu ou conspirou para cometer um crime de tráfico de pessoas nos Estados Unidos ou fora dos Estados Unidos?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label for="crime_trafico_pessoas_sim">Sim</label>
-                            <input id="crime_trafico_pessoas_sim" name="possui_crime_trafico_pessoas" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label for="crime_trafico_pessoas_nao">Não</label>
-                            <input id="crime_trafico_pessoas_nao" name="possui_crime_trafico_pessoas" required type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já auxiliou, instigou, ajudou ou conspirou, conscientemente, com um indivíduo que cometeu um crime grave de tráfico de pessoas ?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <input id="auxilio_trafico_pessoas_sim" name="possui_auxilio_trafico_pessoas" type="radio" value="Sim">
-                            <label for="auxilio_trafico_pessoas_sim">Sim</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input id="auxilio_trafico_pessoas_nao" name="possui_auxilio_trafico_pessoas" required type="radio" value="Não">
-                            <label for="auxilio_trafico_pessoas_nao">Não</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você é cônjuge, filho ou filha de um indivíduo que cometeu ou conspirou para cometer um crime de tráfico de pessoas nos Estados Unidos?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label for="conjuge_trafico_pessoas_sim">Sim</label>
-                            <input id="conjuge_trafico_pessoas_sim" name="conjuge_cometeu_trafico_pessoas" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label for="conjuge_trafico_pessoas_nao">Não</label>
-                            <input id="conjuge_trafico_pessoas_nao" name="conjuge_cometeu_trafico_pessoas" required type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você busca engajar-se em espionagem, sabotagem, violações de controle de exportação ou qualquer outra atividade ilegal enquanto estiver nos Estados Unidos?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label for="buscar_espionagem_sim">Sim</label>
-                            <input id="buscar_espionagem_sim" name="buscar_espionagem" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="buscar_espionagem_nao">Não</label>
-                            <input class="form-check-input" id="buscar_espionagem_nao" name="buscar_espionagem" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você busca engajar-se em atividades terroristas enquanto estiver nos Estados Unidos ou já se envolveu em atividades terroristas?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="atividades_terroristas_sim">Sim</label>
-                            <input class="form-check-input" id="atividades_terroristas_sim" name="atividades_terroristas" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="atividades_terroristas_nao">Não</label>
-                            <input class="form-check-input" id="atividades_terroristas_nao" name="atividades_terroristas" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já forneceu ou pretende fornecer assistência financeira ou outro suporte a terroristas ou organizações terroristas?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="financiar_terrorismo_sim">Sim</label>
-                            <input class="form-check-input" id="financiar_terrorismo_sim" name="financiar_terrorismo" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="financiar_terrorismo_nao">Não</label>
-                            <input class="form-check-input" id="financiar_terrorismo_nao" name="financiar_terrorismo" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você é membro ou representante de uma organização terrorista?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="membro_terrorista_sim">Sim</label>
-                            <input class="form-check-input" id="membro_terrorista_sim" name="membro_terrorista" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="membro_terrorista_nao">Não</label>
-                            <input class="form-check-input" id="membro_terrorista_nao" name="membro_terrorista" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você é cônjuge, filho ou filha de um indivíduo que se envolveu em atividade terrorista, incluindo fornecer assistência financeira ou outro suporte a terroristas ou organizações terroristas, nos últimos cinco anos?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="familiar_terrorista_sim">Sim</label>
-                            <input class="form-check-input" id="familiar_terrorista_sim" name="familiar_terrorista" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="familiar_terrorista_nao">Não</label>
-                            <input class="form-check-input" id="familiar_terrorista_nao" name="familiar_terrorista" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já ordenou, incitou, cometeu, assistiu ou de outra forma participou de genocídio?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="cometeu_genocidio_sim">Sim</label>
-                            <input class="form-check-input" id="cometeu_genocidio_sim" name="cometeu_genocidio" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="cometeu_genocidio_nao">Não</label>
-                            <input class="form-check-input" id="cometeu_genocidio_nao" name="cometeu_genocidio" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já cometeu, ordenou, incitou, assistiu ou de outra forma participou de tortura?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="cometeu_tortura_sim">Sim</label>
-                            <input class="form-check-input" id="cometeu_tortura_sim" name="cometeu_tortura" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="cometeu_tortura_nao">Não</label>
-                            <input class="form-check-input" id="cometeu_tortura_nao" name="cometeu_tortura" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já cometeu, ordenou, incitou, assistiu ou de outra forma participou de assassinatos extrajudiciais, assassinatos políticos ou outros atos de violência?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="cometeu_assassinatos_extrajudiciais_sim">Sim</label>
-                            <input class="form-check-input" id="cometeu_assassinatos_extrajudiciais_sim" name="cometeu_assassinatos_extrajudiciais" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="cometeu_assassinatos_extrajudiciais_nao">Não</label>
-                            <input class="form-check-input" id="cometeu_assassinatos_extrajudiciais_nao" name="cometeu_assassinatos_extrajudiciais" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já participou do recrutamento ou do uso de crianças soldados?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="recrutamento_criancas_soldados_sim">Sim</label>
-                            <input class="form-check-input" id="recrutamento_criancas_soldados_sim" name="recrutamento_criancas_soldados" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="recrutamento_criancas_soldados_nao">Não</label>
-                            <input class="form-check-input" id="recrutamento_criancas_soldados_nao" name="recrutamento_criancas_soldados" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Enquanto servia como funcionário do governo, você foi responsável ou executou diretamente, a qualquer momento, violações graves da liberdade religiosa?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="violou_liberdade_religiosa_sim">Sim</label>
-                            <input class="form-check-input" id="violou_liberdade_religiosa_sim" name="violou_liberdade_religiosa" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="violou_liberdade_religiosa_nao">Não</label>
-                            <input class="form-check-input" id="violou_liberdade_religiosa_nao" name="violou_liberdade_religiosa" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já esteve diretamente envolvido no estabelecimento ou aplicação de controles populacionais que forçaram uma mulher a se submeter a um aborto contra sua vontade ou um homem ou uma mulher a se submeterem à esterilização contra sua vontade?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="forcar_submeter_aborto_sim">Sim</label>
-                            <input class="form-check-input" id="forcar_submeter_aborto_sim" name="forcar_submeter_aborto" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="forcar_submeter_aborto_nao">Não</label>
-                            <input class="form-check-input" id="forcar_submeter_aborto_nao" name="forcar_submeter_aborto" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já esteve diretamente envolvido na transplante coercitiva de órgãos ou tecidos corporais humanos?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="tranplante_tecidos_corporais_sim">Sim</label>
-                            <input class="form-check-input" id="tranplante_tecidos_corporais_sim" name="tranplante_tecidos_corporais" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="tranplante_tecidos_corporais_nao">Não</label>
-                            <input class="form-check-input" id="tranplante_tecidos_corporais_nao" name="tranplante_tecidos_corporais" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já tentou obter ou ajudar outras pessoas a obter um visto, entrada nos Estados Unidos por meio de fraude, deturpação intencional ou outros meios ilegais?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="fraude_entrada_eua_sim">Sim</label>
-                            <input class="form-check-input" id="fraude_entrada_eua_sim" name="fraude_entrada_eua" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="fraude_entrada_eua_nao">Não</label>
-                            <input class="form-check-input" id="fraude_entrada_eua_nao" name="fraude_entrada_eua" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já foi removido ou deportado de algum país?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="deportado_alguma_vez_sim">Sim</label>
-                            <input class="form-check-input" id="deportado_alguma_vez_sim" name="deportado_alguma_vez" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="deportado_alguma_vez_nao">Não</label>
-                            <input class="form-check-input" id="deportado_alguma_vez_nao" name="deportado_alguma_vez" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já reteve a custódia de uma criança cidadã dos EUA fora dos Estados Unidos de uma pessoa a quem a custódia legal foi concedida por um tribunal dos EUA?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="reteve_custodia_cidada_eua_sim">Sim</label>
-                            <input class="form-check-input" id="reteve_custodia_cidada_eua_sim" name="reteve_custodia_cidada_eua" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="reteve_custodia_cidada_eua_nao">Não</label>
-                            <input class="form-check-input" id="reteve_custodia_cidada_eua_nao" name="reteve_custodia_cidada_eua" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você votou nos Estados Unidos em violação de alguma lei ou regulamento?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="votou_violacao_sim">Sim</label>
-                            <input class="form-check-input" id="votou_violacao_sim" name="votou_violacao" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="votou_violacao_nao">Não</label>
-                            <input class="form-check-input" id="votou_violacao_nao" name="votou_violacao" type="radio" value="Não">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container form-radio">
-                    <label class="form-label text-center w-100">Você já renunciou à cidadania dos Estados Unidos com o objetivo de evitar impostos?</label>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="renunciou_cidadania_sim">Sim</label>
-                            <input class="form-check-input" id="renunciou_cidadania_sim" name="renunciou_cidadania" type="radio" value="Sim">
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label" for="renunciou_cidadania_nao">Não</label>
-                            <input class="form-check-input" id="renunciou_cidadania_nao" name="renunciou_cidadania" type="radio" value="Não">
-                        </div>
-                    </div>
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "justificativa_funcoes_empresa_anteriormente">justificativa funcoes empresa anteriormente</label>
+                    <input class = "form-control" id = "justificativa_funcoes_empresa_anteriormente" name = "justificativa_funcoes_empresa_anteriormente" type = "text">
                 </div>
             </div>
         </div>
 
-        <div class="submit">
-            <input type="submit" value="Enviar">
+        <h3>Escolaridade</h3>
+
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_educado_anteriormente">solicitante educado anteriormente</label>
+                    <input class = "form-control text-center" id = "solicitante_educado_anteriormente" name = "solicitante_educado_anteriormente" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "nome_instituicao">nome instituicao</label>
+                    <input class = "form-control text-center" id = "nome_instituicao" name = "nome_instituicao" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "pais_instituicao">pais instituicao</label>
+                    <input class = "form-control text-center" id = "pais_instituicao" name = "pais_instituicao" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "estado_instituicao">estado instituicao</label>
+                    <input class = "form-control text-center" id = "estado_instituicao" name = "estado_instituicao" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "cidade_instituicao">cidade instituicao</label>
+                    <input class = "form-control text-center" id = "cidade_instituicao" name = "cidade_instituicao" type = "text">
+                </div>
+
+                <div class = "mb-3 col-9">
+                    <label class = "form-label" for = "logradouro_instituicao">logradouro instituicao</label>
+                    <input class = "form-control text-center" id = "logradouro_instituicao" name = "logradouro_instituicao" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "cep_instituicao">cep instituicao</label>
+                    <input class = "form-control text-center" id = "cep_instituicao" name = "cep_instituicao" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "curso_estudo_instituicao">curso estudo instituicao</label>
+                    <input class = "form-control text-center" id = "curso_estudo_instituicao" name = "curso_estudo_instituicao" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "data_inicio_curso">data inicio curso</label>
+                    <input class = "form-control text-center" id = "data_inicio_curso" name = "data_inicio_curso" type = "text">
+                </div>
+
+                <div class = "mb-3 col-3">
+                    <label class = "form-label" for = "data_encerramento_curso">data encerramento curso</label>
+                    <input class = "form-control text-center" id = "data_encerramento_curso" name = "data_encerramento_curso" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "linguas_estudadas">linguas estudadas</label>
+                    <input class = "form-control text-center" id = "linguas_estudadas" name = "linguas_estudadas" type = "text">
+                </div>
+            </div>
         </div>
-    </form>
-</div>
 
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6LdNZAokAAAAALhDBK5wUk5WWTW_JNduzu53nLPx"></script>
-<script crossorigin="anonymous" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-<script crossorigin="anonymous" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-<script crossorigin="anonymous" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
-<script crossorigin="anonymous" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-<script crossorigin="anonymous" integrity="sha512-mVkLPLQVfOWLRlC2ZJuyX5+0XrTlbW2cyAwyqgPkLGxhoaHNSWesYMlcUjX8X+k45YB8q90s88O7sos86636NQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+        <h3>Treinamentos</h3>
 
-<script src="assets/js/script.js"></script>
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
 
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_viajou_ultimos_anos">solicitante viajou ultimos anos</label>
+                    <input class = "form-control text-center" id = "solicitante_viajou_ultimos_anos" name = "solicitante_viajou_ultimos_anos" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "paises_viajados_ultimos_anos">paises viajados ultimos anos</label>
+                    <input class = "form-control text-center" id = "paises_viajados_ultimos_anos" name = "paises_viajados_ultimos_anos" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_pertence_tribo">solicitante pertence tribo</label>
+                    <input class = "form-control text-center" id = "solicitante_pertence_tribo" name = "solicitante_pertence_tribo" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "nome_tribo_solicitante">nome tribo solicitante</label>
+                    <input class = "form-control text-center" id = "nome_tribo_solicitante" name = "nome_tribo_solicitante" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_pertence_caridade">solicitante pertence caridade</label>
+                    <input class = "form-control text-center" id = "solicitante_pertence_caridade" name = "solicitante_pertence_caridade" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "nome_caridade_solicitante">nome caridade solicitante</label>
+                    <input class = "form-control text-center" id = "nome_caridade_solicitante" name = "nome_caridade_solicitante" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_possui_treinamento_armas">solicitante possui treinamento armas</label>
+                    <input class = "form-control text-center" id = "solicitante_possui_treinamento_armas" name = "solicitante_possui_treinamento_armas" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "justificativa_treinamento_armas">justificativa treinamento armas</label>
+                    <input class = "form-control text-center" id = "justificativa_treinamento_armas" name = "justificativa_treinamento_armas" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_serviu_exercito">solicitante serviu exercito</label>
+                    <input class = "form-control text-center" id = "solicitante_serviu_exercito" name = "solicitante_serviu_exercito" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "paises_serviu_exercito">paises serviu exercito</label>
+                    <input class = "form-control text-center" id = "paises_serviu_exercito" name = "paises_serviu_exercito" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "ramo_servico_exercito">ramo servico exercito</label>
+                    <input class = "form-control text-center" id = "ramo_servico_exercito" name = "ramo_servico_exercito" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "posicao_militar">posicao militar</label>
+                    <input class = "form-control text-center" id = "posicao_militar" name = "posicao_militar" type = "text">
+                </div>
+
+                <div class = "mb-3 col-4">
+                    <label class = "form-label" for = "especialidade_militar">especialidade militar</label>
+                    <input class = "form-control text-center" id = "especialidade_militar" name = "especialidade_militar" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "data_inicio_exercito">data inicio exercito</label>
+                    <input class = "form-control text-center" id = "data_inicio_exercito" name = "data_inicio_exercito" type = "text">
+                </div>
+
+                <div class = "mb-3 col-6">
+                    <label class = "form-label" for = "data_encerramento_exercito">data encerramento exercito</label>
+                    <input class = "form-control text-center" id = "data_encerramento_exercito" name = "data_encerramento_exercito" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_envolvido_grupo_rebelde">solicitante envolvido grupo rebelde</label>
+                    <input class = "form-control text-center" id = "solicitante_envolvido_grupo_rebelde" name = "solicitante_envolvido_grupo_rebelde" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "justificativa_envolvido_grupo_rebelde">justificativa envolvido grupo rebelde</label>
+                    <input class = "form-control text-center" id = "justificativa_envolvido_grupo_rebelde" name = "justificativa_envolvido_grupo_rebelde" type = "text">
+                </div>
+            </div>
+        </div>
+
+        <h3>Segurança</h3>
+
+        <div class = "container p-4 my-4 form-box">
+            <div class = "row">
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_doenca_transmissivel">solicitante doenca transmissivel</label>
+                    <input class = "form-control text-center" id = "solicitante_doenca_transmissivel" name = "solicitante_doenca_transmissivel" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_envolvido_substancias_controladas">solicitante envolvido substancias controladas</label>
+                    <input class = "form-control text-center" id = "solicitante_envolvido_substancias_controladas" name = "solicitante_envolvido_substancias_controladas" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_envolvido_crimes">solicitante envolvido crimes</label>
+                    <input class = "form-control text-center" id = "solicitante_envolvido_crimes" name = "solicitante_envolvido_crimes" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_envolvido_prostituicao">solicitante envolvido prostituicao</label>
+                    <input class = "form-control text-center" id = "solicitante_envolvido_prostituicao" name = "solicitante_envolvido_prostituicao" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_envolvido_terrorismo">solicitante envolvido terrorismo</label>
+                    <input class = "form-control text-center" id = "solicitante_envolvido_terrorismo" name = "solicitante_envolvido_terrorismo" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_envolvido_violencia">solicitante envolvido violencia</label>
+                    <input class = "form-control text-center" id = "solicitante_envolvido_violencia" name = "solicitante_envolvido_violencia" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_envolvido_controle_populacional">solicitante envolvido controle populacional</label>
+                    <input class = "form-control text-center" id = "solicitante_envolvido_controle_populacional" name = "solicitante_envolvido_controle_populacional" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_envolvido_fraude_imigracao">solicitante envolvido fraude imigracao</label>
+                    <input class = "form-control text-center" id = "solicitante_envolvido_fraude_imigracao" name = "solicitante_envolvido_fraude_imigracao" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_envolvido_renuncia_cidadania">solicitante envolvido renuncia cidadania</label>
+                    <input class = "form-control text-center" id = "solicitante_envolvido_renuncia_cidadania" name = "solicitante_envolvido_renuncia_cidadania" type = "text">
+                </div>
+
+                <div class = "mb-3 col-12">
+                    <label class = "form-label" for = "solicitante_envolvido_votos_violacao">solicitante envolvido votos violacão</label>
+                    <input class = "form-control text-center" id = "solicitante_envolvido_votos_violacao" name = "solicitante_envolvido_votos_violacao" type = "text">
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
 </body>
 </html>
